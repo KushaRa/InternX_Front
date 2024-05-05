@@ -58,9 +58,9 @@ li:hover{
     padding-bottom: 5px;
     border-radius: 10px;
     text-decoration: underline;
-    text-decoration-color:  rgb(120,182,232);
+    text-decoration-color: rgb(132, 220, 198);
 }
 
 button:hover{
-    background-color: rgb(120,182,232);
+    background-color: rgb(132, 220, 198);
 }
