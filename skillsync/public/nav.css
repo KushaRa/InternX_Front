@@ -30,38 +30,36 @@ li{
 
 li a{
     color: black; 
-    font-size: 16px; 
-    font-weight: bold; 
+    font-size: 16px;  
     margin-right: 25px;
     cursor: pointer;
 }
 
-button{
-    background-color: rgb(120,182,232); 
+button{ 
     margin-left: 10px; 
     border-radius: 10px; 
     padding: auto; 
-    width: 117px; 
-    height: 45px;
+    width: 100px; 
+    height: 40px;
     transition: 5ms;
     cursor: pointer;
 }
 
 button a{
-    color: white; 
+    color: black; 
     font-weight: bold; 
     font-size: 15px;
 }
 
 li:hover{
-    background-color: rgb(120,182,232);
-    padding-left: 5px;
+    padding-left: 7px;
     padding-top: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
     border-radius: 10px;
+    text-decoration: underline;
+    text-decoration-color:  rgb(120,182,232);
 }
 
 button:hover{
-    background-color: black;
-}
+    background-color: rgb(120,182,232);
