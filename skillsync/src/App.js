@@ -1,12 +1,12 @@
-import './App.css';
-import Lnavbar from './components/navBar/lnavbar';
+import { Home } from './Pages/Home';
 
 function App() {
   return (
-    <div className='App'>
-      <Lnavbar />
+    <div>
+    
+    <Home/>
     </div>
-  );
+      );
 }
 
 export default App;
