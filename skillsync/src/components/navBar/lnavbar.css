@@ -3,10 +3,11 @@
 }
 
 .navBar{
-    background: white; 
-    font-family: Arial, Helvetica, sans-serif; 
+     
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     padding-right: 15px; 
-    padding-left: 15px;
+    padding-left: 50px;
+    padding-top: 20px;
 }
 
 .navDiv{
@@ -19,7 +20,7 @@
 .logo a{
     font-size: 35px; 
     font-weight: 600; 
-    color: black; 
+    color: #fffefe; 
     cursor: pointer;
 }
 
@@ -29,13 +30,14 @@ li{
 }
 
 li a{
-    color: black; 
+    color: rgb(255, 255, 255); 
     font-size: 20px;  
     margin-right: 25px;
     cursor: pointer;
 }
 
 button{ 
+    background-color:#00B4D8;
     margin-left: 10px; 
     border-radius: 10px; 
     padding: auto; 
@@ -43,24 +45,25 @@ button{
     height: 45px;
     transition: 5ms;
     cursor: pointer;
-    background-color: rgb(0, 180, 216);
 }
 
 button a{
-    color: black;
-    font-size: 20px;
+    color: black; 
+    font-weight: bold; 
+    font-size: 15px;
 }
 
 li:hover{
     padding-left: 7px;
     padding-top: 5px;
     padding-right: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
     border-radius: 10px;
-    text-decoration: underline;
-    text-decoration-color: rgb(0, 180, 216);
+    transition: transform 0.3s ease;
+   
+    text-decoration-color: rgb(255, 255, 255);
 }
 
 button:hover{
-    background-color: rgb(132, 220, 198);
+    background-color: rgb(255, 255, 255);
 }
