@@ -3,7 +3,7 @@ body {
 
 
 .hero-left {
-    background-image: url('E:\Sabra 3.1\Mini project\InternX\SkillSync_Front\skillsync\src\components\Assets\landing page.png');
+    background-image: url("../Assets/landing\ page.png");
     background-size: cover;
     background-position: center;
     height: 100vh;
