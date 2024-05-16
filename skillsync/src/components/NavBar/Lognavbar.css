@@ -3,53 +3,52 @@
 }
 
 .navBar{
-     
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-    padding-right: 15px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-right: 15px;
     padding-left: 50px;
     padding-top: 20px;
 }
 
 .navDiv{
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     transition: all 0.3s ease 0s;
 }
 
 .logo a{
-    font-size: 35px; 
-    font-weight: 600; 
-    color: #fffefe; 
+    font-size: 35px;
+    font-weight: 600;
+    color: #fffefe;
     cursor: pointer;
 }
 
 li{
-    display: inline; 
+    display: inline;
     list-style: none;
 }
 
 li a{
-    color: rgb(255, 255, 255); 
-    font-size: 20px;  
+    color: rgb(255, 255, 255);
+    font-size: 20px;
     margin-right: 25px;
     cursor: pointer;
 }
 
-button{ 
+button{
     background-color:#00B4D8;
-    margin-left: 10px; 
-    border-radius: 10px; 
-    padding: auto; 
-    width: 117px; 
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: auto;
+    width: 117px;
     height: 45px;
     transition: 5ms;
     cursor: pointer;
 }
 
 button a{
-    color: black; 
-    font-weight: bold; 
+    color: black;
+    font-weight: bold;
     font-size: 15px;
 }
 
@@ -60,7 +59,6 @@ li:hover{
     padding-bottom: 6px;
     border-radius: 10px;
     transition: transform 0.3s ease;
-   
     text-decoration-color: rgb(255, 255, 255);
 }
 
