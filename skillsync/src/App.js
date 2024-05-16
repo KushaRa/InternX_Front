@@ -4,12 +4,8 @@ import LogIn from './pages/Login/LogIn';
 
 function App() {
   return (
-  /*  <div>
-    <Home/>
-    </div>
-    */
     <div>
-     <LogIn />
+    <Home/>
     </div>
       );
 }

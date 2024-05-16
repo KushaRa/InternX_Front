@@ -17,5 +17,5 @@ export const Hero = () => {
                 <button type="button">Sign in</button>
             </div>
     </div>
-    )
+    );
 }
