@@ -1,6 +1,5 @@
-import { Home } from './pages/Home/Home';
-import Button from './components/Submitbutton/Submitbutton';
-import LogIn from './pages/Login/LogIn';
+import { Home } from './Pages/Home/Home';
+import logIn from './Pages/logIn/logIn';
 
 function App() {
   return (
