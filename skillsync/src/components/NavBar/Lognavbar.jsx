@@ -1,5 +1,5 @@
-import React from 'react'
-import './Lognavbar.css'
+import React from 'react';
+import './Lognavbar.css';
 
 export default function Lnavbar() {
   return (
@@ -17,6 +17,6 @@ export default function Lnavbar() {
         </div>
      </nav>
     </>
-  )
+  );
 }
 

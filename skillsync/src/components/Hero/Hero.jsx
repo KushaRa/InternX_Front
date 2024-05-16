@@ -1,6 +1,6 @@
-import React from 'react'
-import './Hero.css'
-import NavBar from '../NavBar/Lognavbar'
+import React from 'react';
+import './Hero.css';
+import NavBar from '../NavBar/Lognavbar';
 
 
 export const Hero = () => {
