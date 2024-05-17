@@ -1,7 +1,7 @@
-import "./footer.css";
+import "./Footer.css";
 
 function Footer() {
-    return (<footer>
+    return (<Footer>
         <div class="row">
             <div class="col">
             <img src="logo.jpg" class="logo"alt="" />
