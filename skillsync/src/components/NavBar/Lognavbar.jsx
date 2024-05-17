@@ -1,5 +1,5 @@
 import React from 'react'
-import './lnavbar.css'
+import './Lognavbar.css'
 
 export default function Lnavbar() {
   return (
