@@ -1,9 +1,10 @@
 import React from 'react';
 import './logIn.css';
 
+
 export default function LogIn() {
-  return (
-    <>
+  return (   
+
     <div className="box1">
         <div className="logo">
             <p>Logo</p>
@@ -15,6 +16,6 @@ export default function LogIn() {
             <p>InternX Community</p>
         </div>
     </div>
-    </>
+    
   );
 }
