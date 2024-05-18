@@ -1,20 +1,51 @@
-import React from 'react';
-import './logIn.css';
+import React from "react";
+import "./logIn.css";
+import submitbutton from "../../components/submitbutton/submitbutton";
 
 export default function LogIn() {
   return (
     <>
-    <div className="box1">
-        <div className="logo">
-            <p>Logo</p>
+      <div className="flex-container">
+        <div className="flex-box1">
+          <div className="logo">logo</div>
+          <div className="welcome">Welcome to</div>
+          <div className="internx">InternX Community</div>
         </div>
-        <div className="welcome">
-            <p>Welcome to</p>
+        <div className="flex-box2">
+          <div className="login">
+            <h5>Login to your account</h5>
+            <div className="input-box">
+              <form action="past">
+                <input
+                  type="text"
+                  placeholder="Your user name OR email"
+                  required
+                />
+              </form>
+            </div>
+            <div className="input-box">
+              <form action="past">
+                <input type="password" placeholder="Your password " required />
+              </form>
+            </div>
+            <div className="remember-forget">
+              <label>
+                <input type="checkbox" /> Remember me
+              </label>
+              <a href="#">Forgot password</a>
+            </div>
+            <button type="submit" id="loginButton">
+              Login
+            </button>
+            <div className="Or">
+              <p>---------------------------- OR ---------------------------</p>
+            </div>
+            <button className="Google-button" type="submit" id="googleButton">
+              Continue with google
+            </button>
+          </div>
         </div>
-        <div className="internx">
-            <p>InternX Community</p>
-        </div>
-    </div>
+      </div>
     </>
   );
 }

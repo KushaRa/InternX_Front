@@ -1,15 +1,12 @@
-import { Home } from './Pages/Home/Home';
-import logIn from './Pages/logIn/logIn';
+import { Home } from "./Pages/Home/Home";
+import LogIn from "./Pages/logIn/logIn";
 
 function App() {
   return (
-      <div>
-        <Home/>
-      </div>
-    /* <div>
-     <LogIn />
-    </div>*/
-      );
+    <div>
+      <Home />
+    </div>
+  );
 }
 
 export default App;

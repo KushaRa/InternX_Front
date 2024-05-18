@@ -1,5 +1,5 @@
 import React from 'react';
-import './Submitbutton.css';
+import './submitbutton.css';
 
 export default function Button() {
   return (
