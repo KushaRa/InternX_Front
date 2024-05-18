@@ -1,13 +1,9 @@
-import React from 'react';
-import { Home } from './Pages/Home/Home';
-import { AboutUs } from './Pages/AboutUs/AboutUs';
-import { Contact } from './Pages/Contact/Contact';
-import logIn from './Pages/logIn/logIn';
-import { Route,Routes } from 'react-router-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { Home } from "./Pages/Home/Home";
+import LogIn from "./Pages/logIn/logIn";
 
 function App() {
   return (
+HEAD
       <div>
        <Routes>
         <Route path="/" element={<Home/>}></Route>
@@ -19,6 +15,12 @@ function App() {
      </Routes>
       </div>
       );
+=======
+    <div>
+      <Home />
+    </div>
+  );
+>>>>>>> c6ee88a61a62fb01a443faefe6bf3843cd0669d4
 }
 
 export default App;
