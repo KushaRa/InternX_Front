@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import NavBar from '../NavBar/Lognavbar'
+import { Link } from 'react-router-dom'
 
 
 export const Hero = () => {
@@ -14,7 +15,7 @@ export const Hero = () => {
                 Discover your perfect internship effortlessly, while IT companies find top talent seamlessly.
                 Join InternX today and unlock boundless opportunities.</p>
             <div className='heroLoginbtn'>
-                <button type="button">Sign in</button>
+              <Link to="/signin"><button type="button">Sign in</button></Link>
             </div>
     </div>
     );
