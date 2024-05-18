@@ -15,12 +15,11 @@ HEAD
      </Routes>
       </div>
       );
-=======
     <div>
       <Home />
     </div>
   );
->>>>>>> c6ee88a61a62fb01a443faefe6bf3843cd0669d4
+
 }
 
 export default App;
