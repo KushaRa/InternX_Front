@@ -1,5 +1,9 @@
-import { Home } from "./Pages/Home/Home";
-import LogIn from "./Pages/logIn/logIn";
+import React from 'react';
+import { Home } from './Pages/Home/Home';
+import { AboutUs } from './Pages/AboutUs/AboutUs';
+import { Contact } from './Pages/Contact/Contact';
+import {Login} from './Pages/logIn/LogIn';
+import { Route,Routes } from 'react-router-dom';
 
 function App() {
   return (
@@ -9,7 +13,7 @@ function App() {
         {/*<Route path="/internships" element={<Internships/>}></Route>*/}
         <Route path="/contact" element={<Contact/>}></Route>
         <Route path="/about" element={<AboutUs/>}></Route>
-        <Route path="/login" element={<logIn/>}></Route>
+        <Route path="/login" element={<Login/>}></Route>
         {/*<Route path="/signin" element={<AboutUs/>}></Route>*/}
      </Routes>
       </div>

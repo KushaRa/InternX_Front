@@ -1,8 +1,8 @@
-import React from "react";
 import "./logIn.css";
-import submitbutton from "../../components/submitbutton/submitbutton";
 
-export default function LogIn() {
+import React from "react";
+
+export const Login = () => {
   return (
     <>
       <div className="flex-container">
@@ -48,4 +48,4 @@ export default function LogIn() {
       </div>
     </>
   );
-}
+};
