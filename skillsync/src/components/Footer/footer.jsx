@@ -1,7 +1,7 @@
-import "./Footer.css";
+import "./footer.css";
 
 function Footer() {
-    return (<Footer>
+    return (<footer>
         <div class="row">
             <div class="col">
             <img src="logo.jpg" class="logo"alt="" />
@@ -42,7 +42,8 @@ function Footer() {
         </div>    
         <hr />
         <p class="copyright">InternX © 2024 - All Rights Reserved</p>
-    </footer>);
+    </footer>
+    );
 }
 
 export default Footer;
