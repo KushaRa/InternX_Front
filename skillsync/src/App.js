@@ -3,7 +3,6 @@ import LogIn from "./Pages/logIn/logIn";
 
 function App() {
   return (
-HEAD
       <div>
        <Routes>
         <Route path="/" element={<Home/>}></Route>
@@ -15,10 +14,6 @@ HEAD
      </Routes>
       </div>
       );
-    <div>
-      <Home />
-    </div>
-  );
 
 }
 
