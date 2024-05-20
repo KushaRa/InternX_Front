@@ -1,21 +1,25 @@
-import { CreateAcc } from './Pages/CreateAcc/CreateAcc';
+// import { CreateAcc } from './Pages/CreateAcc/CreateAcc';
+import React from 'react';
 import { Home } from './Pages/Home/Home';
-import logIn from './Pages/logIn/logIn';
+import { AboutUs } from './Pages/AboutUs/AboutUs';
+import { Contact } from './Pages/Contact/Contact';
+import {Login} from './Pages/logIn/LogIn';
+import { Route,Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <CreateAcc/>
-    </div>
-      /*<div>
-        <Home/>
+      <div>
+       <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        {/*<Route path="/internships" element={<Internships/>}></Route>*/}
+        <Route path="/contact" element={<Contact/>}></Route>
+        <Route path="/about" element={<AboutUs/>}></Route>
+        <Route path="/login" element={<Login/>}></Route>
+        {/*<Route path="/signin" element={<AboutUs/>}></Route>*/}
+     </Routes>
       </div>
-    /* <div>
-     <LogIn />
-    </div>*/
-    
-    
       );
+
 }
 
 export default App;
