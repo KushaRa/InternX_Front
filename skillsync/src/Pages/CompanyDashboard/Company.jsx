@@ -1,12 +1,12 @@
 import React from 'react';
 import './Company.css';
-import Lnavbar from '../../components/NavBar/Lognavbar';
+import {MainNav} from '../../components/MainNav/MainNav';
 
 
 export const Company = () => {
     return (
         <div className="Content">
-            <Lnavbar/>
+            <MainNav/>
             <div className="CDetails">
                
             </div>
