@@ -9,9 +9,9 @@ export default function Lnavbar() {
         <div className="navDiv">
          <div className="logo"><a href="#">InternX</a></div>
             <ul>
-            <li>
+                <li>
                 <Link to="/">Home</Link>
-                  </li>
+                </li>
                 <li>
                   <Link to="/internships">Internships</Link>
                 </li>
@@ -26,6 +26,6 @@ export default function Lnavbar() {
         </div>
      </nav>
     </>
-  )
+  );
 }
 
