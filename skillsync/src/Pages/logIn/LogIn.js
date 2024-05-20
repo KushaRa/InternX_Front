@@ -7,7 +7,7 @@ export const Login = () => {
     <>
       <div className="flex-container">
         <div className="flex-box1">
-          <div className="logo">logo</div>
+          <div className="logo2">logo</div>
           <div className="welcome">Welcome to</div>
           <div className="internx">InternX Community</div>
         </div>
