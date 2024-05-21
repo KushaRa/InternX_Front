@@ -1,4 +1,5 @@
 import "./footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (<footer>
@@ -16,20 +17,19 @@ function Footer() {
         </div>
             <div class="col">
                 <h3>Links<div class="underline"><span></span></div></h3>
-                <ul>
-                    <li><a href= "">Home</a></li>
-                    <li><a href= "">Services</a></li>    
-                    <li><a href= "">About Us</a></li>
-                    <li><a href= "">Features</a></li>
-                     <li><a href= "">Contacts</a></li>    
-                </ul>
+                <div className='footerUl'>
+                    <p><Link to="/">Home</Link></p>
+                    <p><Link to="/internships">Internships</Link></p>
+                    <p><Link to="/about">About us</Link></p>
+                    <p><Link to="/contact">Contact us</Link></p>
+                </div>
             </div>
             <div class="col">
                 <h3>Newsletter<div class="underline"><span></span></div></h3>
                 <form>
                     <i class="fa-regular fa-envelope"></i>
                     <input type="email" placeholder="  Enter your email" required />
-                    <button type="  Submit"><i class="fa-solid fa-arrow-right"></i></button>
+                    <button type="Submit"><i class="fa-solid fa-arrow-right"></i></button>
                 </form>
                 <div class="social-icons">
                     <i class="fa-brands fa-facebook"></i>
@@ -39,7 +39,7 @@ function Footer() {
                 </div>
             </div>
 
-        </div>    
+        </div>
         <hr />
         <p class="copyright">InternX © 2024 - All Rights Reserved</p>
     </footer>
