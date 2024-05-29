@@ -5,6 +5,7 @@ import { AboutUs } from './Pages/AboutUs/AboutUs';
 import { Contact } from './Pages/Contact/Contact';
 import { Company } from './Pages/CompanyDashboard/Company';
 import {Login} from './Pages/logIn/LogIn';
+import SelectUser from './Pages/selectUser/SelectUser';
 import { Route,Routes } from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<AboutUs/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/internships" element={<Company/>}></Route>
+        <Route path="/selectuser" element={<SelectUser/>}></Route>
         {/*<Route path="/signin" element={<AboutUs/>}></Route>*/}
      </Routes>
       </div>
