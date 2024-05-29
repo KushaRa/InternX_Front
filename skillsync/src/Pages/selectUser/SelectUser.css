@@ -7,6 +7,7 @@
   }
   
   .select-user-content {
+    
     display: flex;
     flex-grow: 1;
     align-items: center;
@@ -15,19 +16,21 @@
   
   .job-seekers,
   .companies {
-    padding: 20px;
+   padding: 10px;
     text-align: center;
+    font-size: 25px;
     color: white;
     position: relative;
   }
-  
+
   .companies {
     width: 50%;
-    z-index: 1; 
+    z-index: 1;
   }
-  
+
   .login-button {
-    background-color: #0073e6;
+    background-color: #00B4D8;
+    font-size: 15px;
     color: black;
     padding: 10px 20px;
     border: none;
@@ -35,17 +38,18 @@
     cursor: pointer;
     margin-bottom: 10px;
   }
-  
+
   .signup-link {
     color: white;
+    font-size: 19px;
     text-decoration: underline;
     cursor: pointer;
   }
-  
+
   .signup-link:hover {
     color: yellow;
   }
-  
+
   /* blue gradient background */
   .select-user::before {
     content: '';
@@ -54,6 +58,5 @@
     left: 0;
     width: 50%; /* Cover the left half of the page */
     height: 100%;
-    background: linear-gradient(to bottom right, rgba(0, 82, 165, 0.7), rgba(0, 115, 230, 0.7));
+   background: linear-gradient(to bottom right, rgba(0, 82, 165, 0.7), rgba(0, 115, 230, 0.7));
   }
-  

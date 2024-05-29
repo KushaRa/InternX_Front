@@ -44,11 +44,11 @@ button{
     height: 45px;
     transition: 5ms;
     cursor: pointer;
+    font-weight: bolder;
 }
 
 button a{
     color: black;
-    font-weight: bold;
     font-size: 15px;
 }
 
