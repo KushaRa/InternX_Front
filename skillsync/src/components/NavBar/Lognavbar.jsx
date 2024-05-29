@@ -10,7 +10,7 @@ export default function Lnavbar() {
           <div className="logo">
             <a href="#">InternX</a>
           </div>
-          <ul>
+          <ul className="navUl">
             <li>
               <Link to="/">Home</Link>
             </li>
