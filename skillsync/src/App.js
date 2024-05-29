@@ -10,8 +10,8 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-      <div>
-       <Routes>
+    <div>
+      <Routes>
         <Route path="/" element={<Home />}></Route>
         {/*<Route path="/internships" element={<Internships/>}></Route>*/}
         <Route path="/contact" element={<Contact />}></Route>
@@ -19,10 +19,9 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/internships" element={<Company />}></Route>
         <Route path="/selectuser" element={<SelectUser />}></Route>
-     </Routes>
-      </div>
-      );
-
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
