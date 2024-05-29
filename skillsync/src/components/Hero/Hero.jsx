@@ -15,7 +15,7 @@ export const Hero = () => {
                 Discover your perfect internship effortlessly, while IT companies find top talent seamlessly.
                 Join InternX today and unlock boundless opportunities.</p>
             <div className='heroLoginbtn'>
-              <Link to="/signin"><button type="button">Sign in</button></Link>
+              <Link to="/selectuser"><button type="button">Sign in</button></Link>
             </div>
     </div>
   );
