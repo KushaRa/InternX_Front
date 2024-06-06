@@ -1,9 +1,36 @@
-.Content{
-    background-image: url('../../assets/background.png');        
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    height: 100vh; 
-    width: 100%; 
-    
+.Content {
+  background-image: url("../../assets/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+}
+.InternCards {
+  flex-direction: column; /* Arrange items in a column */
+  justify-content: center; /* Center items vertically */
+  align-items:flex-end;
+  background: transparent;
+  margin-right: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;   
+}
+
+.NewIntern {
+  display: flex;
+  justify-content: center; 
+  align-items:end; 
+  margin-right: 20px;
+}
+.NewAdd {
+  font-weight: bolder;
+  border: none;
+  border-radius: 8px; 
+  background-color: #00B4D8; 
+  color: rgb(0, 0, 0); 
+  cursor: pointer;
+  align-items:end; 
+  margin-right: -80px;
+
 }
