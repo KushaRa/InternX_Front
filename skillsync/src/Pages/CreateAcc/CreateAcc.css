@@ -1,0 +1,142 @@
+.flex-Container{
+    display: flex;
+}
+
+.flex-box01{
+    width: 62%;
+    height: 100vh;
+    background-color: black;
+    padding: 0%;
+    margin: 0px;
+    border: none;
+}
+
+.logo{
+    color: white;
+    font-size: 40px;
+    margin-left: 188px;
+    font-style: italic;
+    margin-top: 200px;
+    margin-bottom: 0px;
+    padding: opx;
+}
+
+.welcome{
+    color: rgb(0, 180, 216, 0.54);
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 188px;
+    padding: 0%;
+    border: none;
+}
+
+.internx{
+    color:rgb(0, 180, 216);
+    font-size: 65px;
+    margin-top: 25px;
+    margin-left: 188px;
+}
+
+.createAcc{
+    color: black;
+    margin-left: 200px;
+    margin-top: 150px;
+    margin-right: 39px;
+    padding: 0%;
+    border: none;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box1{
+    position: relative;
+    width: 300px;
+    height: 20px;
+    margin: 30px;
+}
+
+.input-box1 input{
+    width: 300px;
+    height: 28px;
+    border-color: #00b4d8;
+    border-radius: 10px;
+    margin-left: -30px;
+    align-items: center;
+    justify-items: center;
+}
+
+.terms{
+    font-size: 12px;
+    padding: 5px;
+    justify-content: space-between;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.terms input{
+    margin-left: -5px;
+
+}
+
+.divider-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    width: 305px;
+}
+
+.terms label{
+    margin: 0%;
+    padding: 0%;
+}
+
+.divider {
+    flex-grow: 2;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.divider-text {
+    margin: 0 10px;
+    color: #888;
+    font-family: Arial, sans-serif;
+    font-size: small;
+}
+
+#signupButton{
+    width: 305px;
+    margin-left: 0px;
+    height: 35px;
+    border-radius: 10px;
+    background-color:#00b4d8 ;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#googleButton{
+    width: 305px;
+    margin-left: 0px;
+    height: 35px;
+    border-color: #00b4d8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
+
+.google-button img{
+    height: 25px;
+    width: 40px;
+    margin-right: 10px;
+    margin-top: -20px;
+    margin-bottom: -10px;   
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
