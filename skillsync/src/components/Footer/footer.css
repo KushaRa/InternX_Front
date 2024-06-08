@@ -33,7 +33,7 @@ footer{
 
 .Fcol{
     flex-basis: 25%;
-    padding: 10px;
+    padding: 3px;
 }
 
 .Fcol:nth-child(2), .col:nth-child(3){
@@ -163,7 +163,7 @@ hr{
     }
     .col{
         flex-basis: 100%;
-      
+
     }
     .Fcol:nth-child(2), .col:nth-child(3){
         flex-basis: 100%;

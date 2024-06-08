@@ -1,29 +1,16 @@
-import React from 'react';
-import './Company.css';
-import Lnavbar from '../../components/NavBar/Lognavbar';
-
+import React from "react";
+import "./Company.css";
+import { MainNav } from "../../components/MainNav/MainNav";
 
 export const Company = () => {
-    return (
-        <div className="Content">
-            <Lnavbar/>
-            <div className="CDetails">
-               
-            </div>
+  return (
+    <div className="Content">
+      <MainNav />
+      <div className="CDetails"></div>
 
-            <div className="InternCards">
+      <div className="InternCards"></div>
 
-            </div>
-
-            <div className="NewIntern">
-
-            </div>
-            
-        </div>
-
-
-
-
-
-    )
-}
+      <div className="NewIntern"></div>
+    </div>
+  );
+};
