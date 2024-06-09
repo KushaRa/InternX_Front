@@ -7,7 +7,9 @@ import { Contact } from "./Pages/Contact/Contact";
 import { Company } from "./Pages/CompanyDashboard/Company";
 import  Login  from "./Pages/logIn/LogIn";
 import SelectUser from "./Pages/selectUser/SelectUser";
+import  Signup   from "./Pages/CreateAcc/CreateAcc";
 import { Route, Routes } from "react-router-dom";
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/internships" element={<Company />}></Route>
         <Route path="/selectuser" element={<SelectUser />}></Route>
+        <Route path="/signup" element={<Signup />}></Route>
       </Routes>
     </div>
   );
