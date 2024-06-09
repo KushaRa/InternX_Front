@@ -1,15 +1,15 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import "./logIn.css";
 
 export default function LogIn() {
   const [data, setData] = useState({
-    email: '',
-    password: '',
-  })
+    email: "",
+    password: "",
+  });
 
- const loginUser = (e) => {
-  e.preventDefault();
-};
+  const loginUser = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <div className="flex-container">
@@ -25,14 +25,24 @@ export default function LogIn() {
               <form onSubmit={loginUser}>
                 <input
                   type="text"
-                  placeholder="Your user name OR email" value={data.email} onChange={(e) => setData({...data, email: e.target.value})}
+                  placeholder="Your user name OR email"
+                  value={data.email}
+                  onChange={(e) => setData({ ...data, email: e.target.value })}
                   required
                 />
               </form>
             </div>
             <div className="input-box">
               <form onSubmit={loginUser}>
-                <input type="password" placeholder="Your password " value={data.password} onChange={(e) => setData({...data, password: e.target.value})} required />
+                <input
+                  type="password"
+                  placeholder="Your password "
+                  value={data.password}
+                  onChange={(e) =>
+                    setData({ ...data, password: e.target.value })
+                  }
+                  required
+                />
               </form>
             </div>
             <div className="remember-forget">
@@ -55,4 +65,4 @@ export default function LogIn() {
       </div>
     </>
   );
-};
+}
