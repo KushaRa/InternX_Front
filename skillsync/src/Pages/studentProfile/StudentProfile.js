@@ -19,7 +19,7 @@ const StudentProfile = () => {
 
   useEffect(() => {
     // Fetch profile data from the backend (use an actual ID)
-    axios.get('http://localhost:5000/api/profiles').then((response) => {
+    axios.get('http://localhost:8000/api/profiles').then((response) => {
       setProfile(response.data);
       setProfilePicturePreview(response.data.profilePicture);
     });
@@ -42,7 +42,7 @@ const StudentProfile = () => {
     }
 
     // Update profile (use an actual ID)
-    await axios.post('http://localhost:5000/api/profiles', formData, {
+    await axios.post('http://localhost:8000/api/profiles', formData, {
       headers: { 'Content-Type': 'multipart/form-data' },
     });
     alert('Profile updated successfully!');
