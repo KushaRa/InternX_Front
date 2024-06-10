@@ -7,8 +7,7 @@ import { Company } from "./Pages/CompanyDashboard/Company";
 import { Login } from "./Pages/logIn/LogIn";
 import SelectUser from "./Pages/selectUser/SelectUser";
 import { CreateAcc } from "./Pages/CreateAcc/CreateAcc";
-import Card from "./Pages/Card/Card";
-
+import { Card } from "./Pages/Card/Card";
 import { Route, Routes } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -23,9 +22,8 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/internships" element={<Company />}></Route>
         <Route path="/selectuser" element={<SelectUser />}></Route>
-        <Route path="/card" element={<Home />}></Route>
         <Route path="/createacc" element={<CreateAcc />}></Route>
-        <Route path="/show" element={<Card />}></Route>
+        <Route path="/card" element={<Card />}></Route>
 
       </Routes>
     </div>
