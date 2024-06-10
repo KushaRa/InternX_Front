@@ -1,0 +1,8 @@
+.cardPage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('../../assets/homepage.png');
+    background-size: cover;
+}
+
