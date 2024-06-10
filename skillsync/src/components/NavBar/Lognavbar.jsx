@@ -12,7 +12,7 @@ export default function Lnavbar() {
           </div>
           <ul className="navUl">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/card">Home</Link>
             </li>
             <li>
               <Link to="/internships">Internships</Link>
