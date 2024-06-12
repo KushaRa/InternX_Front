@@ -1,8 +1,15 @@
+import React, { useState } from "react";
 import "./logIn.css";
 
-import React from "react";
+export default function LogIn() {
+  const [data, setData] = useState({
+    email: "",
+    password: "",
+  });
 
-export const Login = () => {
+  const loginUser = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <div className="flex-container">
@@ -15,17 +22,27 @@ export const Login = () => {
           <div className="login">
             <h5>Login to your account</h5>
             <div className="input-box">
-              <form action="past">
+              <form onSubmit={loginUser}>
                 <input
                   type="text"
                   placeholder="Your user name OR email"
+                  value={data.email}
+                  onChange={(e) => setData({ ...data, email: e.target.value })}
                   required
                 />
               </form>
             </div>
             <div className="input-box">
-              <form action="past">
-                <input type="password" placeholder="Your password " required />
+              <form onSubmit={loginUser}>
+                <input
+                  type="password"
+                  placeholder="Your password "
+                  value={data.password}
+                  onChange={(e) =>
+                    setData({ ...data, password: e.target.value })
+                  }
+                  required
+                />
               </form>
             </div>
             <div className="remember-forget">
@@ -48,4 +65,4 @@ export const Login = () => {
       </div>
     </>
   );
-};
+}
