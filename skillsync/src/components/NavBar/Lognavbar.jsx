@@ -26,9 +26,6 @@ export default function Lnavbar() {
             <Link to="/login">
               <button className="Nbutton">Log in</button>
             </Link>
-            <li>
-              <Link to="/profile">Profile</Link>
-            </li>
           </ul>
         </div>
       </nav>
