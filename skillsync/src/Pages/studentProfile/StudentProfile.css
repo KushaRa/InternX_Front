@@ -1,0 +1,63 @@
+
+.profile-page {
+  background-image: url('../../assets/background.png');
+  background-size: cover;
+  height: 300vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-container {
+  position: absolute;
+  width: 1322px;
+  height: 319px;
+  left: 59px;
+  top: 190px;
+  
+  background: rgba(0, 180, 216, 0.22);
+  border-radius: 10px;
+}
+
+
+
+.profile-box,
+.info-box,
+.resume-box,
+.work-experience-box,
+.education-box {
+  background-color: blue;
+  color: white;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.profile-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+input[type="file"],
+input[type="text"],
+input[type="email"] {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+}
+
+.save-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
