@@ -11,7 +11,7 @@ export default function Lnavbar() {
       <nav className="navBar">
         <div className="navDiv">
           <div className="logo1">
-            <a href="#">InternX</a>
+          <Link to='/'>InternX</Link>
           </div>
           <ul className="navUl">
             <li>
@@ -26,7 +26,7 @@ export default function Lnavbar() {
             <li>
               <Link to="/contact">Contact us</Link>
             </li>
-            <Link to='/lbutton'><IconButton style={{color: '#00B4D8'}}> <AccountCircle /></IconButton></Link>
+            <Link to='/'><IconButton style={{color: '#00B4D8'}}> <AccountCircle /></IconButton></Link>
           </ul>
         </div>
       </nav>
