@@ -1,0 +1,55 @@
+.dialogBox {
+    position: relative;
+    padding: 16px;
+    background-color: #000000;
+    border: 2px solid #00B4D8;
+    color: #fff;
+  }
+  
+  .dialogTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00B4D8;
+    margin-bottom: 16px;
+  }
+  
+  .inputBox {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #00B4D8;
+    border-radius: 4px;
+    padding: 10px;
+    }
+  
+  .inputBox input,
+  .inputBox textarea,
+  .Mui-selected 
+   {
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .selectBox {
+    padding: 4px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #00B4D8;
+    border-radius: 4px;
+  
+  }
+  .menuItem.selected {
+    background-color: #00B4D8; /* Background color for selected item */
+    color: #fff; /* Text color for selected item */
+  }
+  
+  .dialog {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Material-UI specific styles */
+  .MuiInputLabel-filled {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+  .MuiInputLabel{
+    color: #fff;
+  }
+  
