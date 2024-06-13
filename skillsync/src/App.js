@@ -1,19 +1,19 @@
-// import { CreateAcc } from './Pages/CreateAcc/CreateAcc';
 import React from "react";
 import { Home } from "./Pages/Home/Home";
 import { AboutUs } from "./Pages/AboutUs/AboutUs";
 import { Contact } from "./Pages/Contact/Contact";
 import { Company } from "./Pages/CompanyDashboard/Company";
-import { Login } from "./Pages/logIn/LogIn";
+import  Login  from "./Pages/logIn/LogIn";
 import SelectUser from "./Pages/selectUser/SelectUser";
 import { CreateAcc } from "./Pages/CreateAcc/CreateAcc";
 import { Card } from "./Pages/Card/Card";
+import StudentProfile from "./Pages/studentProfile/StudentProfile";
 import { Route, Routes } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
-  return (
-    <div>
+    return (
+<div>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         {/*<Route path="/internships" element={<Internships/>}></Route>*/}
@@ -24,10 +24,10 @@ function App() {
         <Route path="/selectuser" element={<SelectUser />}></Route>
         <Route path="/createacc" element={<CreateAcc />}></Route>
         <Route path="/card" element={<Card />}></Route>
-
+        <Route path="/profile" element={<StudentProfile />}
       </Routes>
     </div>
-  );
+);
 }
 
 export default App;
