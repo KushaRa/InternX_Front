@@ -1,12 +1,12 @@
 import React from "react";
 import "./Company.css";
-import NavBar from "../../components/NavBar/Lognavbar";
+import MainNav from "../../components/MainNav/MainNav";
 import { Popular } from "../../components/Popular/popular";
 
 export const Company = () => {
   return (
     <div className="Content">
-      <NavBar />
+      <MainNav />
 
       {/*<div className="CDetails"></div>*/}
       <div className="InternCards">

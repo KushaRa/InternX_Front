@@ -7,7 +7,7 @@ export default function Lnavbar() {
     <>
       <nav className="navBar">
         <div className="navDiv">
-          <div className="logo">
+          <div className="logo1">
             <a href="#">InternX</a>
           </div>
           <ul className="navUl">
