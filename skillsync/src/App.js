@@ -5,8 +5,9 @@ import { Contact } from "./Pages/Contact/Contact";
 import { Company } from "./Pages/CompanyDashboard/Company";
 import  Login  from "./Pages/logIn/LogIn";
 import SelectUser from "./Pages/selectUser/SelectUser";
+import CreateAcc from "./Pages/CreateAcc/CreateAcc";
+import { Card } from "./Pages/Card/Card";
 import StudentProfile from "./Pages/studentProfile/StudentProfile";
-import Signup   from "./Pages/CreateAcc/CreateAcc";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -20,10 +21,11 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/internships" element={<Company />}></Route>
         <Route path="/selectuser" element={<SelectUser />}></Route>
-        <Route path="/signup" element={<Signup />}></Route>
-        <Route path="/profile" element={<StudentProfile />} />
+        <Route path="/createacc" element={<CreateAcc />}></Route>
+        <Route path="/card" element={<Card />}></Route>
+        <Route path="/profile" element={<StudentProfile />}></Route>
       </Routes>
-    </div>
+</div>
 );
 }
 
