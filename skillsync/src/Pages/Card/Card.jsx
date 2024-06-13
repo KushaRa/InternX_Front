@@ -1,13 +1,12 @@
 import React from "react";
 import "./Card.css";
-import Lnavbar from "../../components/NavBar/Lognavbar";
-import { Link } from 'react-router-dom';
+import MainNav from '../../components/MainNav/MainNav';
 
 export const Card = () => {
     return (
         <div className="cardPage">
             <header className="cardHeader">
-            <Lnavbar/>
+            <MainNav/>
             </header>
             <section className="card-section">
             <h1 className="cardHeader">Unlock endless<br/ > possibilities for your<br/ > future career</h1>
