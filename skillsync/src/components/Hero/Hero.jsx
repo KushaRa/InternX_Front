@@ -11,7 +11,7 @@ export const Hero = () => {
             <NavBar/>
             </div>
             <h1>Simplify Your Internship Search with InternX.</h1>
-            <p>SkillSync revolutionizes the internship search process in the dynamic IT industry.
+            <p>InternX revolutionizes the internship search process in the dynamic IT industry.
                 Discover your perfect internship effortlessly, while IT companies find top talent seamlessly.
                 Join InternX today and unlock boundless opportunities.</p>
             <div className='heroLoginbtn'>
