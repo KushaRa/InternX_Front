@@ -7,12 +7,12 @@ export default function Lnavbar() {
     <>
       <nav className="navBar">
         <div className="navDiv">
-          <div className="logo">
-            <a href="#">InternX</a>
+          <div className="logo1">
+            <Link to='/'>InternX</Link>
           </div>
           <ul className="navUl">
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/card">Home</Link>
             </li>
             <li>
               <Link to="/internships">Internships</Link>
