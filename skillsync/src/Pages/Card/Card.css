@@ -6,7 +6,6 @@
     background-attachment: fixed;
     background-size: cover;
     align-items: center;
-      
    }
 
    .cardHeader {
@@ -16,7 +15,6 @@
     color: white;
     position: relative;
     margin-top: 50px;
-   
 
 .cardSearchBar {
     margin-top: 10px;
@@ -31,7 +29,7 @@
     /* background-color: rgba(0, 0, 0, 0.3);
     border-radius: 25px;
     padding: 10px;  */
-} 
+}
 }
 .Mnavbar-container {
     position: absolute;
@@ -57,7 +55,7 @@
     display: flex;
     justify-content: center;
     align-items:center;
-    margin-left: 20px;  
+    margin-left: 20px;
 }
 
 .cardButton {
@@ -68,7 +66,6 @@
     border: none;
     cursor: pointer;
     border-radius: 10px 10px 10px 10px;
-    
 }
 
 .cardSearchBar input {
@@ -78,7 +75,7 @@
     width: 1000px;
     border: none;
     border-radius: 10px 10px 10px 10px;
-    color: ;
+    /* color: ; */
 }
 
 .cardHeader {
@@ -86,7 +83,7 @@
     text-align: center;
     font-size: 50px;
     color: white;
-    position: relative; 
+    position: relative;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
@@ -96,14 +93,14 @@
     /* background-size: cover;
     color: #fff; */
     /* text-align: center;
-    padding: 100px 20px;  
-}   */ 
+    padding: 100px 20px;
+}   */
 
  .card-featured-internships {
     background-color: #75e4fafa;
     padding: 40px 20px;
     text-align: center;
-} 
+}
 
 .card-featured-internships h2 {
     font-size: 2em;
@@ -128,23 +125,19 @@
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-  
   .internship-card h3 {
     font-size: 1.2em;
   }
-  
   .internship-card p {
     font-size: 1em;
     margin: 10px 0;
   }
-  
   .card-details {
     display: flex;
     justify-content: space-between;
     font-size: 0.9em;
 
   }
-  
   .all-job-offers {
     display: block;
     margin-top: 20px;
@@ -156,9 +149,7 @@
   /* .search-button:hover {
     background-color: #333;
   } */
-    height:27px;
-    
-}
+    /* height:27px; */
 
 .card-featured-internships{
     margin-top: 100px;
