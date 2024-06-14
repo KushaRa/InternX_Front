@@ -18,6 +18,20 @@
     margin-top: 50px;
    
 
+.cardSearchBar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    /* background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    padding: 10px;  */
+} 
 }
 .Mnavbar-container {
     position: absolute;
@@ -47,7 +61,7 @@
 }
 
 .cardButton {
-    padding: 10px 20px;
+    padding: 8px;
     font-size: 1em;
     background-color: #00B4D8;
     color: #000000;
@@ -64,6 +78,84 @@
     width: 1000px;
     border: none;
     border-radius: 10px 10px 10px 10px;
+    color: ;
+}
+
+.cardHeader {
+    padding: 10px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    position: relative; 
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+  /* .card-section {
+    background-image: url('background-image.jpg'); */
+    /* background-size: cover;
+    color: #fff; */
+    /* text-align: center;
+    padding: 100px 20px;  
+}   */ 
+
+ .card-featured-internships {
+    background-color: #75e4fafa;
+    padding: 40px 20px;
+    text-align: center;
+} 
+
+.card-featured-internships h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-style: initial;
+    border-radius: 10%;
+}
+
+.internship-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .internship-card {
+    background-color: #00B4D8;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+  .internship-card h3 {
+    font-size: 1.2em;
+  }
+  
+  .internship-card p {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .card-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+
+  }
+  
+  .all-job-offers {
+    display: block;
+    margin-top: 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 1em;
+  }
+
+  /* .search-button:hover {
+    background-color: #333;
+  } */
     height:27px;
     
 }
