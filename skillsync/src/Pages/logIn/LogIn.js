@@ -49,7 +49,7 @@ export default function LogIn() {
               <label>
                 <input type="checkbox" /> Remember me
               </label>
-              <a href="#">Forgot password</a>
+              <a href="/">Forgot password</a>
             </div>
             <button type="submit" id="loginButton">
               Login
