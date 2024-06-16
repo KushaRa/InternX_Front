@@ -48,7 +48,7 @@
 
 .cardSearchBar {
     display:flex;
-    padding: 100px;
+    /* padding: 10px; */
     font-size: 1em;
     width: 500px;
     margin-top: 20px;
