@@ -96,7 +96,7 @@
 .card-featured-internships {
   margin-top: 100px;
     display:flex;
-    padding: 100px;
+    /* padding: 10px; */
     font-size: 1em;
     width: 500px;
     margin-top: 20px;
@@ -172,7 +172,7 @@
     border-radius: 10px;
     color: #fff;
     text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(2, 8, 8, 0.1);
     margin: 10px;
 }
   .internship-card h3 {

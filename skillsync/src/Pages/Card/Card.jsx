@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css";
 import MainNav from '../../components/MainNav/MainNav';
-import Lnavbar from "../../components/MainNav/MainNav";
+import Lnavbar from "../../components/NavBar/Lognavbar";
 
 export const Card = () => {
     return (
@@ -16,20 +16,22 @@ export const Card = () => {
                 <button className="cardButton">Search</button>
             </div>
              {/* </section>  */}
-            <section className="card-featured-internships">
+            <div className="card-featured-internships">
             <h2>Featured Internship Offers</h2>
-            </section>
+            </div>
                 <div className="internship-cards">
                     {Array(6).fill().map((_, index) => (
                         <div className="internship-card" key={index}>
                         <h3>Delivergate (Private) Limited</h3>
                         <p>Front-End Developer Intern</p>
+                        
                         <div className="card-details">
                             <span>Colombo</span>
                             <span>Remote</span>
                             <span>6 Months</span>
-              </div>
-            </div>
+                </div>
+             </div>
+             
           ))}
         </div>
         <a href="/" className="all-job-offers">All Job Offers</a>
@@ -39,7 +41,7 @@ export const Card = () => {
         <>
     <div className="cardPage">
         <div className='Mnavbar-container'>
-            <MainNav/>
+            <MainNav/> 
             </div>
             </div>
         </>
