@@ -83,7 +83,7 @@ const NewIntern = ({ open, handleClose }) => {
                 height: '45px',
                 color: 'rgb(0, 0, 0)',
                 fontWeight: 'bolder',
-                border: 'none',
+                // border: 'none',
                 cursor: 'pointer',
                 transition: 'background-color 0.2s ease-in-out',
                 border: '1px solid #00B4D8',
