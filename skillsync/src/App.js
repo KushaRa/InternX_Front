@@ -8,6 +8,7 @@ import SelectUser from "./Pages/selectUser/SelectUser";
 import CreateAcc from "./Pages/CreateAcc/CreateAcc";
 import { Card } from "./Pages/Card/Card";
 import StudentProfile from "./Pages/studentProfile/StudentProfile";
+import { Categories } from "./Pages/Categories/categories";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/createacc" element={<CreateAcc />}></Route>
         <Route path="/card" element={<Card />}></Route>
         <Route path="/profile" element={<StudentProfile />}></Route>
+        <Route path="/categories" element={<Categories />}></Route>
       </Routes>
 </div>
 );
