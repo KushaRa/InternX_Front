@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./logIn.css";
+import axios from "axios";
 
 export default function LogIn() {
   const [data, setData] = useState({
@@ -7,8 +8,14 @@ export default function LogIn() {
     password: "",
   });
 
-  const loginUser = (e) => {
+  const loginUser = async (e) => {
     e.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:8000/api/login", data);
+      console.log(response.data);
+    } catch (error) {
+      console.error("Error logging in:", error);
+    }
   };
   return (
     <>
