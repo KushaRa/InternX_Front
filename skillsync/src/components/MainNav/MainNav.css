@@ -1,72 +1,71 @@
-*{
-    text-decoration: none;
+* {
+  text-decoration: none;
 }
-.active{
-    background-color: aqua;
-}
-
-.navBar{
-     
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-    padding-right: 15px; 
-    padding-left: 50px;
-    padding-top: 20px;
+.active {
+  background-color: aqua;
 }
 
-.navDiv{
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between;
-    transition: all 0.3s ease 0s;
+.navBar {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding-right: 15px;
+  padding-left: 50px;
+  padding-top: 20px;
 }
 
-.logo1 a{
-    font-size: 35px; 
-    font-weight: 600; 
-    color: #fffefe; 
-    cursor: pointer;
+.navDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease 0s;
 }
 
-li{
-    display: inline; 
-    list-style: none;
+.logo1 a {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fffefe;
+  cursor: pointer;
 }
 
-li a{
-    color: rgb(255, 255, 255); 
-    font-size: 20px;  
-    margin-right: 25px;
-    cursor: pointer;
+li {
+  display: inline;
+  list-style: none;
 }
 
-button{ 
-    background-color:#00B4D8;
-    margin-left: 10px; 
-    border-radius: 10px; 
-    padding: auto; 
-    width: 117px; 
-    height: 45px;
-    transition: 5ms;
-    cursor: pointer;
-    font-weight: bolder; 
+li a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-right: 25px;
+  cursor: pointer;
 }
 
-button a{
-    color: black; 
-   font-size: 15px;
+button {
+  background-color: #00b4d8;
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: auto;
+  width: 117px;
+  height: 45px;
+  transition: 5ms;
+  cursor: pointer;
+  font-weight: bolder;
 }
 
-li:hover{
-    padding-left: 7px;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 6px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-   
-    text-decoration-color: rgb(255, 255, 255);
+button a {
+  color: black;
+  font-size: 15px;
 }
 
-button:hover{
-    background-color: rgb(255, 255, 255);
+li:hover {
+  padding-left: 7px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 6px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+
+  text-decoration-color: rgb(255, 255, 255);
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255);
 }
