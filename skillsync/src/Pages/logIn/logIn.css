@@ -48,14 +48,14 @@
   align-items: center;
 }
 
-.input-box {
+.Login_input-box {
   position: relative;
   width: 300px;
   height: 20px;
   margin: 30px;
 }
 
-.input-box input {
+.Linput {
   width: 300px;
   height: 28px;
   border-color: #00b4d8;
