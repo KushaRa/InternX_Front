@@ -5,10 +5,8 @@ import "../../components/MainNav/MainNav.css";
 
 export const Categories = () => {
   return (
-    <div>
-      <div className="category_page">
-        <MainNav />
-      </div>
+    <div className="category_page">
+      <MainNav />
     </div>
   );
 };
