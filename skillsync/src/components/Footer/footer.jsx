@@ -18,7 +18,7 @@ function Footer() {
             <div class="Fcol">
                 <h3>Links<div class="underline"><span></span></div></h3>
                 <div className='footerUl'>
-                    <p><Link to="/">Home</Link></p>
+                    <p><Link to="/card">Home</Link></p>
                     <p><Link to="/internships">Internships</Link></p>
                     <p><Link to="/about">About us</Link></p>
                     <p><Link to="/contact">Contact us</Link></p>
