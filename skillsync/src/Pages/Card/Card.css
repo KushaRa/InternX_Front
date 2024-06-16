@@ -97,16 +97,17 @@
 }   */
 
  .card-featured-internships {
-    background-color: #75e4fafa;
-    padding: 40px 20px;
+    background-color: #75e4fa57;
+    padding: 8px  600px;
     text-align: center;
 }
 
 .card-featured-internships h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 20px;
     border-style: initial;
     border-radius: 10%;
+    flex: content;
 }
 
 .internship-cards {
@@ -124,9 +125,11 @@
     color: #fff;
     text-align: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
 }
   .internship-card h3 {
     font-size: 1.2em;
+    margin-bottom: 10px;
   }
   .internship-card p {
     font-size: 1em;
