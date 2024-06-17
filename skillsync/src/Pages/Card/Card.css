@@ -76,14 +76,14 @@
     width: 1000px;
     border: none;
     border-radius: 10px 10px 10px 10px;
-    /* color: ; */
+    
 }
 
 .cardHeader {
     padding: 10px;
     text-align: center;
     font-size: 50px;
-    color: white;
+    color: rgb(247, 247, 247);
     position: relative;
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -121,42 +121,48 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    
+    
   }
 
   .internship-card {
     /* background-color: #00B4D8; */
     padding: 20px;
-    width: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
     /* color: #fff; */
     text-align: left;
     box-shadow: 0 4px 8px rgba(2, 8, 8, 0.1);
     margin: 10px;
+    cursor: pointer;
+    
 }
 
 .card-header {
-  background-color: #4ab7c5;
-  color: #3bacce;
-  padding: 10px;
+  background-color: #041b1e;
+  width: auto;
+  color: rgb(249, 246, 246);
+  padding: 70px;
 }
 
 
   .internship-card h3 {
-    font-size: 0.8em;
+    font-size: 1em;
     margin-bottom: 10px;
   }
   .internship-card p {
-    font-size: 0.9em;
+    font-size: 1em;
     margin: 10px 0;
   }
   .card-details {
     display: flex;
     justify-content: space-between;
     font-size: 0.9em;
-    background-color: #10a0b0bc;
-  color: white;
-  padding: 15px;
-  margin-top: auto;
+    background-color: #2cd4e7bc;
+    /* color: white; */
+    padding: 15px;
+    margin-top: auto;
   
 
   }
@@ -178,3 +184,6 @@
 
 }
 
+.internship-card:hover{
+  background-color:#75e4fa57;
+}
