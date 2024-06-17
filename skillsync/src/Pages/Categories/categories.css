@@ -1,0 +1,8 @@
+.category_page {
+  background-image: url("../../assets/background.png");
+  background-size: cover;
+  height: 300vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -23,7 +23,7 @@ const SelectUser = () => {
           <h2>For Companies</h2>
           <p>Post opportunities and find talented interns.</p>
           <button className="login-button"><Link to="/createacc">Sign up</Link></button>
-          <p>Already have an account? <br></br><Link to="/login"><span className="signup-link">Log In</span></Link></p>       
+          <p>Already have an account? <br></br><Link to="/login"><span className="signup-link">Log In</span></Link></p>
            </div>
       </div>
     </div>
