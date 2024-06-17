@@ -28,9 +28,10 @@ export default function LogIn() {
         <div className="flex-box2">
           <div className="login">
             <h5>Login to your account</h5>
-            <div className="input-box">
-              <form onSubmit={loginUser}>
+            <div>
+              <form onSubmit={loginUser} className="Login_input-box">
                 <input
+                  className="Linput"
                   type="text"
                   placeholder="Your user name OR email"
                   value={data.email}
@@ -39,8 +40,8 @@ export default function LogIn() {
                 />
               </form>
             </div>
-            <div className="input-box">
-              <form onSubmit={loginUser}>
+            <div>
+              <form onSubmit={loginUser} className="Login_input-box">
                 <input
                   type="password"
                   placeholder="Your password "
