@@ -1,7 +1,6 @@
 import React from "react";
 import "./categories.css";
 import MainNav from "../../components/MainNav/MainNav";
-import "../../components/MainNav/MainNav.css";
 
 import Box from "@mui/material/Box";
 import List from "@mui/material/List";
