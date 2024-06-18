@@ -1,13 +1,14 @@
 import React from "react";
 import "./Card.css";
 import MainNav from '../../components/MainNav/MainNav';
-import Lnavbar from "../../components/NavBar/Lognavbar";
+// import Lnavbar from "../../components/NavBar/Lognavbar";
 
 export const Card = () => {
     return (
         <div className="cardPage">
             <header className="cardHeader">
-            <Lnavbar/>
+            {/* <Lnavbar/> */}
+            <MainNav/>
             </header>
             {/* <section className="card-section"> */}
             <h1 className="cardHeader">Unlock endless<br/ > possibilities for your<br/ > future career</h1>
@@ -22,14 +23,15 @@ export const Card = () => {
                 <div className="internship-cards">
                     {Array(6).fill().map((_, index) => (
                         <div className="internship-card" key={index}>
+                            <div className="card-header">
                         <h3>Delivergate (Private) Limited</h3>
                         <p>Front-End Developer Intern</p>
-                        
+                        </div>
                         <div className="card-details">
                             <span>Colombo</span>
                             <span>Remote</span>
                             <span>6 Months</span>
-                </div>
+                 </div>
              </div>
              
           ))}
