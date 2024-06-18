@@ -34,7 +34,7 @@ export const Card = () => {
                 <p>Front-End Developer Intern</p>
               </div>
               <div className="card-details">
-              <img className="locationlogo " src={location} alt="Logo"/>
+                <img className="locationlogo " src={location} alt="Logo" />
                 <span>Colombo</span>
                 <span>Remote</span>
                 <span>6 Months</span>
