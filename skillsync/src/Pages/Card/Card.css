@@ -5,16 +5,16 @@
   background-image: url("../../assets/homepage.png");
   background-attachment: fixed;
   background-size: cover;
-  align-items: center;
-}
+  align-items: center; 
+} 
 
 .cardHeader {
-  padding-top: 150px;
+  padding-top: 10px;
   text-align: center;
-  font-size: 50px;
+  font-size: 500px;
   color: white;
   position: relative;
-  margin-top: 50px;
+  /* margin-top: 50px; */
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -25,9 +25,9 @@
    }
 
    .cardHeader {
-    padding-top: 150px;
+    /* padding-top: 150px; */
     text-align: center;
-    font-size: 50px;
+    /* font-size: 50px; */
     color: white;
     position: relative;
     margin-top: 50px;
@@ -48,11 +48,13 @@
 }
 }
 .Mnavbar-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
+  
+  
 }
 /* .cardSearchBar {
     margin-top: 20px;
@@ -63,7 +65,7 @@
 
 .cardSearchBar {
   display: flex;
-  padding: 100px;
+  padding: 7.5px;
   font-size: 1em;
   width: 500px;
   margin-top: 20px;
