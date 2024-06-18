@@ -13,10 +13,10 @@ export const Categories = () => {
     <div className="category_page">
       <MainNav />
       <div className="flex-container">
-        <div className="flex-box3">
+        <div className="flex-box3" >
           <h1 style={{color: 'white' , fontSize: '20px' , textAlign: 'center'}}>Category</h1>
           <Box
-            sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}
+            sx={{ width: "100%", maxWidth: 360, bgcolor: "rgba(0, 180, 216, 0.43)" }}
           >
             <List component="nav" aria-label="secondary mailbox folder">
               <ListItemButton
