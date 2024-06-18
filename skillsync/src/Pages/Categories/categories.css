@@ -6,3 +6,16 @@
   flex-direction: column;
   align-items: center;
 }
+
+.flex-container {
+  display: flex;
+}
+
+.flex-box3 {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  padding: 0%;
+  margin: 0px;
+  border: none;
+}
