@@ -11,6 +11,10 @@ export const Categories = () => {
   return (
     <div className="category_page">
       <MainNav />
+      <div className="cardSearchBar">
+        <input type="text" placeholder="Type Here" />
+        <button className="cardButton">Search</button>
+      </div>
       <div className="flex-container">
         <div className="flex-box3">
           <h1 style={{ color: "white", fontSize: "20px", textAlign: "center" }}>
@@ -59,7 +63,10 @@ export const Categories = () => {
               <ListItemButton
                 onClick={(event) => handleListItemClick(event, 5)}
               >
-                <ListItemText className="textcategory" primary="UI/UX Design" />
+                <ListItemText
+                  className="textcategory"
+                  primary="UI/UX Design"
+                />
               </ListItemButton>
               <ListItemButton
                 onClick={(event) => handleListItemClick(event, 6)}
