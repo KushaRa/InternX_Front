@@ -2,6 +2,8 @@ import React from "react";
 import "./Card.css";
 import MainNav from "../../components/MainNav/MainNav";
 import location from "../../assets/location.jpg";
+import remote from "../../assets/remote.webp";
+import time from "../../assets/time.png";
 
 export const Card = () => {
   return (
@@ -17,7 +19,7 @@ export const Card = () => {
         <br /> future career
       </h1>
       <div className="cardSearchBar">
-        <input type="text" placeholder="Type Here" />
+        <input className="card-search" type ="text" placeholder="Type Here" />
         <button className="cardButton">Search</button>
       </div>
       {/* </section>  */}
@@ -36,14 +38,16 @@ export const Card = () => {
               <div className="card-details">
                 <img className="locationlogo " src={location} alt="Logo" />
                 <span>Colombo</span>
+                <img className="remotelogo" src={remote} alt="Logo" />
                 <span>Remote</span>
+                <img className="timelogo" src={time} alt="Logo" />
                 <span>6 Months</span>
               </div>
             </div>
           ))}
       </div>
       <a href="/" className="all-job-offers">
-        All Job Offers
+        All Job Offers -->>
       </a>
     </div>
   );
