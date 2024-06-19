@@ -9,17 +9,76 @@
 
 .flex-container {
   display: flex;
+  padding: 10px;
 }
 
-.flex-box3 {
+/* .flex-box3 {
   width: 200px;
   height: 200px;
   background-color: rgba(4, 199, 238, 0.22);
   padding: 0%;
   margin: 0px;
   border: none;
-}
+} */
 
 .textcategory {
   color: white;
+}
+
+.category_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.category_card {
+  width: 500px;
+  height: auto; /* Adjusted to fit content */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(2, 8, 8, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  background-color: #00B4D8; /* Blue background color */
+  padding: 20px; /* Added padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.ctgcard-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.ctgcard-header h3 {
+  font-size: 16px;
+  margin: 0;
+  color: white; /* White text color */
+}
+
+.ctgcard-header p {
+  font-size: 14px;
+  margin: 0;
+  color: white; /* White text color */
+}
+
+.ctgcard-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white; /* White text color */
+}
+
+.ctgcard-details span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-details img {
+  width: 16px;
+  height: 16px;
 }
