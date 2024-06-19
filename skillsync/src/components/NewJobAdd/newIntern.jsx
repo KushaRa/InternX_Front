@@ -18,7 +18,7 @@ import './newIntern.css';
 import CloseIcon from '@mui/icons-material/Close';
 
 const NewIntern = ({ open, handleClose }) => {
-  const [formData, setFormData] = useState({
+  const [InternData, setInternData] = useState({
     company_name: '',
     title: '',
     job_type: '',
@@ -27,14 +27,14 @@ const NewIntern = ({ open, handleClose }) => {
     email: '',
     description: ''
   });
-  const handleChange = (e) => {
+  const handleChangeNewIntern = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({
+    setInternData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
   };
-  const handleSubmit = async (e) => {
+  const handleSubmitNewIntern = async (e) => {
     e.preventDefault();
     try {
       const response = await fetch('http://localhost:8000/api/submit-add', {
@@ -42,7 +42,7 @@ const NewIntern = ({ open, handleClose }) => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(InternData),
       });
       if (response.ok) {
         console.log('Data submitted successfully!'); // Log success message to console
@@ -50,7 +50,7 @@ const NewIntern = ({ open, handleClose }) => {
         const result = await response.json();
         console.log('Success:', result);
         alert('Post submitted successfully!');
-        setFormData({
+        setInternData({
           company_name: '',
           title: '',
           job_type: '',
@@ -82,7 +82,7 @@ const NewIntern = ({ open, handleClose }) => {
           </Box>
         </DialogTitle>
         <DialogContent className="dialogContent">
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmitNewIntern}>
           <Grid container spacing={2}>
             <Grid item xs={6} className="gridItem company_name">
             <FilledInput
@@ -91,8 +91,8 @@ const NewIntern = ({ open, handleClose }) => {
                   disableUnderline
                   fullWidth
                   name="company_name"
-                  value={formData.company_name}
-                  onChange={handleChange}
+                  value={InternData.company_name}
+                  onChange={handleChangeNewIntern}
                 />
             </Grid>
             <Grid item xs={6} className="gridItem jobTitle">
@@ -102,8 +102,8 @@ const NewIntern = ({ open, handleClose }) => {
                   disableUnderline
                   fullWidth
                   name="title"
-                  value={formData.title}
-                  onChange={handleChange}
+                  value={InternData.title}
+                  onChange={handleChangeNewIntern}
                 />
             </Grid>
             <Grid item xs={6} className="gridItem job_type">
@@ -113,8 +113,8 @@ const NewIntern = ({ open, handleClose }) => {
                     className="selectBox"
                     disableUnderline
                     name="job_type"
-                    value={formData.job_type}
-                    onChange={handleChange}
+                    value={InternData.job_type}
+                    onChange={handleChangeNewIntern}
                     style={{
                       backgroundColor: '#0000',
                       color: '#fff',
@@ -137,8 +137,8 @@ const NewIntern = ({ open, handleClose }) => {
                   disableUnderline
                   fullWidth
                   name="duration"
-                  value={formData.duration}
-                  onChange={handleChange}
+                  value={InternData.duration}
+                  onChange={handleChangeNewIntern}
                 />
             </Grid>
             <Grid item xs={6} className="gridItem location">
@@ -148,8 +148,8 @@ const NewIntern = ({ open, handleClose }) => {
                   disableUnderline
                   fullWidth
                   name="location"
-                  value={formData.location}
-                  onChange={handleChange}
+                  value={InternData.location}
+                  onChange={handleChangeNewIntern}
                 />
             </Grid>
             <Grid item xs={6} className="gridItem email">
@@ -159,8 +159,8 @@ const NewIntern = ({ open, handleClose }) => {
                   disableUnderline
                   fullWidth
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
+                  value={InternData.email}
+                  onChange={handleChangeNewIntern}
                 />
             </Grid>
             <Grid item xs={12} className="gridItem description">
@@ -172,8 +172,8 @@ const NewIntern = ({ open, handleClose }) => {
                   multiline
                   rows={4}
                   name="description"
-                  value={formData.description}
-                  onChange={handleChange}
+                  value={InternData.description}
+                  onChange={handleChangeNewIntern}
                 />
             </Grid>
           </Grid>
