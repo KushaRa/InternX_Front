@@ -4,7 +4,6 @@ import MainNav from "../../components/MainNav/MainNav";
 import location from "../../assets/location.jpg";
 import remote from "../../assets/remote.webp";
 import time from "../../assets/time.png";
-// import Lnavbar from "../../components/NavBar/Lognavbar";
 
 export const Card = () => {
   return (
@@ -20,7 +19,7 @@ export const Card = () => {
         <br /> future career
       </h1>
       <div className="cardSearchBar">
-        <input type="text" placeholder="Type Here" />
+        <input className="card-search" type ="text" placeholder="Type Here" />
         <button className="cardButton">Search</button>
       </div>
       {/* </section>  */}
@@ -37,7 +36,7 @@ export const Card = () => {
                 <p>Front-End Developer Intern</p>
               </div>
               <div className="card-details">
-              <img className="locationlogo" src={location} alt="Logo" />
+                <img className="locationlogo " src={location} alt="Logo" />
                 <span>Colombo</span>
                 <img className="remotelogo" src={remote} alt="Logo" />
                 <span>Remote</span>
