@@ -8,12 +8,12 @@ import { IconButton } from '@mui/material';
 export default function Lnavbar() {
   return (
     <>
-      <nav className="navBar">
-        <div className="navDiv">
+      <nav className="MnavBar">
+        <div className="MnavDiv">
           <div className="logo1">
           <Link to='/'>InternX</Link>
           </div>
-          <ul className="navUl">
+          <ul className="MnavUl">
             <li>
               <Link to="/card">Home</Link>
             </li>

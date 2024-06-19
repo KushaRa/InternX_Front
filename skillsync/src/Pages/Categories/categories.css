@@ -1,0 +1,25 @@
+.category_page {
+  background-image: url("../../assets/background.png");
+  background-size: cover;
+  height: 300vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-box3 {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(4, 199, 238, 0.22);
+  padding: 0%;
+  margin: 0px;
+  border: none;
+}
+
+.textcategory {
+  color: white;
+}
