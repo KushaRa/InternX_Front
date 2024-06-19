@@ -34,7 +34,41 @@ const NewIntern = ({ open, handleClose }) => {
       [name]: value,
     }));
   };
-  
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch('http://localhost:8000/api/submit-add', {
+        method: 'POST',            
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        console.log('Data submitted successfully!'); // Log success message to console
+        alert('Data submitted successfully!');
+        const result = await response.json();
+        console.log('Success:', result);
+        alert('Post submitted successfully!');
+        setFormData({
+          company_name: '',
+          title: '',
+          job_type: '',
+          duration: '',
+          location: '',
+          email: '',
+          description: '',
+        });
+        handleClose();
+      } else {
+        console.error('Error:', response.statusText);
+        alert('Failed to submit the post.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+     // alert('Post Submitted.');
+    }
+  };
 
 
 
