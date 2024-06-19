@@ -46,9 +46,9 @@ export const Card = () => {
             </div>
           ))}
       </div>
-      <a href="/" className="all-job-offers">
-        All Job Offers ->
-      </a>
+      <link to="Categories">
+        All Job Offers
+        </link>
     </div>
   );
 };
