@@ -247,5 +247,9 @@
 }
 
 .internship-card:hover {
-  background-color: #75e4fa57;
+  background-color: #719ea7f6;
+}
+
+.card-search {
+  background-color: #73dcf1;
 }
