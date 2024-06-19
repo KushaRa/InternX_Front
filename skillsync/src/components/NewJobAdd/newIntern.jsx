@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState}from 'react';
 import {
   Box,
   Grid,
@@ -18,6 +18,26 @@ import './newIntern.css';
 import CloseIcon from '@mui/icons-material/Close';
 
 const NewIntern = ({ open, handleClose }) => {
+  const [formData, setFormData] = useState({
+    company_name: '',
+    title: '',
+    job_type: '',
+    duration: '',
+    location: '',
+    email: '',
+    description: ''
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+  
+
+
+
   return (
     <Dialog open={open} onClose={handleClose} fullWidth className="dialog">
       <Box className="dialogBox">
