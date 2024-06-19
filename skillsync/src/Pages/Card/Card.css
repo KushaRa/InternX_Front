@@ -132,12 +132,13 @@
 .cardButton {
   /* padding: 8px; */
   font-size: 1em;
-  background-color: #00b4d8;
-  color: #000000;
+  background-color: #343839;
+  color: #fdfdfd;
   border: none;
   cursor: pointer;
   border-radius: 10px 10px 10px 10px;
   height: 46px;
+  
 }
 
 .cardSearchBar input {
@@ -248,4 +249,12 @@
 
 .internship-card:hover {
   background-color: #75e4fa57;
+}
+
+.card-search {
+  background-color: #73dcf1;
+}
+
+.cardButton:hover{
+  background-color:black ;
 }
