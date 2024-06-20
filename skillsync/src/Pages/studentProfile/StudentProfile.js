@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Lnavbar from '../../components/NavBar/Lognavbar'; //imort the navbar
+import Lnavbar from '../../components/NavBar/Lognavbar'; // Import the navbar
 import axios from 'axios';
 import './StudentProfile.css';
 
@@ -49,37 +49,45 @@ const StudentProfile = () => {
   };
 
   return (
-    <div className="profile-page" >
-      <Lnavbar/>
-      <div className="profile-container">
+    <div className="profile-page">
+      <Lnavbar />
+      <div className="container">
         <div className="profile-box">
-          <input type="file" onChange={handleFileChange} />
-          {profilePicturePreview && <img src={profilePicturePreview} alt="Profile" className="profile-picture" />}
+          <div className="profile-picture-container">
+            {profilePicturePreview && (
+              <img src={profilePicturePreview} alt="Profile" className="profile-picture" />
+            )}
+            <label htmlFor="file-upload" className="custom-file-upload">
+              Choose File
+            </label>
+            <input id="file-upload" type="file" onChange={handleFileChange} />
+          </div>
           <input type="text" name="name" value={profile.name} onChange={handleChange} placeholder="Name" />
         </div>
-        <div className="info-box">
-          <h2>Personal Information</h2>
+        <div className="personal-info box">
+          <div className="header">Personal Information</div>
           <input type="email" name="email" value={profile.email} onChange={handleChange} placeholder="Add your email" />
           <input type="text" name="mobile" value={profile.mobile} onChange={handleChange} placeholder="Add your mobile number" />
           <input type="text" name="address" value={profile.address} onChange={handleChange} placeholder="Add your address" />
         </div>
-        <div className="resume-box">
-          <h2>My Resume</h2>
-          <input type="text" name="resume" value={profile.resume} onChange={handleChange} placeholder="Add your resume here" />
-        </div>
-        <div className="work-experience-box">
-          <h2>Work Experience</h2>
+        <div className="work-experience box">
+          <div className="header">Work Experience</div>
           <input type="text" name="workExperience" value={profile.workExperience} onChange={handleChange} placeholder="Add your work experience here" />
         </div>
-        <div className="education-box">
-          <h2>Education</h2>
+        <div className="education box">
+          <div className="header">Education</div>
           <input type="text" name="education" value={profile.education} onChange={handleChange} placeholder="Add your education skills here" />
         </div>
-        <button onClick={handleSubmit} className="save-button">Save Changes</button>
+        <div className="resume box">
+          <div className="header">My Resume</div>
+          <input type="text" name="resume" value={profile.resume} onChange={handleChange} placeholder="Add your resume here" />
+        </div>
+        <div className="save-button-container">
+          <button onClick={handleSubmit} className="save-button">Save Changes</button>
+        </div>
       </div>
     </div>
   );
 };
 
 export default StudentProfile;
-
