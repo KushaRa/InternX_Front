@@ -1,7 +1,8 @@
 import React from "react";
 import "./CreateAcc.css";
 
-export const CreateAcc = () => {
+
+export const Signup = () => {
   return (
     <>
       <div className="flex-Container">
@@ -53,4 +54,4 @@ export const CreateAcc = () => {
   );
 };
 
-export default CreateAcc;
+export default Signup;
