@@ -47,7 +47,7 @@ export const Card = () => {
           ))}
       </div>
       <a href="/" className="all-job-offers">
-        All Job Offers ->
+        All Job Offers
       </a>
     </div>
   );
