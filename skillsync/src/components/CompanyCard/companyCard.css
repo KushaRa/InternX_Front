@@ -99,6 +99,9 @@
   margin-bottom: 5px;
   margin-left: 5px;
   margin-right: 5px;
+  display: flex;
+  align-items: center;
+  
 }
 
 .viewbutton {
