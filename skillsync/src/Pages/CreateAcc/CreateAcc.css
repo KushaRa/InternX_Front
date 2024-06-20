@@ -111,10 +111,11 @@
     margin-left: 0px;
     height: 35px;
     border-radius: 10px;
-    background-color:#00b4d8 ;
-    border: none;
+    /* background-color:#00b4d8 ; */
+    /* border: none; */
     cursor: pointer;
     font-weight: bold;
+    border-color: #00b4d8;
 }
 
 #googleButton{
