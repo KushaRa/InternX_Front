@@ -5,12 +5,12 @@ import location from "../../assets/location.jpg";
 import remote from "../../assets/remote.webp";
 import time from "../../assets/time.png";
 // import { useHistory } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 export const Card = () => {
   const navigate = useNavigate();
   const handleCardClick = () => {
-    navigate('/categories');
+    navigate("/categories");
   };
   return (
     <div className="cardPage">
@@ -25,7 +25,7 @@ export const Card = () => {
         <br /> future career
       </h1>
       <div className="cardSearchBar">
-        <input className="card-search" type ="text" placeholder="Type Here" />
+        <input className="card-search" type="text" placeholder="Type Here" />
         <button className="cardButton">Search</button>
       </div>
       {/* </section>  */}
@@ -36,7 +36,11 @@ export const Card = () => {
         {Array(6)
           .fill()
           .map((_, index) => (
-            <div className="internship-card" key={index} onClick={handleCardClick}>
+            <div
+              className="internship-card"
+              key={index}
+              onClick={handleCardClick}
+            >
               <div className="card-header">
                 <h3>Delivergate (Private) Limited</h3>
                 <p>Front-End Developer Intern</p>
@@ -52,8 +56,7 @@ export const Card = () => {
             </div>
           ))}
       </div>
-
-        All Job Offers
+      All Job Offers
     </div>
   );
 };
