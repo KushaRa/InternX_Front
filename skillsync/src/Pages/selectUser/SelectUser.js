@@ -11,7 +11,7 @@ const SelectUser = () => {
         <div className="job-seekers">
           <h2>For Job Seekers</h2>
           <p>Find valuable hands-on experience to boost your career.</p>
-         <button className="login-button">Sign up</button>
+         <button className="login-button"><Link to="/createacc">Sign up</Link></button>
           <p>
             Already have an account? <br></br>
             <Link to="/login">
