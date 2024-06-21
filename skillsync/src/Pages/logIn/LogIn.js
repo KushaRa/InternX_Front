@@ -11,7 +11,10 @@ export default function LogIn() {
   const loginUser = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8000/api/login", data);
+      const response = await axios.post(
+        "http://localhost:8000/api/login",
+        data
+      );
       console.log(response.data);
     } catch (error) {
       console.error("Error logging in:", error);
