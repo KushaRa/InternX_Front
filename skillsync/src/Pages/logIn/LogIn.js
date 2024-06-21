@@ -29,7 +29,7 @@ export default function LogIn() {
           <div className="login">
             <h5>Login to your account</h5>
             <div>
-              <form onSubmit={loginUser} className="Login_input-box">
+              <form onSubmit={loginUser} className="input-box1">
                 <input
                   className="Linput"
                   type="text"
@@ -41,7 +41,7 @@ export default function LogIn() {
               </form>
             </div>
             <div>
-              <form onSubmit={loginUser} className="Login_input-box">
+              <form onSubmit={loginUser} className="input-box1">
                 <input
                   type="password"
                   placeholder="Your password "
@@ -53,17 +53,19 @@ export default function LogIn() {
                 />
               </form>
             </div>
-            <div className="remember-forget">
+            <div className="terms">
               <label>
-                <input type="checkbox" /> Remember me
+                <input type="checkbox" />I agree with InternX Terms of Services
+                and Privacy Policy.
               </label>
-              <a href="/">Forgot password</a>
             </div>
-            <button type="submit" id="loginButton">
+            <button type="submit" id="loginButton" className="loginButton">
               Login
             </button>
-            <div className="Or">
-              <p>---------------------------- OR ---------------------------</p>
+            <div class="divider-container">
+              <div class="divider"></div>
+              <div class="divider-text">or</div>
+              <div class="divider"></div>
             </div>
             <button className="Google-button" type="submit" id="googleButton">
               Continue with google

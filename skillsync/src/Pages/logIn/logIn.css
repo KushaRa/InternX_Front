@@ -1,12 +1,14 @@
 .flex-container {
   display: flex;
+  border: none;
 }
+
 .flex-box1 {
   width: 62%;
   height: 100vh;
   background-color: black;
-  padding: 0%;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   border: none;
 }
 
@@ -16,8 +18,8 @@
   margin-left: 188px;
   font-style: italic;
   margin-top: 200px;
-  margin-bottom: 0px;
-  padding: 0px;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .welcome {
@@ -41,66 +43,95 @@
   margin-left: 200px;
   margin-top: 150px;
   margin-right: 39px;
-  padding: 0%;
+  padding: 0;
   border: none;
-  font-size: 25px;
+  font-size: 40px;
   justify-content: center;
   align-items: center;
 }
 
-.Login_input-box {
-  position: relative;
-  width: 300px;
-  height: 20px;
-  margin: 30px;
+.input-box1 {
+  margin: 20px 0;
 }
 
-.Linput {
+.input-box1 input {
   width: 300px;
-  height: 28px;
+  height: 35px;
+  border: 1px solid #00b4d8;
+  border-radius: 10px;
+  padding: 5px;
+  color: black;
+  margin: 5px 0;
+}
+
+
+.loginButton {
+  width: 300px;
+  margin-left: 0px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #00b4d8;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+}
+
+.divider {
+  flex-grow: 2;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.divider-text {
+  margin: 0 10px;
+  color: #888;
+  font-family: Arial, sans-serif;
+  font-size: small;
+}
+
+.googleButton {
+  width: 305px;
+  margin-left: 0px;
+  height: 35px;
   border-color: #00b4d8;
   border-radius: 10px;
-  margin-left: -30px;
-  align-items: center;
-  justify-items: center;
+  cursor: pointer;
 }
 
-.remember-forget {
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+.google-button img {
+  height: 25px;
+  width: 40px;
+  margin-right: 10px;
+  margin-top: -20px;
+  margin-bottom: -10px;
+  padding-top: 10px;
+  padding-bottom: 1px;
+}
+
+.flex-box02 {
+  width: 38%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -150px;
+  margin-left: -50px;
+}
+
+.terms {
   font-size: 12px;
   padding: 5px;
   justify-content: space-between;
   display: flex;
   margin: 0;
   align-items: center;
+  margin-bottom: 10px;
 }
 
-.remember-forget label {
-  margin: 0;
-  padding: 0;
-}
-
-.remember-forget a {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
-#loginButton {
-  width: 300px;
-  margin-left: 0px;
-  height: 35px;
-}
-
-.Or {
-  font-size: 15px;
-  align-items: center;
-  justify-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-#googleButton {
-  width: 300px;
-  margin-left: 0px;
-  height: 35px;
+.terms input {
+  margin-left: -5px;
 }
