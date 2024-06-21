@@ -1,7 +1,6 @@
 import React from "react";
 import "./CreateAcc.css";
 
-
 export const Signup = () => {
   return (
     <>
@@ -15,19 +14,13 @@ export const Signup = () => {
           <div className="createAcc">
             <h5>Create a InternX account</h5>
             <div className="input-box1">
-              <form action="past">
-                <input type="text" placeholder="Full Name" required />
-              </form>
+              <input type="text" placeholder="Full Name" required />
             </div>
             <div className="input-box1">
-              <form action="past">
-                <input type="text" placeholder="Email" required />
-              </form>
+              <input type="text" placeholder="Email" required />
             </div>
             <div className="input-box1">
-              <form action="past">
-                <input type="password" placeholder="Your Password" required />
-              </form>
+              <input type="password" placeholder="Your Password" required />
             </div>
             <div className="terms">
               <label>
@@ -35,7 +28,7 @@ export const Signup = () => {
                 and Privacy Policy.
               </label>
             </div>
-            <button type="submit" id="signupButton">
+            <button type="submit" id="signupButton" className="signupButton">
               Sign up
             </button>
             <div class="divider-container">
@@ -44,7 +37,10 @@ export const Signup = () => {
               <div class="divider"></div>
             </div>
             <button className="google-button" type="submit" id="googleButton">
-             <img src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png" alt="Google logo"></img>
+              <img
+                src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png"
+                alt="Google logo"
+              ></img>
               Continue with google
             </button>
           </div>
