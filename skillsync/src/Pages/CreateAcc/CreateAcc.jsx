@@ -28,7 +28,7 @@ export const Signup = () => {
                 and Privacy Policy.
               </label>
             </div>
-            <button type="submit" className="signupButton">
+            <button type="submit" id="signupButton" className="signupButton">
               Sign up
             </button>
             <div class="divider-container">
