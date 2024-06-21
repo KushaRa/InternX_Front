@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useState }  from "react";
 import "./CreateAcc.css";
 
 export const Signup = () => {
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSignup = async (e) => {
+    e.preventDefault();
+    const response = await fetch("http://localhost:8000/api/Signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ fullname, email, password }),
+    });
+
+    if (response.ok) {
+      console.log("User created successfully");
+    } else {
+      console.log("Error creating user");
+    }
+  };
   return (
     <>
       <div className="flex-Container">
@@ -13,15 +33,33 @@ export const Signup = () => {
         <div className="flex-box02">
           <div className="createAcc">
             <h5>Create a InternX account</h5>
-            <div className="input-box1">
-              <input type="text" placeholder="Full Name" required />
-            </div>
-            <div className="input-box1">
-              <input type="text" placeholder="Email" required />
-            </div>
-            <div className="input-box1">
-              <input type="password" placeholder="Your Password" required />
-            </div>
+            <form onSubmit={handleSignup} className="input-box1">
+              <input
+                type="text"
+                placeholder="Full Name"
+                value={fullname}
+                onChange={(e) => setFullname(e.target.value)}
+                required
+              />
+            </form>
+            <form onSubmit={handleSignup} className="input-box1">
+              <input
+                type="text"
+                placeholder="Email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              </form>
+            <form onSubmit={handleSignup} className="input-box1">
+              <input
+                type="password"
+                placeholder="Your Password"
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              </form>
             <div className="terms">
               <label>
                 <input type="checkbox" />I agree with InternX Terms of Services
