@@ -56,7 +56,9 @@ export const Card = () => {
             </div>
           ))}
       </div>
-      All Job Offers
+      <a href="/" className="all-job-offers">
+        All Job Offers
+      </a>
     </div>
   );
 };
