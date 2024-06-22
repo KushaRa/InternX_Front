@@ -1,0 +1,15 @@
+.contact-page {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 500px;
+    color: white;
+    position: relative;
+    /* margin-top: 50px; */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url ('../../assets/landingpage.png');
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+  }
