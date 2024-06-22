@@ -1,15 +1,24 @@
 .contact-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* background-image: url("../../assets/landingpage.png"); */
+    background-size: cover;
+    background-color: black;
+  }
+
+
+ /* .contact-header {
     padding-top: 10px;
     text-align: center;
     font-size: 500px;
     color: white;
     position: relative;
-    /* margin-top: 50px; */
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: url ('../../assets/landingpage.png');
+    background-image: url('../../assets/landingpage.png');
     background-attachment: fixed;
     background-size: cover;
-    align-items: center;
-  }
+    align-items: center; */
+  

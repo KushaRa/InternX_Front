@@ -6,7 +6,11 @@ import MainNav from "../../components/MainNav/MainNav";
 export const Contact = () => {
     return (
         <div className='contact-page'>
+            
             <MainNav />
+            
+
+            
         </div>
     )
 }
