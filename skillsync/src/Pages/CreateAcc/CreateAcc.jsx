@@ -1,5 +1,6 @@
-import React, { useState }  from "react";
+import React, { useState } from "react";
 import "./CreateAcc.css";
+import axios from "axios";
 
 export const Signup = () => {
   const [fullname, setFullname] = useState("");
@@ -8,18 +9,15 @@ export const Signup = () => {
 
   const handleSignup = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:8000/api/Signup", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ fullname, email, password }),
-    });
-
-    if (response.ok) {
-      console.log("User created successfully");
-    } else {
-      console.log("Error creating user");
+    try {
+      const response = await axios.post("http://localhost:8000/user/Signup", {
+        fullname,
+        email,
+        password,
+      });
+      console.log(response.data);
+    } catch (error) {
+      console.error(error);
     }
   };
   return (
@@ -41,8 +39,7 @@ export const Signup = () => {
                 onChange={(e) => setFullname(e.target.value)}
                 required
               />
-            </form>
-            <form onSubmit={handleSignup} className="input-box1">
+
               <input
                 type="text"
                 placeholder="Email"
@@ -50,8 +47,7 @@ export const Signup = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              </form>
-            <form onSubmit={handleSignup} className="input-box1">
+
               <input
                 type="password"
                 placeholder="Your Password"
@@ -59,20 +55,21 @@ export const Signup = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-              </form>
-            <div className="terms">
-              <label>
-                <input type="checkbox" />I agree with InternX Terms of Services
-                and Privacy Policy.
-              </label>
-            </div>
-            <button type="submit" id="signupButton" className="signupButton">
-              Sign up
-            </button>
-            <div class="divider-container">
-              <div class="divider"></div>
-              <div class="divider-text">or</div>
-              <div class="divider"></div>
+
+              <div className="terms">
+                <label>
+                  <input type="checkbox" />I agree with InternX Terms of
+                  Services and Privacy Policy.
+                </label>
+              </div>
+              <button type="submit" id="signupButton" className="signupButton">
+                Sign up
+              </button>
+            </form>
+            <div className="divider-container">
+              <div className="divider"></div>
+              <div className="divider-text">or</div>
+              <div className="divider"></div>
             </div>
             <button className="google-button" type="submit" id="googleButton">
               <img
