@@ -12,7 +12,7 @@ export default function LogIn() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/login",
+        // "http://localhost:8000/api/login",
         data
       );
       console.log(response.data);
