@@ -14,10 +14,10 @@ export const Contact = () => {
             
             <div className='contact-container'>
                 <MainNav />
-                <h1>Contact Us</h1>
+                <h1 className='contact-h1'>Contact Us</h1>
                 <div className='contat-content'>
                     <div className='contacct-info'>
-                        <h2>Get in Touch</h2>
+                        <h2 className='contact-h2'>Get in Touch</h2>
                         <p><img className="address-logo " src={address} alt="Logo" />Address:Dharmapala Mawatha</p>
                         <p className='contact-p'>Colombo 10, Sri Lanka</p>
                         <p><img className="email-logo " src={email} alt="Logo" />Email: internx@gmail.com</p>
@@ -26,7 +26,7 @@ export const Contact = () => {
                     <div className='contact-form'>
                     <input type="text" placeholder="Name" />
                     <input type="email" placeholder="Email" />
-                    <textarea placeholder="Message"></textarea>
+                    <textarea className='contact-msg' placeholder="Message"></textarea>
                     <button type="submit">Send</button>   
                     </div>
                 </div>

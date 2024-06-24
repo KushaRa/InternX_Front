@@ -6,8 +6,6 @@
   margin: 0 auto;
   border-radius: 100px;
   background-image: url("../../assets/background.png");
-  
-  
 }
 
  .contact-content {
@@ -23,7 +21,7 @@
 }
 
 .contact-info h2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .contact-info p {
@@ -34,6 +32,8 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  margin-left: 200px;
+  padding-top: 10px;
 }
 
 .contact-form input,
@@ -64,6 +64,7 @@
   padding: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-left: 50px;
 }
 
 .contact-form button:hover {
@@ -75,7 +76,7 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #000; 
-   color: #fff;
+  color: #fff;
 }   
 
 .address-logo {
@@ -99,4 +100,19 @@ body {
 
 .contact-p {
   margin-left: 21px;
+}
+
+.contact-h1 {
+  text-align: center;
+}
+
+.contact-h2 {
+  text-align: center;
+}
+
+.contact-msg {
+  /* width: 1000px; */
+  margin-left: 48px;
+  margin-right: 48px;
+  padding-top: 50px;
 }
