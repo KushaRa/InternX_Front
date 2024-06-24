@@ -1,0 +1,118 @@
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* background-image: url("../../assets/landingpage.png"); */
+    background-size: cover;
+    background-color: rgba(58, 220, 238, 0.426);
+  }
+
+
+ /* .contact-header {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 500px;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('../../assets/landingpage.png');
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center; */
+
+.contact-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+  }
+
+.contact-content {
+     max-width: 800px;
+    text-align: center;
+  }
+
+.contact-section .contact-content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+  }
+
+.contact-section .contact-content p {
+    font-weight: 500;
+    color: black;
+
+}
+
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.contact-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-box {
+  position: relative;
+  padding: 20px 0;
+}
+
+.contact-text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.contact-container .contact-info .contact-box .contact-text h3 {
+  font-weight: 500;
+  color: #00bcd4;
+}
+
+  
+
+.contact-icon {
+  min-width: 60px;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.address-logo {
+  width: 12px;
+  height: 18.5px;
+  padding: -10px;
+  margin-right: 2px;
+}
+
+.email-logo {
+    width: 12px;
+    height: 18.5px;
+    padding: -10px;
+    margin-right: 2px;
+  }
+
+  .phone-logo {
+    width: 12px;
+    height: 18.5px;
+    padding: -10px;
+    margin-right: 2px;
+  }

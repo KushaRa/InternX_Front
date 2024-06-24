@@ -82,3 +82,47 @@
   width: 16px;
   height: 16px;
 }
+
+
+.locationlogo {
+  width: 12px;
+  height: 18.5px;
+  padding: -10px;
+  margin-right: 2px;
+}
+
+.remotelogo {
+  width: 20px;
+  height: 20px;
+  padding: -10px;
+  margin-right: -5px;
+}
+
+.timelogo {
+  width: 15px;
+  height: 18px;
+  padding: -10px;
+  margin-right: -5px;
+  
+}
+.locationlogo {
+  width: 12px;
+  height: 18.5px;
+  padding: -10px;
+  margin-right: 2px;
+}
+
+.remotelogo {
+  width: 20px;
+  height: 20px;
+  padding: -10px;
+  margin-right: -5px;
+}
+
+.timelogo {
+  width: 15px;
+  height: 18px;
+  padding: -10px;
+  margin-right: -5px;
+  
+}

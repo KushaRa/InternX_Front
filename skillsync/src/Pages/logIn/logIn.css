@@ -73,6 +73,7 @@
   cursor: pointer;
   font-weight: bold;
   color: black;
+  border-color: #00b4d8;
 }
 
 .divider {
@@ -133,4 +134,13 @@ label {
 
 .terms input {
   margin-left: -5px;
+}
+
+#googleButton {
+  width: 305px;
+  margin-left: 0px;
+  height: 35px;
+  border-color: #00b4d8;
+  border-radius: 10px;
+  cursor: pointer;
 }

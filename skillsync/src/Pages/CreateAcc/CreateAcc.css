@@ -113,12 +113,13 @@
   height: 35px;
   border-radius: 10px;
   background-color: #00b4d8;
-  border: none;
+  /* border: none; */
   cursor: pointer;
   font-weight: bold;
   color: black;
   padding: 10px;
   font-size: 16px;
+  border-color: #00b4d8;
 }
 /* .signupButton:hover {
   background-color: #008ecc;
