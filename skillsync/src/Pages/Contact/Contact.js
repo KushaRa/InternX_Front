@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Contact.css";
 import MainNav from "../../components/MainNav/MainNav";
-// import Footer from '../../components/Footer/footer';
+import Footer from '../../components/Footer/footer';
 import address from "../../assets/address.jpg";
 import email from "../../assets/email.jpg";
 import phone from "../../assets/phone.jpg";
@@ -35,10 +35,11 @@ export const Contact = () => {
                 
             
 
-            // {/* <Footer /> */}
+             
         // </div>
         
     )
-    
+   
 }
 export default Contact;
+<Footer /> 
