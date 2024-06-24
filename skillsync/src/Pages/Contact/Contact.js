@@ -7,6 +7,7 @@ import email from "../../assets/email.png";
 import phone from "../../assets/phone.png";
 
 
+
 export const Contact = () => {
     return (
         <div className='contact-page'>
