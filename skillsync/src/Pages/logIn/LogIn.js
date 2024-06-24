@@ -12,7 +12,7 @@ export default function LogIn() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/login",
+        // "http://localhost:8000/api/login",
         data
       );
       console.log(response.data);
@@ -71,6 +71,10 @@ export default function LogIn() {
               <div class="divider"></div>
             </div>
             <button className="Google-button" type="submit" id="googleButton">
+            <img
+                src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png"
+                alt="Google logo"
+              ></img>
               Continue with google
             </button>
           </div>

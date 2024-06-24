@@ -7,6 +7,7 @@ import MainNav from "../../components/MainNav/MainNav";
 // import phone from "../../assets/phone.png";
 
 
+
 export const Contact = () => {
     return (
         // <div className='contact-page'>
