@@ -65,13 +65,13 @@ export const LogIn = () => {
                 <div class="divider-text">or</div>
                 <div class="divider"></div>
               </div>
-              <button className="Google-button" type="submit" id="googleButton">
-                <img
-                  src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png"
-                  alt="Google logo"
-                ></img>
-                Continue with google
-              </button>
+              <button className="google-button" type="submit" id="googleButton">
+              <img
+                src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png"
+                alt="Google logo"
+              ></img>
+              Continue with google
+            </button>
             </div>
           </div>
         </div>
