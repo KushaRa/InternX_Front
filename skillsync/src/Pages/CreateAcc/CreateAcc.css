@@ -73,9 +73,12 @@
 
 .terms {
   font-size: 12px;
+  padding: 5px;
+  justify-content: space-between;
   display: flex;
+  margin: 0;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .terms input {
