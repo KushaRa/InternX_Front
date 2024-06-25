@@ -16,12 +16,12 @@ export const Contact = () => {
                 <MainNav />
                 <h1 className='contact-h1'>Contact Us</h1>
                 <div className='contat-content'>
-                    <div className='contacct-info'>
+                     <div className='contact-info'> 
                         <h2 className='contact-h2'>Get in Touch</h2>
-                        <p><img className="address-logo " src={address} alt="Logo" />Address:Dharmapala Mawatha</p>
+                        <p className='contact-p'><img className="address-logo " src={address} alt="Logo" />Address:Dharmapala Mawatha</p>
                         <p className='contact-p'>Colombo 10, Sri Lanka</p>
-                        <p><img className="email-logo " src={email} alt="Logo" />Email: internx@gmail.com</p>
-                        <p><img className="phone-logo " src={phone} alt="Logo" />Phone: 011-3476910</p>
+                        <p className='contact-p'><img className="email-logo " src={email} alt="Logo" />Email: internx@gmail.com</p>
+                        <p className='contact-p'><img className="phone-logo " src={phone} alt="Logo" />Phone: 011-3476910</p>
                     </div>
                     <div className='contact-form'>
                         <div className='cInput-group'>
@@ -38,9 +38,9 @@ export const Contact = () => {
             
 
              
-        // </div>
+        //  </div>
         
-    )
+    );
    
 }
 export default Contact;
