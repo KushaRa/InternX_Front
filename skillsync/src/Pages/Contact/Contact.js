@@ -24,8 +24,10 @@ export const Contact = () => {
                         <p><img className="phone-logo " src={phone} alt="Logo" />Phone: 011-3476910</p>
                     </div>
                     <div className='contact-form'>
+                        <div className='cInput-group'>
                     <input className="input1" type="text" placeholder="Name" />
                     <input className="input1" type="email" placeholder="Email" />
+                        </div>
                     <textarea className='contact-msg' placeholder="Message"></textarea>
                     <button type="submit">Send</button>   
                     </div>
