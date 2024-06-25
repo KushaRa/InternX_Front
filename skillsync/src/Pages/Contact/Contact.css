@@ -6,6 +6,8 @@
   margin: 0 auto;
   /* border-radius: 100px; */
   background-image: url("../../assets/background.png");
+  background-size: cover;
+  height: 100vh;
 }
 
  .contact-content {
@@ -32,16 +34,18 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-left: 200px;
+  width: 500px;
+  margin-left: 600px;
   padding-top: -10px; 
   margin-top: -150px; 
+  
 
 }
 
 .contact-form input,
 .contact-form textarea {
-  background-color: #333;
-  border: none;
+  background-color: #000000;
+  border-color: #45d3ec;
   border-radius: 4px;
   color: #fff;
   padding: 10px;
@@ -56,6 +60,8 @@
 .contact-form textarea {
   resize: none;
   height: 100px;
+  width: 450px;
+  margin-left: 14px;
 }
 
 .contact-form button {
@@ -73,13 +79,13 @@
   background-color: #45d3ec;
 }
 
-body {
+/* body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #000; 
   color: #fff;
-}   
+}    */
 
 .address-logo {
   height:12px;
@@ -117,4 +123,10 @@ body {
   margin-left: 48px;
   margin-right: 48px;
   padding-top: 50px;
+}
+
+.input1 {
+  
+  padding-left: 100px;
+  
 }
