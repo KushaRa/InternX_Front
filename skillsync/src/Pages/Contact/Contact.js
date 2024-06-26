@@ -22,6 +22,11 @@ export const Contact = () => {
                         <p className='contact-p'>Colombo 10, Sri Lanka</p>
                         <p className='contact-p'><img className="email-logo " src={email} alt="Logo" />Email: internx@gmail.com</p>
                         <p className='contact-p'><img className="phone-logo " src={phone} alt="Logo" />Phone: 011-3476910</p>
+                         {/* <div className='c-para'>
+                            <p>InternX revolutionizes the internship search process in the dynamic IT industry. 
+                                Discover your perfect internship effortlessly, while IT companies find top talent seamlessly. 
+                                Join InternX today and unlock boundless opportunities.</p>
+                        </div>  */}
                     </div>
                     <div className='contact-form'>
                         <div className='cInput-group'>
