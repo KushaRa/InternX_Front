@@ -16,7 +16,7 @@ export const Contact = () => {
                 <MainNav />
                 <h1 className='contact-h1'>Contact Us</h1>
                 <div className='contat-content'>
-                     <div className='contact-info'> 
+                     {/* <div className='contact-info'>  */}
                         <h2 className='contact-h2'>Get in Touch</h2>
                         <p className='contact-p'><img className="address-logo " src={address} alt="Logo" />Address:Dharmapala Mawatha</p>
                         <p className='contact-p'>Colombo 10, Sri Lanka</p>
@@ -30,7 +30,7 @@ export const Contact = () => {
                         </div>
                     <textarea className='contact-msg' placeholder="Message"></textarea>
                     <button type="submit">Send</button>   
-                    </div>
+                    {/* </div> */}
                 </div>
             </div>
 
