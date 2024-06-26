@@ -58,7 +58,7 @@ export const Signup = () => {
 
               <div className="terms">
                 <label>
-                  <input type="checkbox" />I agree with InternX Terms of
+                  <input type="checkbox" className="checkbox1" />I agree with InternX Terms of
                   Services and Privacy Policy.
                 </label>
               </div>
