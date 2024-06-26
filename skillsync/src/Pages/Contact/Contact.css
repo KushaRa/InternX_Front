@@ -37,7 +37,7 @@
   width: 700px;
   margin-left: 600px;
   padding-top: -10px; 
-  margin-top: -150px; 
+  margin-top: -200px; 
   
 
 }
@@ -60,9 +60,9 @@
 .contact-form textarea {
   resize: none;
   height: 100px;
-  width: 670px;
+  width: 680px;
   height: 200px;
-  margin-left: 6px;
+  margin-left: 1px;
   margin-top: 50px;
 }
 
@@ -74,7 +74,7 @@
   padding: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-left: 10px;
+  margin-left: 2px;
 }
 
 .contact-form button:hover {
@@ -134,6 +134,7 @@
   display: flex;
   justify-content: space-between;
   gap: 20px; 
+
   
 }
 
