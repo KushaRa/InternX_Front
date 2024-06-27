@@ -24,12 +24,14 @@ export const Popular = () => {
       {dataProduct.map((item, i) => (
         <CompanyCard
           key={i}
-          id={item.id}
+          id={item._id}
           company_name={item.company_name}
           title={item.title}
           duration={item.duration}
           job_type={item.job_type}
           location={item.location}
+          email={item.email}
+          description={item.description}
         />
       ))}
     </div>

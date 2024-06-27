@@ -21,7 +21,7 @@ const JobDetailsContainer = () => {
   }, [id]);
 
   if (!data) {
-    return <div>Loading...</div>;
+    return <div className="load">Loading...</div>;
   }
 
  return (
