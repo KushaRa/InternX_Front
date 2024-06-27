@@ -1,5 +1,5 @@
 .VCard {
-    background-image: url('../../Components/Assests/view.jpg');
+    background-image: url('../../assets/view.jpg');
     background-size: cover; /* Ensures the image covers the whole div */
     background-position: center; /* Centers the image */
     height: 100vh; /* Makes sure the div takes up the full height of the viewport */

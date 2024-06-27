@@ -1,8 +1,8 @@
 // src/Pages/ViewCard/ViewCard.jsx
 import React from "react";
 import "./viewCard.css";
-import MainNav from "../../Components/NavBar-Main/MainNavBar";
-import JobDetailsContainer from "../../Components/JobDetailsContainer/JobDetailsContainer";
+import MainNav from "../../components/MainNav/MainNav";
+import JobDetailsContainer from "../../JobDetailsContainer/JobDetailsContainer";
 
 export const ViewCard = () => {
   return (
