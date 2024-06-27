@@ -3,26 +3,23 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  height:auto;
   width: 100%;
-}
-InternCards {
+  }
+
+.InternCards {
+   display: flex;
   flex-direction: column; /* Arrange items in a column */
   justify-content: center; /* Center items vertically */
   align-items:flex-end;
   background: transparent;
   margin-right: 40px;
-  display: flex;
   flex-wrap: wrap;
-  gap: 20px;   
+  gap: 20px; 
+   
 }
 
-.NewInt {
-  display: flex;
-  justify-content: center; 
-  align-items:end; 
-  margin-right: 20px;
-}
+
 .NewAdd {
   background-color: '#00B4D8';
   margin-top: '10px';
@@ -39,3 +36,4 @@ InternCards {
   height:50px                          
 
 }
+ min-height:200vh;
