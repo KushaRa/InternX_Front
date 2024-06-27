@@ -27,12 +27,3 @@ export const CompanyCard = (props) => {
     </div>
   );
 };
-
-// {
-//   /*id:1,
-//     company_name: "Draft PVT LTD",
-//     title:"Frontend Developer Internship",
-//     duration: "6 months",
-//     type:"Remote",
-//     locatio:"Colombo",*/
-// }
