@@ -2,7 +2,7 @@
 import React from "react";
 import "./viewCard.css";
 import MainNav from "../../components/MainNav/MainNav";
-import JobDetailsContainer from "../../JobDetailsContainer/JobDetailsContainer";
+import JobDetailsContainer from "../../components/JobDetailsContainer/JobDetailsContainer";
 
 export const ViewCard = () => {
   return (

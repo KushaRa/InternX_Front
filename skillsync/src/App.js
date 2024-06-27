@@ -10,7 +10,7 @@ import { Card } from "./Pages/Card/Card";
 import StudentProfile from "./Pages/studentProfile/StudentProfile";
 import { Categories } from "./Pages/Categories/categories";
 import { Route, Routes } from "react-router-dom";
-import {ViewCard} from "./Pages/ViewCard/viewCard";
+import ViewCard  from "./Pages/ViewCard/viewCard";
 
 function App() {
     return (
