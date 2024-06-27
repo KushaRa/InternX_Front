@@ -17,9 +17,11 @@
 }
 
 .contact-info {
-  flex: 1;
+
+  /* flex: 1;
   padding-right: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 40px; */
+
 }
 
 .contact-info h2 {
@@ -37,7 +39,7 @@
   width: 700px;
   margin-left: 600px;
   padding-top: -10px; 
-  margin-top: -150px; 
+  margin-top: -200px; 
   
 
 }
@@ -60,10 +62,9 @@
 .contact-form textarea {
   resize: none;
   height: 100px;
-  width: 670px;
+  width: 680px;
   height: 200px;
-  margin-left: 6px;
-  margin-top: 50px;
+  margin-left: 1px;
 }
 
 .contact-form button {
@@ -74,7 +75,7 @@
   padding: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-left: 10px;
+  margin-left: 2px;
 }
 
 .contact-form button:hover {
@@ -120,6 +121,11 @@
   text-align: left;
   margin-left: 100px;
   margin-bottom: 80px;
+  flex: 1;
+  padding-right: 20px;
+  margin-bottom: 40px;
+  padding-top: 10px;
+  
 }
 
 .contact-msg {
@@ -133,8 +139,7 @@
   
   display: flex;
   justify-content: space-between;
-  gap: 20px; 
-  
+  gap: 20px;   
 }
 
 .input-group input {

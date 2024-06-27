@@ -16,12 +16,21 @@ export const Contact = () => {
                 <MainNav />
                 <h1 className='contact-h1'>Contact Us</h1>
                 <div className='contat-content'>
-                     <div className='contact-info'> 
+
+                     {/* <div className='contact-info'>  */}
+
                         <h2 className='contact-h2'>Get in Touch</h2>
                         <p className='contact-p'><img className="address-logo " src={address} alt="Logo" />Address:Dharmapala Mawatha</p>
                         <p className='contact-p'>Colombo 10, Sri Lanka</p>
                         <p className='contact-p'><img className="email-logo " src={email} alt="Logo" />Email: internx@gmail.com</p>
                         <p className='contact-p'><img className="phone-logo " src={phone} alt="Logo" />Phone: 011-3476910</p>
+
+                         {/* <div className='c-para'>
+                            <p>InternX revolutionizes the internship search process in the dynamic IT industry. 
+                                Discover your perfect internship effortlessly, while IT companies find top talent seamlessly. 
+                                Join InternX today and unlock boundless opportunities.</p>
+                        </div>  */}
+
                     </div>
                     <div className='contact-form'>
                         <div className='cInput-group'>
@@ -30,7 +39,7 @@ export const Contact = () => {
                         </div>
                     <textarea className='contact-msg' placeholder="Message"></textarea>
                     <button type="submit">Send</button>   
-                    </div>
+                    {/* </div> */}
                 </div>
             </div>
 
