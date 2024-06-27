@@ -1,0 +1,10 @@
+.jobDetails{
+    background-color: #00B4D8;
+    margin:50px;
+    padding:50px;
+    border-radius: 12px;
+    gap:10px
+}
+.companyCard{
+    margin-top: 10px;
+}

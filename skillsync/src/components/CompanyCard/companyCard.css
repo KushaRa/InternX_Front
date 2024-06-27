@@ -17,18 +17,6 @@
   border-bottom-right-radius: 0px;
 }
 
-{/*.card:before{
-  content:"";
-  position:absolute;
-  width:600px;
-  height:100%;
-  background: rgba(0, 0, 0, 0.1);
-  background: rgba(93, 96, 127, 0.362);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}*/}
-
-
 .part1,
 .part2 {
   margin-bottom: 0px;
@@ -123,3 +111,14 @@
 .apply:hover {
   background-color: #00090b;
 }
+
+{/*.card:before{
+  content:"";
+  position:absolute;
+  width:600px;
+  height:100%;
+  background: rgba(0, 0, 0, 0.1);
+  background: rgba(93, 96, 127, 0.362);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}*/}
