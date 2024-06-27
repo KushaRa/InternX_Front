@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CreateAcc.css";
-
+import axios from "axios";
 
 export const Signup = () => {
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSignup = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post("http://localhost:8000/user/Signup", {
+        fullname,
+        email,
+        password,
+      });
+      console.log(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <>
       <div className="flex-Container">
@@ -14,37 +31,51 @@ export const Signup = () => {
         <div className="flex-box02">
           <div className="createAcc">
             <h5>Create a InternX account</h5>
-            <div className="input-box1">
-              <form action="past">
-                <input type="text" placeholder="Full Name" required />
-              </form>
-            </div>
-            <div className="input-box1">
-              <form action="past">
-                <input type="text" placeholder="Email" required />
-              </form>
-            </div>
-            <div className="input-box1">
-              <form action="past">
-                <input type="password" placeholder="Your Password" required />
-              </form>
-            </div>
-            <div className="terms">
-              <label>
-                <input type="checkbox" />I agree with InternX Terms of Services
-                and Privacy Policy.
-              </label>
-            </div>
-            <button type="submit" id="signupButton">
-              Sign up
-            </button>
-            <div class="divider-container">
-              <div class="divider"></div>
-              <div class="divider-text">or</div>
-              <div class="divider"></div>
+            <form onSubmit={handleSignup} className="input-box1">
+              <input
+                type="text"
+                placeholder="Full Name"
+                value={fullname}
+                onChange={(e) => setFullname(e.target.value)}
+                required
+              />
+
+              <input
+                type="text"
+                placeholder="Email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+
+              <input
+                type="password"
+                placeholder="Your Password"
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+
+              <div className="terms">
+                <label>
+                  <input type="checkbox" className="checkbox1" />I agree with InternX Terms of
+                  Services and Privacy Policy.
+                </label>
+              </div>
+              <button type="submit" id="signupButton" className="signupButton">
+                Sign up
+              </button>
+            </form>
+            <div className="divider-container">
+              <div className="divider"></div>
+              <div className="divider-text">or</div>
+              <div className="divider"></div>
             </div>
             <button className="google-button" type="submit" id="googleButton">
-             <img src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png" alt="Google logo"></img>
+              <img
+                src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png"
+                alt="Google logo"
+              ></img>
               Continue with google
             </button>
           </div>
