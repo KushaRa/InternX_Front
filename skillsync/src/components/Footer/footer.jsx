@@ -12,7 +12,7 @@ function Footer() {
             <h3>Office<div class="underline"><span></span></div></h3>
             <p>Dharmapala Mawatha</p>
             <p>Colombo 10, Sri Lanka</p>
-            <p class="email-id">internx@gmail.com</p>
+            <p class="email-id">internx.info@gmail.com</p>
             <h4>011-3476910</h4>
         </div>
             <div class="Fcol">
