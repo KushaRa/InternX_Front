@@ -20,14 +20,15 @@ export const Company = () => {
       <MainNav />
       <NewIntern open={open} handleClose={handleClose} />
       <div className="NewInt">
-        <button className="NewAdd" onClick={handleOpen}>
-          ADD NEW
-        </button>
+       
       </div>
 
       {/*<div className="CDetails"></div>*/}
       <div className="InternCards">
-        <Popular />
+      <button className="NewAdd" onClick={handleOpen}>
+          ADD NEW
+      </button>
+         <Popular />
       </div>
     </div>
   );

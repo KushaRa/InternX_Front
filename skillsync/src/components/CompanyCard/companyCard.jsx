@@ -3,6 +3,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import WorkIcon from '@mui/icons-material/Work';
 import './companyCard.css'
+import { Link } from "react-router-dom";
 
 export const CompanyCard = (props) => {
   return (
@@ -18,7 +19,9 @@ export const CompanyCard = (props) => {
         <div className="location"><LocationOnIcon />{props.location}</div>
 
         <div className="viewbutton">
-          <button className="apply">View Applicants</button>
+        <Link to={`/view/${props.id}`}>  
+          <button className="apply">View</button>
+         </Link>
         </div>
       </div>
     </div>

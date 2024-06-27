@@ -10,6 +10,7 @@ import { Card } from "./Pages/Card/Card";
 import StudentProfile from "./Pages/studentProfile/StudentProfile";
 import { Categories } from "./Pages/Categories/categories";
 import { Route, Routes } from "react-router-dom";
+import ViewCard  from "./Pages/ViewCard/viewCard";
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/card" element={<Card />}></Route>
         <Route path="/profile" element={<StudentProfile />}></Route>
         <Route path="/categories" element={<Categories />}></Route>
+        <Route path="/view/:id" element={<ViewCard/>}></Route>
       </Routes>
 </div>
 );
