@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./logIn.css";
 import axios from "axios";
 
-export default function LogIn() {
+export const LogIn = () => {
   const [data, setData] = useState({
     email: "",
     password: "",
@@ -11,7 +11,10 @@ export default function LogIn() {
   const loginUser = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8000/api/login", data);
+      const response = await axios.post(
+        // "http://localhost:8000/api/login",
+        data
+      );
       console.log(response.data);
     } catch (error) {
       console.error("Error logging in:", error);
@@ -29,7 +32,7 @@ export default function LogIn() {
           <div className="login">
             <h5>Login to your account</h5>
             <div>
-              <form onSubmit={loginUser} className="Login_input-box">
+              <form onSubmit={loginUser} className="input-box1">
                 <input
                   className="Linput"
                   type="text"
@@ -38,10 +41,6 @@ export default function LogIn() {
                   onChange={(e) => setData({ ...data, email: e.target.value })}
                   required
                 />
-              </form>
-            </div>
-            <div>
-              <form onSubmit={loginUser} className="Login_input-box">
                 <input
                   type="password"
                   placeholder="Your password "
@@ -51,26 +50,34 @@ export default function LogIn() {
                   }
                   required
                 />
+                <div className="terms">
+                  <label>
+                    <input type="checkbox" />I agree with InternX Terms of
+                    Services and Privacy Policy.
+                  </label>
+                </div>
+                <button type="submit" id="loginButton" className="loginButton">
+                  Login
+                </button>
               </form>
-            </div>
-            <div className="remember-forget">
-              <label>
-                <input type="checkbox" /> Remember me
-              </label>
-              <a href="/">Forgot password</a>
-            </div>
-            <button type="submit" id="loginButton">
-              Login
-            </button>
-            <div className="Or">
-              <p>---------------------------- OR ---------------------------</p>
-            </div>
-            <button className="Google-button" type="submit" id="googleButton">
+              <div class="divider-container">
+                <div class="divider"></div>
+                <div class="divider-text">or</div>
+                <div class="divider"></div>
+              </div>
+              <button className="google-button" type="submit" id="googleButton">
+              <img
+                src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png"
+                alt="Google logo"
+              ></img>
               Continue with google
             </button>
+            </div>
           </div>
         </div>
       </div>
     </>
   );
-}
+};
+
+export default LogIn;
