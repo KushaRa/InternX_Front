@@ -1,16 +1,39 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import "./Contact.css";
 import MainNav from "../../components/MainNav/MainNav";
 import Footer from '../../components/Footer/footer';
 import address from "../../assets/address.jpg";
 import email from "../../assets/email.jpg";
 import phone from "../../assets/phone.jpg";
+import emailjs from '@emailjs/browser';
+
 
 
 
 export const Contact = () => {
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_vyb0ww4', 'template_lp1roh3', form.current,'lXtWrN83VcO2t54Is',
+      )
+      .then(
+        (result) => {
+          console.log('Message Sent!',result.text);
+          alert('Message Sent!');
+        },
+        (error) => {
+          console.log('Failed...', error.text);
+          alert('Failed to send message, please try again later.');
+        },
+      );
+  };
     return (
-        // <div className='contact-page'>
+        <>
+   
+         {/* <div className='contact-page'> */}
             
             <div className='contact-container'>
                 <MainNav />
@@ -32,22 +55,24 @@ export const Contact = () => {
                         </div>  */}
 
                     </div>
-                    <div className='contact-form'>
+                     {/* <form ref={form} onSubmit={sendEmail} className='contact-form'>  */}
+                    <div ref={form} className='contact-form'> 
                         <div className='cInput-group'>
-                    <input className="input1" type="text" placeholder="Name" />
-                    <input className="input1" type="email" placeholder="Email" />
+                    <input className="input1" type="text" placeholder="Name" name='user_name' />
+                    <input className="input1" type="email" placeholder="Email" name='user_email'/>
                         </div>
-                    <textarea className='contact-msg' placeholder="Message"></textarea>
-                    <button type="submit">Send</button>   
-                    {/* </div> */}
+                    <textarea className='contact-msg' placeholder="Message" name='message'></textarea>
+                    <button type="button" onClick={sendEmail}>Send</button>   
+                
+                      </div>  
                 </div>
-            </div>
-
+             {/* </div> */}
                 
             
 
-             
-        //  </div>
+{/*              
+            </div> */}
+            </>
         
     );
    
