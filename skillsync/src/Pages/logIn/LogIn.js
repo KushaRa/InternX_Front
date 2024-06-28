@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./logIn.css";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export const LogIn = () => {
   const [data, setData] = useState({
@@ -57,7 +58,7 @@ export const LogIn = () => {
                   </label>
                 </div>
                 <button type="submit" id="loginButton" className="loginButton">
-                  Login
+                  <Link to="/Card">Login</Link>
                 </button>
               </form>
               <div class="divider-container">
@@ -66,12 +67,12 @@ export const LogIn = () => {
                 <div class="divider"></div>
               </div>
               <button className="google-button" type="submit" id="googleButton">
-              <img
-                src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png"
-                alt="Google logo"
-              ></img>
-              Continue with google
-            </button>
+                <img
+                  src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png"
+                  alt="Google logo"
+                ></img>
+                Continue with google
+              </button>
             </div>
           </div>
         </div>
