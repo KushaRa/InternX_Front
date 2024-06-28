@@ -4,21 +4,19 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 
 export const LogIn = () => {
-  const [data, setData] = useState({
-    email: "",
-    password: "",
-  });
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const loginUser = async (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        // "http://localhost:8000/api/login",
-        data
-      );
+      const response = await axios.post("http://localhost:8000/user/Login", {
+        email,
+        password,
+      });
       console.log(response.data);
     } catch (error) {
-      console.error("Error logging in:", error);
+      console.error(error);
     }
   };
   return (
@@ -33,23 +31,20 @@ export const LogIn = () => {
           <div className="login">
             <h5>Login to your account</h5>
             <div>
-              <form onSubmit={loginUser} className="input-box1">
+              <form onSubmit={handleLogin} className="input-box1">
                 <input
-                  className="Linput"
                   type="text"
-                  placeholder="Your user name OR email"
-                  value={data.email}
-                  onChange={(e) => setData({ ...data, email: e.target.value })}
+                  placeholder="Email"
                   required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
                 <input
                   type="password"
-                  placeholder="Your password "
-                  value={data.password}
-                  onChange={(e) =>
-                    setData({ ...data, password: e.target.value })
-                  }
+                  placeholder="Your Password"
                   required
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
                 <div className="terms">
                   <label>
