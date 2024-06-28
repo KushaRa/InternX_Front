@@ -1,5 +1,5 @@
 import React from "react";
-import "./ViewCard.css";
+import "./viewCard.css";
 import MainNav from "../../components/MainNav/MainNav";
 import JobDetailsContainer from "../../components/JobDetailsContainer/JobDetailsContainer";
 
