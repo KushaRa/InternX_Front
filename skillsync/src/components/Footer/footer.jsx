@@ -1,5 +1,6 @@
 import "./footer.css";
 import { Link } from "react-router-dom";
+import facebook from "../../assets/facebook.jpg";
 
 function Footer() {
     return (<footer>
@@ -31,11 +32,11 @@ function Footer() {
                     <input type="email" placeholder="  Enter your email" required />
                     <button type="Submit"><i class="fa-solid fa-arrow-right"></i></button>
                 </form>
-                <div class="social-icons">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <i class="fa-brands fa-pinterest"></i>
+                <div className="social-icons">
+                    <img className="facebook-logo" src={facebook} alt="logo"></img>
+                     <i className="fa-brands fa-twitter"></i>
+                    <i className="fa-brands fa-whatsapp"></i>
+                    <i className="fa-brands fa-pinterest"></i> 
                 </div>
             </div>
 
