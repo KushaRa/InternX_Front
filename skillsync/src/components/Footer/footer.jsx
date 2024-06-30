@@ -1,6 +1,7 @@
 import "./footer.css";
 import { Link } from "react-router-dom";
 import facebook from "../../assets/facebook.jpg";
+import whatsapp from "../../assets/whatsapp.png";
 
 function Footer() {
     return (<footer>
@@ -34,7 +35,7 @@ function Footer() {
                 </form>
                 <div className="social-icons">
                     <img className="facebook-logo" src={facebook} alt="logo"></img>
-                     <i className="fa-brands fa-twitter"></i>
+                    <img className="whatspp-logo" src={whatsapp} alt="logo"></img>
                     <i className="fa-brands fa-whatsapp"></i>
                     <i className="fa-brands fa-pinterest"></i> 
                 </div>
