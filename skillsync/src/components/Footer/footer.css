@@ -178,6 +178,28 @@ hr{
     margin-left: 50px;
 }
 
+.twitter-logo {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: -1000px;
+    padding-top: 10px;
+    border-radius: 0%;
+    background-color: white;
+    margin-left: 50px;
+}
+
+.envelop-logo {
+    width: 20px;
+    height: 20px;
+    margin-bottom: -20px;
+    /* margin-top: -1000px; */
+    padding-top: 10px;
+    /* border-radius: 0%; */
+    /* background-color: white; */
+    margin-left: 3px;
+}
+
 @keyframes moving{
     0%{
         left: -20px;
