@@ -69,12 +69,13 @@ footer{
 }
 
 form{
-    padding-bottom: 15px;
+    /* padding-bottom: 15px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
     margin-bottom: 50px;
+    margin-top: 40px;
 }
 
 form .fa-regular{
@@ -88,6 +89,7 @@ form input{
     color: #ccc;
     border: 0;
     outline: none;
+    margin-top: 20px;
 }
 
 form button{
@@ -135,6 +137,7 @@ hr{
     top: 25px;
     left: 0;
     overflow: hidden;
+   
 }
 
 .underline span{
@@ -193,11 +196,15 @@ hr{
     width: 20px;
     height: 20px;
     margin-bottom: -20px;
-    /* margin-top: -1000px; */
     padding-top: 10px;
-    /* border-radius: 0%; */
-    /* background-color: white; */
     margin-left: 3px;
+    padding-bottom: 25px;
+}
+
+.footer-mail {
+    margin-top: -100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 @keyframes moving{
