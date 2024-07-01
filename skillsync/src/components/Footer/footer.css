@@ -154,7 +154,7 @@ hr{
     cursor: pointer;
     margin-top: -1000px;
     padding-top: 10px;
-    border-radius: 50%;
+    border-radius: 0%;
     background-color: white;
     /* padding-top: 50px; */
     margin-top: -10px;
@@ -165,8 +165,39 @@ hr{
     align-items: center;
     justify-content: center;
     font-size: 200px;
+}
 
+.whatspp-logo {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: -1000px;
+    padding-top: 10px;
+    border-radius: 0%;
+    background-color: white;
+    margin-left: 50px;
+}
 
+.twitter-logo {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: -1000px;
+    padding-top: 10px;
+    border-radius: 0%;
+    background-color: white;
+    margin-left: 50px;
+}
+
+.envelop-logo {
+    width: 20px;
+    height: 20px;
+    margin-bottom: -20px;
+    /* margin-top: -1000px; */
+    padding-top: 10px;
+    /* border-radius: 0%; */
+    /* background-color: white; */
+    margin-left: 3px;
 }
 
 @keyframes moving{
