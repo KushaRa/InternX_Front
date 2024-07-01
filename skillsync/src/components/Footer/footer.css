@@ -193,19 +193,14 @@ hr{
 }
 
 .envelop-logo {
-    width: 20px;
-    height: 20px;
+    width:18px;
+    height: 18px;
     margin-bottom: -20px;
     padding-top: 10px;
     margin-left: 3px;
-    padding-bottom: 25px;
+    padding-bottom: 28px;
 }
 
-.footer-mail {
-    margin-top: -100px;
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
 
 @keyframes moving{
     0%{
