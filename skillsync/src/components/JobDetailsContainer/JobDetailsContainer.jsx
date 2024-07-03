@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import './JobDetailsContainer.css';
 
 const JobDetailsContainer = () => {
   const { id } = useParams();
   const [data, setData] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,11 +21,26 @@ const JobDetailsContainer = () => {
     fetchData();
   }, [id]);
 
+  const deleteRecord = async () => {
+    try {
+      await axios.delete(`http://localhost:8000/api/display-add/${id}`);
+      alert('Deleted Successfully');
+      navigate('/internships'); // Redirect to another page after deletion
+
+    } catch (error) {
+      console.error('Error deleting record:', error);
+      alert('Failed to Delete Advertisment');
+    }
+  };
+
+//
+
   if (!data) {
     return <div className="load">Loading...</div>;
   }
 
  return (
+    <div className='fullPage'>
     <div className='jobDetails'>
       <div className="titleCard"><h2>Title: {data.title}</h2></div>
       <div className="companyCard"><p>Company: {data.company_name}</p></div>
@@ -34,6 +50,11 @@ const JobDetailsContainer = () => {
       <div className="emailCard"><p>Email: {data.email}</p></div>
       <div className="decriptionCard"><p>Description: {data.description}</p></div>
     </div>
+    <div className="section-two">
+    <button className="EditButton">Responses</button>
+    <button className="DeleteButton" onClick={deleteRecord}>Delete</button>
+  </div>
+  </div>
   );
 };
 
