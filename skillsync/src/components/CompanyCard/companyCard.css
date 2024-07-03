@@ -29,26 +29,13 @@
   position: relative;
   height: 100px;
   background: transparent;
+  background: rgba(0, 205, 246, 0.4);
   border: 1px solid #ffffff;
   padding: 20px;
   
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
-.part1::before{
-    content:"";
-    position:absolute;
-    width:700px;
-    height:100%;
-    background: rgba(29, 11, 219, 0.1);
-    background: rgba(0, 180, 216, 0.362);
-    margin-top:-20px;
-    margin-left: -21px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
 
 
 .part2{
@@ -67,14 +54,14 @@
 }
 
 .company_name {
-  color: #007bff;
-  font-size: 18px;
-  font-weight: bold;
+  color: #040404;
+  font-size: 20px;
+  font-weight: bolder;
   margin-bottom: 5px;
 }
 
 .title {
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
   margin-bottom: 10px;
 }
