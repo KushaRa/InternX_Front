@@ -42,13 +42,13 @@ const JobDetailsContainer = () => {
  return (
     <div className='fullPage'>
     <div className='jobDetails'>
-      <div className="titleCard"><h2>Title: {data.title}</h2></div>
-      <div className="companyCard"><p>Company: {data.company_name}</p></div>
-      <div className="jobtypeCard"><p>Job Type: {data.job_type}</p></div>
-      <div className="durationCard"><p>Duration: {data.duration}</p></div>
-      <div className="locationCard"><p>Location: {data.location}</p></div>
-      <div className="emailCard"><p>Email: {data.email}</p></div>
-      <div className="decriptionCard"><p>Description: {data.description}</p></div>
+      <div className="titleCard"><h2>{data.title}</h2></div>
+      <div className="companyCard"><p><b>Company: </b>{data.company_name}</p></div>
+      <div className="jobtypeCard"><p><b>Job Type: </b>{data.job_type}</p></div>
+      <div className="durationCard"><p><b>Duration: </b>{data.duration}</p></div>
+      <div className="locationCard"><p><b>Location: </b>{data.location}</p></div>
+      <div className="emailCard"><p><b>Email: </b><a href={`mailto:${data.email}`} className="emailLink">{data.email} </a></p></div>
+      <div className="decriptionCard"><p><b>Description:</b><br></br> {data.description}</p></div>
     </div>
     <div className="section-two">
     <button className="EditButton">Responses</button>

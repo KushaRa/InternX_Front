@@ -1,12 +1,15 @@
 .jobDetails{
-    background-color: #00B4D8;
-    margin:50px;
-    padding:50px;
+    align-items: center;
+    position: relative;
+    background: rgba(0, 205, 246, 0.5);
+    margin:40px;
+    padding:40px;
     border-radius: 12px;
-    gap:10px
-}
+    gap:10px;
+    font-size:17px;
+    }
 .companyCard{
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .load{
     color:aliceblue;
@@ -14,6 +17,18 @@
 .section-two
 {
   margin-left: 50px;
+}
+.titleCard{
+  color:#f3f2f7;
+  font-weight: bolder;
+  
+}
+.emailLink{
+  color: #130163;
+  text-decoration: underline;
+}
+.emailLink:hover{
+  color:aliceblue;
 }
 
 .DeleteButton{
@@ -37,4 +52,5 @@
     font-size: 14px;
     font-weight:150px;
   }
+  
   
