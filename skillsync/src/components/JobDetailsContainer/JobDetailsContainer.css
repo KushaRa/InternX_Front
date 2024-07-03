@@ -23,6 +23,13 @@
   font-weight: bolder;
   
 }
+.emailLink{
+  color: #130163;
+  text-decoration: underline;
+}
+.emailLink:hover{
+  color:aliceblue;
+}
 
 .DeleteButton{
     background-color: #ff0000;

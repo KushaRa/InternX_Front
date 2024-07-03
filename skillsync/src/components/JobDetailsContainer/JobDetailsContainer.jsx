@@ -47,7 +47,7 @@ const JobDetailsContainer = () => {
       <div className="jobtypeCard"><p><b>Job Type: </b>{data.job_type}</p></div>
       <div className="durationCard"><p><b>Duration: </b>{data.duration}</p></div>
       <div className="locationCard"><p><b>Location: </b>{data.location}</p></div>
-      <div className="emailCard"><p><b>Email: </b>{data.email}</p></div>
+      <div className="emailCard"><p><b>Email: </b><a href={`mailto:${data.email}`} className="emailLink">{data.email} </a></p></div>
       <div className="decriptionCard"><p><b>Description:</b><br></br> {data.description}</p></div>
     </div>
     <div className="section-two">

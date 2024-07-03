@@ -27,6 +27,7 @@ const NewIntern = ({ open, handleClose }) => {
     email: '',
     description: ''
   });
+ 
 
   const handleChangeNewIntern = (e) => {
     const { name, value } = e.target;
@@ -36,6 +37,7 @@ const NewIntern = ({ open, handleClose }) => {
     }));
   };
 
+ 
   const handleSubmitNewIntern = async (e) => {
     e.preventDefault();
     try {
@@ -70,7 +72,9 @@ const NewIntern = ({ open, handleClose }) => {
       console.error('Error:', error);
       // alert('Post Submitted.');
     }
+    
   };
+  
 
   return (
     <Dialog open={open} onClose={handleClose} fullWidth className="dialog">
@@ -163,6 +167,7 @@ const NewIntern = ({ open, handleClose }) => {
                   />
                 </Grid>
                 <Grid item xs={6} className="gridItem">
+                
                   <FilledInput
                     className="inputBox"
                     placeholder="Email *"
@@ -171,8 +176,9 @@ const NewIntern = ({ open, handleClose }) => {
                     name="email"
                     value={InternData.email}
                     onChange={handleChangeNewIntern}
+                   
                   />
-                </Grid>
+                  </Grid>
               </Grid>
               {/* Fourth Section: Description Input */}
               <Grid item className="gridItem">
