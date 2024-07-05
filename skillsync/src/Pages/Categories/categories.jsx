@@ -8,15 +8,40 @@ import ListItemText from "@mui/material/ListItemText";
 import location from "../../assets/location.jpg";
 import remote from "../../assets/remote.webp";
 import time from "../../assets/time.png";
+import SearchIcon from '@mui/icons-material/Search';
 
 const handleListItemClick = (Categories, index) => {};
 export const Categories = () => {
   return (
     <div className="category_page">
       <><MainNav /></>
-      <div className="cardSearchBar">
-        <input type="text" placeholder="Type Here" />
-        <button className="cardButton">Search</button>
+      <div className="cardSearchBar"
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "40%",
+        marginTop: "20px"
+              
+      }}>
+        <input 
+          type="text" 
+          placeholder="Type Here.." 
+          style={{
+            border: "none",
+            outline: 0,
+            padding: "12px 25px",
+            fontSize: "18px",
+            backgroundColor: "aliceblue",
+            color: "black",
+            borderRadius: "30px",
+            flex: 1,
+            marginRight: "18px",
+            marginLeft: "50px",
+            marginTop: "20px"
+          }}
+        />  
+        <button className="searchButton"><SearchIcon /></button>
       </div>
       <div className="flex-container">
         <div className="flex-box3">

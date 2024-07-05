@@ -69,7 +69,7 @@ export const Card = () => {
         />      
             <button className="searchButton"><SearchIcon /></button>
           </div> 
-      {/* </section>  */}
+      
       </div>
       <div className="card-featured-internships">
         <h2>Featured Internship Offers</h2>
