@@ -7,6 +7,7 @@ import time from "../../assets/time.png";
 // import { useHistory } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import SearchIcon from '@mui/icons-material/Search';
 
 
 export const Card = () => {
@@ -31,21 +32,45 @@ export const Card = () => {
   return (
     <div className="cardPage">
       <> <MainNav /></>
-      <header className="cardHeader">
-        {/* <Lnavbar/> */}
-       
-      </header>
-      {/* <section className="card-section"> */}
-      <h1 className="cardHeader">
-        Unlock endless
-        <br /> possibilities for your
-        <br /> future career
-      </h1>
-      <div className="cardSearchBar">
-        <input className="card-search" type="text" placeholder="Type Here" />
-        <button className="cardButton">Search</button>
-      </div>
+      <div className="cardHeader" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+       <h4>
+        Unlock Endless Possibilities for Your Future Career
+        </h4>
+        <p>InternX revolutionizes the internship search process in the dynamic IT industry.
+        <br></br> Discover your perfect internship effortlessly, while IT companies find top talent seamlessly.
+        <br></br> Explore boundless opportunities with InternX.
+        </p>
+      
+      <div className="cardSearchBar"
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "40%",
+        marginTop: "20px"
+              
+      }}>
+      <input 
+          type="text" 
+          placeholder="Type Here.." 
+          style={{
+            border: "none",
+            outline: 0,
+            padding: "12px 25px",
+            fontSize: "18px",
+            backgroundColor: "aliceblue",
+            color: "black",
+            borderRadius: "30px",
+            flex: 1,
+            marginRight: "18px",
+            marginLeft: "50px",
+            marginTop: "20px"
+          }}
+        />      
+            <button className="searchButton"><SearchIcon /></button>
+          </div> 
       {/* </section>  */}
+      </div>
       <div className="card-featured-internships">
         <h2>Featured Internship Offers</h2>
       </div>
@@ -71,9 +96,12 @@ export const Card = () => {
             </div>
           ))}
       </div>
-      <a href="/" className="all-job-offers">
+    <div className="all-job" style={{ padding: "20px", display: "block", marginTop: "20px", marginBottom: "20px", color: "#000", textDecoration: "none", fontSize: "1em", fontWeight: "bold" }}>
+        <a href="/" style={{ color: "#000", textDecoration: "none" }}>
         All Job Offers
-      </a>
+        </a>
+    </div>
+    
     </div>
   );
 };
