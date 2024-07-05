@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect}  from "react";
 import "./Card.css";
 import MainNav from "../../components/MainNav/MainNav";
 import location from "../../assets/location.jpg";
@@ -6,8 +6,24 @@ import remote from "../../assets/remote.webp";
 import time from "../../assets/time.png";
 // import { useHistory } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+
 
 export const Card = () => {
+  const [dataProduct, setDataProduct] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:8000/api/display-add');
+        setDataProduct(response.data);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
   const navigate = useNavigate();
   const handleCardClick = () => {
     navigate("/categories");
@@ -33,25 +49,23 @@ export const Card = () => {
         <h2>Featured Internship Offers</h2>
       </div>
       <div className="internship-cards">
-        {Array(6)
-          .fill()
-          .map((_, index) => (
+        {dataProduct.map((item, i) => (
             <div
               className="internship-card"
-              key={index}
+              key={i}
               onClick={handleCardClick}
             >
               <div className="card-header">
-                <h3>Delivergate (Private) Limited</h3>
-                <p>Front-End Developer Intern</p>
+                <h3>{item.company_name}</h3>
+                <p>{item.title}</p>
               </div>
               <div className="card-details">
                 <img className="locationlogo " src={location} alt="Logo" />
-                <span>Colombo</span>
+                <span>{item.location}</span>
                 <img className="remotelogo" src={remote} alt="Logo" />
-                <span>Remote</span>
+                <span>{item.job_type}</span>
                 <img className="timelogo" src={time} alt="Logo" />
-                <span>6 Months</span>
+                <span>{item.duration}</span>
               </div>
             </div>
           ))}
