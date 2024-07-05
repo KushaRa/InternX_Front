@@ -30,9 +30,10 @@ export const Card = () => {
   };
   return (
     <div className="cardPage">
+      <> <MainNav /></>
       <header className="cardHeader">
         {/* <Lnavbar/> */}
-        <MainNav />
+       
       </header>
       {/* <section className="card-section"> */}
       <h1 className="cardHeader">

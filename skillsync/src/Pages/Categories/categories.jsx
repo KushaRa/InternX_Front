@@ -13,7 +13,7 @@ const handleListItemClick = (Categories, index) => {};
 export const Categories = () => {
   return (
     <div className="category_page">
-      <MainNav />
+      <><MainNav /></>
       <div className="cardSearchBar">
         <input type="text" placeholder="Type Here" />
         <button className="cardButton">Search</button>
