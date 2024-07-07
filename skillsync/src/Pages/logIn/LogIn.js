@@ -1,22 +1,29 @@
 import React, { useState } from "react";
 import "./logIn.css";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const LogIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    setError(""); // Reset error message
     try {
       const response = await axios.post("http://localhost:8000/user/Login", {
         email,
         password,
       });
-      console.log(response.data);
+      if (response.status === 200) {
+        navigate("/Card");
+      } else {
+        setError("Login failed");
+      }
     } catch (error) {
-      console.error(error);
+      setError("Invalid email or password.");
     }
   };
   return (
@@ -53,7 +60,7 @@ export const LogIn = () => {
                   </label>
                 </div>
                 <button type="submit" id="loginButton" className="loginButton">
-                  <Link to="/Card">Login</Link>
+                  Login
                 </button>
               </form>
               <div class="divider-container">
