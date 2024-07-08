@@ -1,9 +1,10 @@
 import "./footer.css";
 import { Link } from "react-router-dom";
-import facebook from "../../assets/facebook.jpg";
-import whatsapp from "../../assets/whatsapp.png";
-import twitter from "../../assets/twitter.jpg";
-import envelop from "../../assets/envelop.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
     return (<footer>
@@ -31,16 +32,15 @@ function Footer() {
             <div class="Fcol">
                 <h3>Newsletter<div class="underline"><span></span></div></h3>
                 <form>
-                    <img className="envelop-logo" src={envelop} alt="logo"></img>
+                    {/* <img className="envelop-logo" src={envelop} alt="logo"></img> */}
+                    <FontAwesomeIcon icon={faEnvelope} />
                     <input type="email" placeholder="  Enter your email" required />
                     <button type="Submit"><i class="fa-solid fa-arrow-right"></i></button>
                 </form>
                 <div className="social-icons">
-                    <img className="facebook-logo" src={facebook} alt="logo"></img>
-                    <img className="whatspp-logo" src={whatsapp} alt="logo"></img>
-                    <img className="twitter-logo" src={twitter} alt="logo"></img>
-                    <i className="fa-brands fa-whatsapp"></i>
-                    <i className="fa-brands fa-pinterest"></i> 
+                     <FontAwesomeIcon icon={faFacebook} />
+                     <FontAwesomeIcon icon={faTwitter} />
+                     <FontAwesomeIcon icon={faWhatsapp} />
                 </div>
             </div>
 
