@@ -52,3 +52,22 @@ body {
   .heroLoginbtn button:hover {
     background-color: #ffffff;
   }
+
+  @media (max-width: 768px){
+    .hero-left h1{
+      font-size :50px;;
+      margin-top: 150px;
+    }
+    .hero-left p{
+      font-size: medium;
+    }
+  }
+  @media (max-width: 480px){
+    .hero-left h1{
+      font-size: larger;
+      margin-top: 30px;
+    }
+    .hero-left p{
+      font-size: medium;
+    }
+  }
