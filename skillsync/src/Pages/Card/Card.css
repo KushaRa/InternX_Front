@@ -1,9 +1,8 @@
-
-  body {
-    width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-    margin: 0; /* Remove default margin */
-  }
+body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  margin: 0; /* Remove default margin */
+}
 
 .cardPage {
   display: flex;
@@ -12,84 +11,76 @@
   background-image: url("../../assets/homepage.png");
   background-attachment: fixed;
   background-size: cover;
-   
 }
 
 .locationlogo {
   width: 10px;
   height: 18.5px;
-  padding: -10px;
   margin-right: 2px;
 }
 
 .remotelogo {
   width: 20px;
   height: 20px;
-  padding: -10px;
   margin-right: -5px;
 }
 
 .timelogo {
   width: 15px;
   height: 18px;
-  padding: -10px;
   margin-right: -5px;
-  
 }
 
 .cardHeader {
-  padding-top: 10px;
+  padding: 10px;
   color: white;
   height: 100vh;
   background-image: url("../../assets/homepage.png");
   background-attachment: fixed;
   background-size: cover;
-  
+  text-align: center;
+  font-size: 2.5em;
+  position: relative;
+  margin-bottom: 20px;
 }
 
-.cardHeader p{
+.cardHeader p {
   font-size: 25px;
 }
 
-.cardSearchBar {    
-   
-    display: flex;   
-    align-items: center;
-    padding: 7.9px;
-    font-size: 1em;
-    width: 500px; 
-    justify-content: space-between;   
-   
-   
-    
+.cardSearchBar {
+  display: flex;
+  align-items: center;
+  padding: 7.9px;
+  font-size: 1em;
+  width: 500px;
+  justify-content: space-between;
 }
 
-.CardSearch{
-    border:none;
-    outline: 0;
-    padding:12px 25px;
-    font-size: 18px;
-    background-color: aliceblue;
-    color: black;
-    border-radius: 30px;
-    flex:1;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 20px;
-  }
-.cardSearchBar button{
-   border:none;
-    outline: 0;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;;
-    cursor: pointer;
-    margin-top: 10px;
+.cardSearch {
+  border: none;
+  outline: 0;
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
-/* .cardSearchBar {
-    margin-top: 20px;
-} */
+.cardSearchBar button {
+  border: none;
+  outline: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
 .card-section {
   align-items: center;
 }
@@ -97,36 +88,26 @@
 .cardButton {
   padding: 10px 20px;
   font-size: 1em;
-  background-color: #00b4d8;
-  color: #000000;
-  border: none;
-  cursor: pointer;
-  border-radius: 10px 10px 10px 10px;
-}
-
-
-.card-featured-internships {
-  margin-top: 80px;
-  display: flex;
-  padding: 10px;
-  font-size: 1em;
-  width: 500px;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  
-  margin-left: 20px;
-}
-
-.cardButton {
-  /* padding: 8px; */
-  font-size: 1em;
   background-color: #343839;
   color: #fdfdfd;
   border: none;
   cursor: pointer;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   height: 46px;
+}
+
+.card-featured-internships {
+  margin-top: 20px;
+  display: flex;
+  padding: 20px;
+  font-size: 1em;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #75e4fa57;
+  box-sizing: border-box;
+  margin-left: 20px;
 }
 
 .cardSearchBar input {
@@ -135,39 +116,8 @@
   font-size: 1em;
   width: 1000px;
   border: none;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
 }
-
-.cardHeader {
-  padding: 10px;
-  text-align: center;
-  font-size: 50px;
-  color: rgb(247, 247, 247);
-  position: relative;
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-/* .card-section {
-    background-image: url('background-image.jpg'); */
-/* background-size: cover;
-    color: #fff; */
-/* text-align: center;
-    padding: 100px 20px;
-}   */
-
-.card-featured-internships {
-  background-color: #75e4fa57; 
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  padding: 20px; 
-  text-align: center;
-  width: 100%;
-  margin-top: 20px;
-  box-sizing: border-box; 
-}
-
 
 .card-featured-internships h2 {
   font-size: 20px;
@@ -177,16 +127,15 @@
   overflow: hidden;
   border-radius: 10%;
   text-overflow: ellipsis;
-  /* flex: content; */
 }
 
 .internship-cards {
   display: flex;
-  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
-.internship-cards h2{
+
+.internship-cards h2 {
   font-size: 20px;
   margin-bottom: 5px;
   margin-top: 5px;
@@ -197,44 +146,31 @@
 }
 
 .internship-card {
-  /* background-color: #00B4D8; */
   padding: 20px;
   width: 300px;
   height: 300px;
   border-radius: 10px;
-  /* color: #fff; */
   text-align: left;
-   margin: 10px;
+  margin: 10px;
   cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s; /* Smooth transition for hover effect */
 }
 
+.internship-card:hover {
+  background-color: #75e4fa57;
+  transform: scale(1.05); /* Slightly increase the size */
+}
 .card-header {
   background-color: #041b1e;
-  width: auto;
   color: rgb(249, 246, 246);
-  padding: 70px;
+  padding: 50px;
 }
-
 
 .card-details {
   display: flex;
   justify-content: space-between;
   font-size: 0.9em;
   background-color: #2cd4e7bc;
-  /* color: white; */
   padding: 15px;
   margin-top: auto;
 }
-
-
-/* .search-button:hover {
-    background-color: #333;
-  } */
-/* height:27px; */
-
-
-.internship-card:hover {
-  background-color: #75e4fa57;
-}
-
-

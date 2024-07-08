@@ -8,6 +8,7 @@ import time from "../../assets/time.png";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import SearchIcon from '@mui/icons-material/Search';
+import { Link } from "react-router-dom";
 
 
 export const Card = () => {
@@ -96,11 +97,11 @@ export const Card = () => {
             </div>
           ))}
       </div>
+    <Link to="/categories">
     <div className="all-job" style={{ padding: "20px", display: "block", marginTop: "20px", marginBottom: "20px", color: "#000", textDecoration: "none", fontSize: "1em", fontWeight: "bold" }}>
-        <a href="/" style={{ color: "#000", textDecoration: "none" }}>
-        All Job Offers
-        </a>
+                All Job Offers     
     </div>
+    </Link>
     
     </div>
   );

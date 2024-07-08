@@ -1,67 +1,67 @@
-*{
+* {
     text-decoration: none;
-}
-
-.navBar{
+  }
+  
+  .navBar {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-right: 15px;
     padding-left: 50px;
     padding-top: 20px;
-}
-
-.navDiv{
+  }
+  
+  .navDiv {
     display: flex;
     align-items: center;
     justify-content: space-between;
     transition: all 0.3s ease 0s;
-}
-
-.logo1 a{
+  }
+  
+  .logo1 a {
     font-size: 35px;
     font-weight: 600;
     color: #fffefe;
     cursor: pointer;
-}
-
-.navUl li{
+  }
+  
+  .navUl {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Increase the gap between items */
+  }
+  
+  .navUl li {
     display: inline;
     list-style: none;
-}
-
-.navUl li a{
+  }
+  
+  .navUl li a {
     color: rgb(255, 255, 255);
     font-size: 20px;
-    margin-right: 25px;
     cursor: pointer;
-}
-
-button{
-    background-color:#00B4D8;
+    transition: color 0.3s ease;
+  }
+  
+  .navUl li a:hover {
+    color: #00b4d8; /* Change the font color on hover */
+  }
+  
+  button {
+    background-color: #00b4d8;
     margin-left: 10px;
     border-radius: 10px;
-    padding: auto;
     width: 117px;
     height: 45px;
-    transition: 5ms;
     cursor: pointer;
     font-weight: bolder;
-}
-
-button a{
+    transition: background-color 0.3s ease;
+  }
+  
+  button a {
     color: black;
     font-size: 15px;
-}
-
-.navUl li:hover{
-    padding-left: 7px;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 6px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    text-decoration-color: rgb(255, 255, 255);
-}
-
-button:hover{
+  }
+  
+  button:hover {
     background-color: rgb(255, 255, 255);
-}
+  }
+  
