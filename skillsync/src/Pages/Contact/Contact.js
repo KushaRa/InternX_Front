@@ -6,6 +6,8 @@ import address from "../../assets/address.jpg";
 import email from "../../assets/email.jpg";
 import phone from "../../assets/phone.jpg";
 import emailjs from "@emailjs/browser";
+const apiKey = process.env.REACT_APP_EMAILJS_API_KEY;
+
 
 export const Contact = () => {
   const nameRef = useRef();
@@ -21,12 +23,21 @@ export const Contact = () => {
     message: messageRef.current.value,
    };
 
+   if (!apiKey) {
+    console.error('EmailJS API key is not defined.');
+    return;
+  }
+
+  // console.log('Sending email with params:', templateParams);
+  // console.log('Using API Key:', apiKey);
+
    emailjs
       .send(
         "service_vyb0ww4",
         "template_lp1roh3",
         templateParams,
-        "lXtWrN83VcO2t54Is"
+        // "lXtWrN83VcO2t54Is"
+        apiKey
       )
       .then(
         (result) => {
