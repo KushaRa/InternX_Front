@@ -4,6 +4,7 @@
   height: 100vh;
   background-image: url("../../assets/landingpage.png");
   background-size: cover;
+  position:relative;
 }
 
 .select-user-content {
@@ -11,23 +12,33 @@
   flex-grow: 1;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .job-seekers,
 .companies {
-  padding: 10px;
+  width: 50%;
+  padding:20px;
   text-align: center;
   font-size: 25px;
-  color: white;
+  color: rgb(255, 255, 255);
   position: relative;
-}
-
-.companies {
-  width: 50%;
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   z-index: 1;
 }
-
-.login-button {
+.job-seekers h2,
+.companies h2{
+  color: #00b4d8;
+}
+.job-seekers:hover {
+  background-color: rgba(0, 82, 165, 0.4);
+}
+.login-buttonSC {
+  
   background-color: #00b4d8;
   font-size: 15px;
   color: black;
@@ -35,8 +46,20 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
+  display: inline-block;
 }
+
+
+.companies:hover {
+  background-color: rgba(0, 82, 165, 0.4);
+}
+
+.companies {
+  width: 50%;
+  z-index: 1;
+}
+
 
 .signup-link {
   color: white;
@@ -46,21 +69,72 @@
 }
 
 .signup-link:hover {
-  color: yellow;
+  color: rgb(2, 2, 2);
 }
 
+
 /* blue gradient background */
-.select-user::before {
+.select-user-content::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%; /* Cover the left half of the page */
-  height: 100%;
-  background: linear-gradient(
-    to bottom right,
-    /* rgba(0, 82, 165, 0.7) */
-    #00B4D8,
-    rgba(57, 190, 247, 0.152)
-  );
+  top: 10%;
+  bottom: 10%;
+  left: 50%;
+  width: 2px;
+  background-color: white;
+  z-index: 0;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  
+}
+
+
+@media (max-width: 768px) {
+  .select-user-content {
+    flex-direction: column;
+  }
+
+  .job-seekers,
+  .companies {
+    width: 100%;
+  }
+
+  .select-user-content::before {
+    display: none;
+  }
+  .login-button {
+    width: 20%;  
+    padding: 12px 0;  
+    font-size: 18px; 
+   
+  }
+
+  .signup-link {
+    font-size: 16px; 
+  }
+  .job-seekers:hover,
+  .companies:hover {
+    background-color: rgba(0, 90, 150, 0.5); 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .login-button {
+    width: 90%;  
+    padding: 14px 0;  
+    font-size: 20px;  
+  }
+
+  .signup-link {
+    font-size: 14px; 
+  }
+
+  .job-seekers:hover,
+  .companies:hover {
+    background-color: rgba(0, 90, 150, 0.5); 
+  }
 }
