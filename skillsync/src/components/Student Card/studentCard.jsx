@@ -5,7 +5,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import './studentCard.css'
 import { Link } from "react-router-dom";
 
-export const CompanyCard = (props) => {
+export const StudentCard = (props) => {
   return (
     <div className="card">
       <div className="part1">
