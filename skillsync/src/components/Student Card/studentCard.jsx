@@ -19,7 +19,7 @@ export const StudentCard = (props) => {
         <div className="location"><LocationOnIcon />{props.location}</div>
 
         <div className="viewbutton">
-        <Link to='/'>  
+        <Link to={`/apply/${props.id}`}>  
           <button className="apply">View</button>
          </Link>
         </div>

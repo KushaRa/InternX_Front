@@ -5,9 +5,6 @@ import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import location from "../../assets/location.jpg";
-import remote from "../../assets/remote.webp";
-import time from "../../assets/time.png";
 import SearchIcon from '@mui/icons-material/Search';
 import { PopularStudent } from "../../components/PopularStudent/popularStudent";
 
