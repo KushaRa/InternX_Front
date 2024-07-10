@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-//import "./popular.css";
+import "./popularStudent.css";
 import { StudentCard } from "../Student Card/studentCard";
 
-export const Popular = () => {
+export const PopularStudent = () => {
   const [dataProduct, setDataProduct] = useState([]);
 
   useEffect(() => {
