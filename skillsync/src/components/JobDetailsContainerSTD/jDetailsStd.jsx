@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams} from "react-router-dom";
 import axios from "axios";
-//import './JobDetailsContainer.css';
+import './jDetailsStd.css';
 
 const JDetailsStd = () => {
   const { id } = useParams();
   const [data, setData] = useState(null);
-  const navigate = useNavigate();
+  
 
   useEffect(() => {
     const fetchData = async () => {
@@ -21,17 +21,7 @@ const JDetailsStd = () => {
     fetchData();
   }, [id]);
 
-  const deleteRecord = async () => {
-    try {
-      await axios.delete(`http://localhost:8000/api/display-add/${id}`);
-      alert('Deleted Successfully');
-      navigate('/internships'); // Redirect to another page after deletion
-
-    } catch (error) {
-      console.error('Error deleting record:', error);
-      alert('Failed to Delete Advertisment');
-    }
-  };
+  
 
 //
 
@@ -51,9 +41,8 @@ const JDetailsStd = () => {
       <div className="decriptionCard"><p><b>Description:</b><br></br> {data.description}</p></div>
     </div>
     <div className="section-two">
-    <button className="EditButton">Responses</button>
-    <button className="DeleteButton" onClick={deleteRecord}>Delete</button>
-  </div>
+    <button className="ApplyButton">Apply Now</button>
+      </div>
   </div>
   );
 };
