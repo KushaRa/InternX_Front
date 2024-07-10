@@ -2,7 +2,7 @@ import React from "react";
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import WorkIcon from '@mui/icons-material/Work';
-//import './companyCard.css'
+import './studentCard.css'
 import { Link } from "react-router-dom";
 
 export const CompanyCard = (props) => {
