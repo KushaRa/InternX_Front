@@ -1,5 +1,5 @@
 import React from "react";
-import "./viewCard.css";
+import "./stdView.css";
 import MainNav from "../../components/MainNav/MainNav";
 import JDetailsStd from "../../components/JobDetailsContainerSTD/jDetailsStd";
 
