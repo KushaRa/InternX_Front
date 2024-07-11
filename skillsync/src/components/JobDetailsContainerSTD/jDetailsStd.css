@@ -1,0 +1,46 @@
+.jobDetails{
+    align-items: center;
+    position: relative;
+    background: rgba(0, 205, 246, 0.45);
+    margin:40px;
+    padding:40px;
+    border-radius: 12px;
+    gap:10px;
+    font-size:17px;
+    }
+.companyCard{
+    margin-top: 5px;
+}
+.load{
+    color:aliceblue;
+}
+.section-two
+{
+  margin-left: 50px;
+}
+.titleCard{
+  color:#f3f2f7;
+  font-weight: bolder;
+  
+}
+.emailLink{
+  color: #130163;
+  text-decoration: underline;
+}
+.emailLink:hover{
+  color:aliceblue;
+}
+
+ 
+  .ApplyButton{
+    background-color: #39e81e;
+    color: rgb(9, 9, 9);
+    border: none;
+    border-radius: 10px;
+    padding:0; 
+    cursor: pointer;
+    font-size: 14px;
+    font-weight:150px;
+  }
+  
+  

@@ -5,11 +5,8 @@ import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import location from "../../assets/location.jpg";
-import remote from "../../assets/remote.webp";
-import time from "../../assets/time.png";
 import SearchIcon from '@mui/icons-material/Search';
-import { Popular } from "../../components/Popular/popular";
+import { PopularStudent } from "../../components/PopularStudent/popularStudent";
 
 const handleListItemClick = (Categories, index) => {};
 export const Categories = () => {
@@ -107,7 +104,7 @@ export const Categories = () => {
         </div>
         <div className="flex-box4">
           <div className="category_cards">
-           <Popular/>
+           <PopularStudent/>
           </div>
         </div>
       </div>

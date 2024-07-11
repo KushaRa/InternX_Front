@@ -11,6 +11,7 @@ import StudentProfile from "./Pages/studentProfile/StudentProfile";
 import { Categories } from "./Pages/Categories/categories";
 import { Route, Routes } from "react-router-dom";
 import ViewCard from "./Pages/ViewCard/viewCard";
+import StdViewCard from "./Pages/StdView/stdView";
 
 function App() {
     return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/profile" element={<StudentProfile />}></Route>
         <Route path="/categories" element={<Categories />}></Route>
         <Route path="/view/:id" element={<ViewCard />}></Route>
+        <Route path="/apply/:id" element={<StdViewCard />}></Route>
       </Routes>
 </div>
 );
