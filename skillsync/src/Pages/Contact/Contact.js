@@ -27,18 +27,22 @@ export const Contact = () => {
     console.error('EmailJS API key is not defined.');
     return;
   }
+  console.log('EmailJS API Key:', apiKey);
+
+
 
   // console.log('Sending email with params:', templateParams);
   // console.log('Using API Key:', apiKey);
 
    emailjs
-      .send(
-        "service_vyb0ww4",
-        "template_lp1roh3",
-        templateParams,
-        // "lXtWrN83VcO2t54Is"
-        apiKey
-      )
+   .send("service_vyb0ww4", "template_lp1roh3", templateParams, apiKey)
+      // .send(
+      //   "service_vyb0ww4",
+      //   "template_lp1roh3",
+      //   templateParams,
+      //   // "lXtWrN83VcO2t54Is"
+      //   apiKey
+      
       .then(
         (result) => {
           console.log("Message Sent!", result.text);
