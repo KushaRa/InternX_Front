@@ -6,14 +6,14 @@ import member2 from '../../assets/Nethmini.png'
 import member4 from '../../assets/Kushana.jpg'
 import { BsLinkedin } from "react-icons/bs";
 import { MdOutlineMail } from "react-icons/md";
-import Lnavbar from '../NavBar/lnavbar';
+import MainNav from "../../components/MainNav/MainNav";
 
 const AboutUs = () => {
   return (
     <div className="about">
       
       <div className="intro">
-      <div><Lnavbar/></div>
+      <div><MainNav/></div>
        <div className='vissioMission'>
         <div className='Mission'><h3>Our Mission </h3>
         <p>

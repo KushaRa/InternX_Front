@@ -1,5 +1,5 @@
 .intro {
-    height: 98vh;
+    height: 107vh;
     margin: 0;
     font-family: Arial, sans-serif;
     color: white;
@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 40px;
     align-items: center;
     gap: 20px;
  }
@@ -35,7 +35,7 @@
  }
  
  .Vission, .Mission {
-    margin-top: 20px;
+    margin-top: 10px;
  }
  
  .vissioMission h3 {
@@ -54,7 +54,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 50px;
+    margin-top: 45px;
     align-items: center;
     gap: 20px;
  }
@@ -71,9 +71,11 @@
     text-align: center;
     padding-left: 200px;
     padding-right: 200px;
+    margin-top: ;
  }
  
  .topic {
+    margin-top: 1px;
     color: #005582;
     text-align: center;
     font-size: 2rem;
