@@ -32,7 +32,7 @@ export const Signup = () => {
           <div className="createAcc">
             <h5>Create a InternX account</h5>
             <form onSubmit={handleSignup} className="input-box1">
-              <input
+              <input style={{width:"280px", height:"20px"}}
                 type="text"
                 placeholder="Full Name"
                 value={fullname}
@@ -40,7 +40,7 @@ export const Signup = () => {
                 required
               />
 
-              <input
+              <input  style={{width:"280px", height:"20px"}}
                 type="text"
                 placeholder="Email"
                 required
@@ -48,7 +48,7 @@ export const Signup = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
 
-              <input
+              <input style={{width:"280px", height:"20px"}}
                 type="password"
                 placeholder="Your Password"
                 required
