@@ -39,7 +39,7 @@ export const LogIn = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <input style={{width:"280px", height:"20px"}}
+                <input style={{width:"280px", height:"20px", marginRight:"10px"}}
                   type="password"
                   placeholder="Your Password"
                   required
