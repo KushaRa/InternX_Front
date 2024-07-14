@@ -23,14 +23,14 @@ export const Signup = () => {
   return (
     <>
       <div className="flex-Container">
-        <div className="flex-box01">
+        <div className="flex-box01" style={{width:"750px"}}> 
           <div className="logo">logo</div>
           <div className="welcome">Welcome to</div>
           <div className="internx">InternX Community</div>
         </div>
         <div className="flex-box02">
           <div className="createAcc">
-            <h5>Create a InternX account</h5>
+            <h5 style={{marginLeft:"10px", marginTop:"50px"}}>Create a InternX account</h5>
             <form onSubmit={handleSignup} className="input-box1">
               <input style={{width:"280px", height:"20px"}}
                 type="text"
@@ -58,7 +58,7 @@ export const Signup = () => {
 
               <div className="terms">
                 <label>
-                  <input type="checkbox" className="checkbox1" />I agree with InternX Terms of
+                  <input style={{width:"15px"}} type="checkbox" className="checkbox1" />I agree with InternX Terms of
                   Services and Privacy Policy.
                 </label>
               </div>
