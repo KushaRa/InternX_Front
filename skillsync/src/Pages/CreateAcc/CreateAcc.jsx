@@ -48,21 +48,25 @@ const Signup = () => {
           <div className="createAcc">
             <h5>Create an InternX account</h5>
             <form onSubmit={handleSignup} className="input-box1">
-              <input
+              <input style={{width:"280px", height:"20px"}}
                 type="text"
                 placeholder="Full Name"
                 value={fullname}
                 onChange={(e) => setFullname(e.target.value)}
                 required
               />
-              <input
+
+
+              <input  style={{width:"280px", height:"20px"}}
                 type="text"
                 placeholder="Email"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-              <input
+
+              <input style={{width:"280px", height:"20px"}}
+
                 type="password"
                 placeholder="Your Password"
                 required
