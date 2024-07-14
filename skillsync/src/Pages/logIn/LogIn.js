@@ -32,14 +32,14 @@ export const LogIn = () => {
             <h5>Login to your account</h5>
             <div>
               <form onSubmit={handleLogin} className="input-box1">
-                <input
+                <input style={{width:"280px", height:"20px"}}
                   type="text"
                   placeholder="Email"
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <input
+                <input style={{width:"280px", height:"20px"}}
                   type="password"
                   placeholder="Your Password"
                   required
