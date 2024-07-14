@@ -8,6 +8,7 @@ import time from "../../assets/time.png";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import SearchIcon from '@mui/icons-material/Search';
+import { Link } from "react-router-dom";
 
 
 export const Card = () => {
@@ -30,16 +31,14 @@ export const Card = () => {
     navigate("/categories");
   };
   return (
-    <div className="cardPage">
-      <> <MainNav /></>
-      <div className="cardHeader" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-       <h4>
-        Unlock Endless Possibilities for Your Future Career
+    <div className="cardPage">    
+    <div className="mainNav"><MainNav/></div>   
+      <div className="heroSection" >      
+     <div className="cardHeader" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+      <h4>
+        Unlock Endless Possibilities<br></br> for Your Future Career
         </h4>
-        <p>InternX revolutionizes the internship search process in the dynamic IT industry.
-        <br></br> Discover your perfect internship effortlessly, while IT companies find top talent seamlessly.
-        <br></br> Explore boundless opportunities with InternX.
-        </p>
+        
       
       <div className="cardSearchBar"
       style={{
@@ -69,7 +68,7 @@ export const Card = () => {
         />      
             <button className="searchButton"><SearchIcon /></button>
           </div> 
-      
+          </div>
       </div>
       <div className="card-featured-internships">
         <h2>Featured Internship Offers</h2>
@@ -96,21 +95,15 @@ export const Card = () => {
             </div>
           ))}
       </div>
+    <Link to="/categories">
     <div className="all-job" style={{ padding: "20px", display: "block", marginTop: "20px", marginBottom: "20px", color: "#000", textDecoration: "none", fontSize: "1em", fontWeight: "bold" }}>
-        <a href="/" style={{ color: "#000", textDecoration: "none" }}>
-        All Job Offers
-        </a>
+                All Job Offers     
     </div>
+    </Link>
     
     </div>
   );
 };
-<>
-  <div className="cardPage">
-    <div className="Mnavbar-container">
-      <MainNav />
-    </div>
-  </div>
-</>;
+
 
 export default Card;

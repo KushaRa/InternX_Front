@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import "./logIn.css";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const LogIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -14,11 +17,26 @@ export const LogIn = () => {
         email,
         password,
       });
-      console.log(response.data);
+      if (response.status === 200) {
+        navigate("/Card");
+      } else {
+        toast.error("Login failed", {
+          style: { backgroundColor: "#00b4d8", color: "black" },
+        });
+      }
     } catch (error) {
-      console.error(error);
+      if (error.response && error.response.status === 400) {
+        toast.error(error.response.data, {
+          style: { backgroundColor: "#00b4d8", color: "black" },
+        }); // Display the error message from the server
+      } else {
+        toast.error("An unexpected error occurred. Please try again.", {
+          style: { backgroundColor: "#00b4d8", color: "black" },
+        });
+      }
     }
   };
+
   return (
     <>
       <div className="flex-container">
@@ -53,25 +71,26 @@ export const LogIn = () => {
                   </label>
                 </div>
                 <button type="submit" id="loginButton" className="loginButton">
-                  <Link to="/Card">Login</Link>
+                  Login
                 </button>
               </form>
-              <div class="divider-container">
-                <div class="divider"></div>
-                <div class="divider-text">or</div>
-                <div class="divider"></div>
+              <div className="divider-container">
+                <div className="divider"></div>
+                <div className="divider-text">or</div>
+                <div className="divider"></div>
               </div>
-              <button className="google-button" type="submit" id="googleButton">
+              <button className="google-button" type="button" id="googleButton">
                 <img
                   src="https://logos-world.net/wp-content/uploads/2020/09/Google-Symbol.png"
                   alt="Google logo"
                 ></img>
-                Continue with google
+                Continue with Google
               </button>
             </div>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 };

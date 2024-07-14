@@ -11,6 +11,7 @@ export const ViewCard = () =>
     <div className="VCard">
       <MainNav/>
       <JobDetailsContainer />
+     
     </div>
   );
 };

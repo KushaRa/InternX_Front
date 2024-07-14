@@ -5,10 +5,8 @@ import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import location from "../../assets/location.jpg";
-import remote from "../../assets/remote.webp";
-import time from "../../assets/time.png";
 import SearchIcon from '@mui/icons-material/Search';
+import { PopularStudent } from "../../components/PopularStudent/popularStudent";
 
 const handleListItemClick = (Categories, index) => {};
 export const Categories = () => {
@@ -106,24 +104,7 @@ export const Categories = () => {
         </div>
         <div className="flex-box4">
           <div className="category_cards">
-            {Array(6)
-              .fill()
-              .map((_, index) => (
-                <div className="category_card" key={index}>
-                  <div className="ctgcard-header">
-                    <h3>Delivergate (Private) Limited</h3>
-                    <p>Front-End Developer Intern</p>
-                  </div>
-                  <div className="ctgcard-details">
-                    <img className="locationlogo " src={location} alt="Logo" />
-                    <span>Colombo</span>
-                    <img className="remotelogo" src={remote} alt="Logo" />
-                    <span>Remote</span>
-                    <img className="timelogo" src={time} alt="Logo" />
-                    <span>6 Months</span>
-                  </div>
-                </div>
-              ))}
+           <PopularStudent/>
           </div>
         </div>
       </div>
