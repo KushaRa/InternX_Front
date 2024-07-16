@@ -41,12 +41,12 @@ export const LogIn = () => {
     <>
       <div className="flex-container">
         <div className="flex-box01">
-          <div className="logo2">logo</div>
+        <div className="logo">InternX</div>
           <div className="welcome">Welcome to</div>
           <div className="internx">InternX Community</div>
         </div>
 
-        <div className="flex-box2">
+        <div className="flex-box02">
           <div className="login">
             <h5>Login to your account</h5>
             <div>
