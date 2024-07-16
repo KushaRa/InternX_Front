@@ -94,7 +94,7 @@ body {
   background-color: #75e4fa57;
   box-sizing: border-box;
   margin-left: 0px;
-  margin-top: 95px;
+  margin-top: 8px;
 }
 
 .cardSearchBar input {
@@ -175,4 +175,13 @@ body {
   background-color: #2cd4e7bc;
   padding: 15px;
   margin-top: auto;
+}
+
+.searchButton {
+  
+  padding-top: -50px;
+  padding-bottom: -60px;
+ 
+
+  
 }
