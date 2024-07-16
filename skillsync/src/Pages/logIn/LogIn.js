@@ -50,20 +50,21 @@ export const LogIn = () => {
             <h5>Login to your account</h5>
             <div>
               <form onSubmit={handleLogin} className="input-box1">
-                <input style={{width:"280px", height:"20px"}}
+              <div className="place"> <input 
                   type="text"
                   placeholder="Email"
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <input style={{width:"280px", height:"20px", marginRight:"10px"}}
+                </div>
+                <div className="place"><input 
                   type="password"
                   placeholder="Your Password"
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                />
+                /></div>
                 <div className="terms">
                   <label>
                     <input type="checkbox" />I agree with InternX Terms of
