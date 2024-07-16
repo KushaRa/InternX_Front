@@ -40,39 +40,38 @@ const Signup = () => {
       {/* ToastContainer component to display notifications */}
       <div className="flex-Container">
         <div className="flex-box01">
-          <div className="logo">logo</div>
+          <div className="logo">InternX</div>
           <div className="welcome">Welcome to</div>
           <div className="internx">InternX Community</div>
         </div>
+
+        
         <div className="flex-box02">
           <div className="createAcc">
             <h5>Create an InternX account</h5>
             <form onSubmit={handleSignup} className="input-box1">
-              <input style={{width:"280px", height:"20px"}}
+              <div className="place"><input 
                 type="text"
                 placeholder="Full Name"
                 value={fullname}
                 onChange={(e) => setFullname(e.target.value)}
                 required
-              />
-
-
-              <input  style={{width:"280px", height:"20px"}}
+              /></div>
+              <div className="place"><input  
                 type="text"
                 placeholder="Email"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-              />
-
-              <input style={{width:"280px", height:"20px"}}
-
+              /></div> 
+              <div className="place">
+                <input 
                 type="password"
                 placeholder="Your Password"
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-              />
+              /></div>
               <div className="terms">
                 <label>
                   <input type="checkbox" className="checkbox1" />I agree with
@@ -88,6 +87,7 @@ const Signup = () => {
               <div className="divider-text">or</div>
               <div className="divider"></div>
             </div>
+            <div className='already'>
             <Link to="/login" className="login-link">
               Already have an account? Log in
             </Link>
@@ -98,6 +98,7 @@ const Signup = () => {
               ></img>
               Continue with Google
             </button>
+            </div>
           </div>
         </div>
       </div>
