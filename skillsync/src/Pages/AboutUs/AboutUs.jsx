@@ -1,19 +1,19 @@
 import React from 'react'
 import './AboutUs.css'
-import member1 from '../../assets/Ravindu.png'
-import member3 from '../../assets/Lakshika.png'
-import member2 from '../../assets/Nethmini.png'
-import member4 from '../../assets/Kushana.jpg'
+import member1 from '../../assets/Ravindu.png';
+import member3 from '../../assets/Lakshika.png';
+import member2 from '../../assets/Nethmini.png';
+import member4 from '../../assets/Kushana.jpg';
 import { BsLinkedin } from "react-icons/bs";
 import { MdOutlineMail } from "react-icons/md";
-import MainNav from "../../components/MainNav/MainNav";
+import MainNav from '../../components/MainNav/MainNav';
 
 const AboutUs = () => {
   return (
     <div className="about">
       
       <div className="intro">
-      <div><MainNav/></div>
+      <div className='nav'><MainNav></MainNav></div>
        <div className='vissioMission'>
         <div className='Mission'><h3>Our Mission </h3>
         <p>

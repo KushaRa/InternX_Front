@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./CreateAcc.css";
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom"; // Use useNavigate instead of useHistory
+import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "./CreateAcc.css";
 
 const Signup = () => {
   const navigate = useNavigate(); // Initialize useNavigate
@@ -36,42 +36,45 @@ const Signup = () => {
 
   return (
     <>
-      <ToastContainer /> {/* ToastContainer component to display notifications */}
+      <ToastContainer />
+      {/* ToastContainer component to display notifications */}
       <div className="flex-Container">
         <div className="flex-box01" style={{width:"750px"}}> 
           <div className="logo">logo</div>
+        <div className="flex-box01">
+          <div className="logo">InternX</div>
+
           <div className="welcome">Welcome to</div>
           <div className="internx">InternX Community</div>
         </div>
+
+        
         <div className="flex-box02">
           <div className="createAcc">
             <h5 style={{marginLeft:"10px", marginTop:"50px"}}>Create a InternX account</h5>
             <form onSubmit={handleSignup} className="input-box1">
-              <input style={{width:"280px", height:"20px"}}
+              <div className="place"><input 
                 type="text"
                 placeholder="Full Name"
                 value={fullname}
                 onChange={(e) => setFullname(e.target.value)}
                 required
-              />
-
-
-              <input  style={{width:"280px", height:"20px"}}
+              /></div>
+              <div className="place"><input  
                 type="text"
                 placeholder="Email"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-              />
-
-              <input style={{width:"280px", height:"20px"}}
-
+              /></div> 
+              <div className="place">
+                <input 
                 type="password"
                 placeholder="Your Password"
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-              />
+              /></div>
               <div className="terms">
                 <label>
                   <input type="checkbox" className="checkbox1" />I agree with InternX Terms of
@@ -87,6 +90,7 @@ const Signup = () => {
               <div className="divider-text">or</div>
               <div className="divider"></div>
             </div>
+            <div className='already'>
             <Link to="/login" className="login-link">
               Already have an account? Log in
             </Link>
@@ -97,6 +101,7 @@ const Signup = () => {
               ></img>
               Continue with Google
             </button>
+            </div>
           </div>
         </div>
       </div>
