@@ -5,13 +5,16 @@
   width: 100%;
   background-color: #f8f9fa;
 }
-.flex-box1 {
+.flex-box01 {
   width: 50%;
   height: 100vh;
   background-color: black;
-  padding: 0;
-  margin: 0;
-  border: none;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
 }
 
 .logo2 {
