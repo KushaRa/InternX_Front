@@ -50,7 +50,7 @@ export const LogIn = () => {
             <h5>Login to your account</h5>
             <div>
               <form onSubmit={handleLogin} className="input-box1">
-                <input style={{width:"280px", height:"20px"}}
+                <input style={{width:"300px", height:"20px"}}
                   type="text"
                   placeholder="Email"
                   required
