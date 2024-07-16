@@ -39,8 +39,11 @@ const Signup = () => {
       <ToastContainer />
       {/* ToastContainer component to display notifications */}
       <div className="flex-Container">
+        <div className="flex-box01" style={{width:"750px"}}> 
+          <div className="logo">logo</div>
         <div className="flex-box01">
           <div className="logo">InternX</div>
+
           <div className="welcome">Welcome to</div>
           <div className="internx">InternX Community</div>
         </div>
@@ -48,7 +51,7 @@ const Signup = () => {
         
         <div className="flex-box02">
           <div className="createAcc">
-            <h5>Create an InternX account</h5>
+            <h5 style={{marginLeft:"10px", marginTop:"50px"}}>Create a InternX account</h5>
             <form onSubmit={handleSignup} className="input-box1">
               <div className="place"><input 
                 type="text"
@@ -74,8 +77,8 @@ const Signup = () => {
               /></div>
               <div className="terms">
                 <label>
-                  <input type="checkbox" className="checkbox1" />I agree with
-                  InternX Terms of Services and Privacy Policy.
+                  <input type="checkbox" className="checkbox1" />I agree with InternX Terms of
+                  Services and Privacy Policy.
                 </label>
               </div>
               <button type="submit" id="signupButton" className="signupButton">
