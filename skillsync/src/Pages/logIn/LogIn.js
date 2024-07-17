@@ -40,30 +40,32 @@ export const LogIn = () => {
   return (
     <>
       <div className="flex-container">
-        <div className="flex-box1">
-          <div className="logo2">logo</div>
+        <div className="flex-box01">
+        <div className="logo">InternX</div>
           <div className="welcome">Welcome to</div>
           <div className="internx">InternX Community</div>
         </div>
-        <div className="flex-box2">
+
+        <div className="flex-box02">
           <div className="login">
             <h5>Login to your account</h5>
             <div>
               <form onSubmit={handleLogin} className="input-box1">
-                <input style={{width:"280px", height:"20px"}}
+              <div className="place"> <input 
                   type="text"
                   placeholder="Email"
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <input style={{width:"280px", height:"20px", marginRight:"10px"}}
+                </div>
+                <div className="place"><input 
                   type="password"
                   placeholder="Your Password"
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                />
+                /></div>
                 <div className="terms">
                   <label>
                     <input type="checkbox" />I agree with InternX Terms of
