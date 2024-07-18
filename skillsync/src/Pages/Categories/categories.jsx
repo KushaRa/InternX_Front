@@ -9,21 +9,18 @@ import SearchIcon from '@mui/icons-material/Search';
 import { PopularStudent } from "../../components/PopularStudent/popularStudent";
 
 const handleListItemClick = (Categories, index) => {};
-
 export const Categories = () => {
   return (
     <div className="category_page">
       <MainNav />
-      <div
-        className="cardSearchBar"
+      <div className="cardSearchBar"
         style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           width: "40%",
           marginTop: "20px"
-        }}
-      >
+        }}>
         <input 
           type="text" 
           placeholder="Type Here.." 
@@ -40,7 +37,7 @@ export const Categories = () => {
             marginLeft: "50px",
             marginTop: "20px"
           }}
-        />
+        />  
         <button className="searchButton"><SearchIcon /></button>
       </div>
       <div className="flex-container">
@@ -56,23 +53,50 @@ export const Categories = () => {
             }}
           >
             <List component="nav" aria-label="secondary mailbox folder">
-              <ListItemButton onClick={(event) => handleListItemClick(event, 1)}>
-                <ListItemText className="textcategory" primary="Software Development" />
+              <ListItemButton
+                onClick={(event) => handleListItemClick(event, 1)}
+              >
+                <ListItemText
+                  className="textcategory"
+                  primary="Software Development"
+                />
               </ListItemButton>
-              <ListItemButton onClick={(event) => handleListItemClick(event, 2)}>
-                <ListItemText className="textcategory" primary="Data Sciences and Analytics" />
+              <ListItemButton
+                onClick={(event) => handleListItemClick(event, 2)}
+              >
+                <ListItemText
+                  className="textcategory"
+                  primary="Data Sciences and Analytics"
+                />
               </ListItemButton>
-              <ListItemButton onClick={(event) => handleListItemClick(event, 3)}>
-                <ListItemText className="textcategory" primary="Cyber Security" />
+              <ListItemButton
+                onClick={(event) => handleListItemClick(event, 3)}
+              >
+                <ListItemText
+                  className="textcategory"
+                  primary="Cyber Security"
+                />
               </ListItemButton>
-              <ListItemButton onClick={(event) => handleListItemClick(event, 4)}>
-                <ListItemText className="textcategory" primary="IT Support and Networking" />
+              <ListItemButton
+                onClick={(event) => handleListItemClick(event, 4)}
+              >
+                <ListItemText
+                  className="textcategory"
+                  primary="It Support and Networking"
+                />
               </ListItemButton>
-              <ListItemButton onClick={(event) => handleListItemClick(event, 5)}>
+              <ListItemButton
+                onClick={(event) => handleListItemClick(event, 5)}
+              >
                 <ListItemText className="textcategory" primary="UI/UX Design" />
               </ListItemButton>
-              <ListItemButton onClick={(event) => handleListItemClick(event, 6)}>
-                <ListItemText className="textcategory" primary="Cloud Computing" />
+              <ListItemButton
+                onClick={(event) => handleListItemClick(event, 6)}
+              >
+                <ListItemText
+                  className="textcategory"
+                  primary="Cloud Computing"
+                />
               </ListItemButton>
             </List>
           </Box>

@@ -1,25 +1,21 @@
-.category_page {
-  background-image: url("../../assets/background.png");
-  background-size: cover;
-  height: 300vh;
+.mainPart{
+   background-size: cover;
+  min-height: 100vh; /* Ensure the page takes up full viewport height */
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center contents horizontally */
+}
+.category_page {
+  background-image: url("../../assets/background.png");
+  align-items: center; /* Center items horizontally */
 }
 
 .flex-container {
   display: flex;
- column-gap: 20px;
-  align-items: center;
-  align-items: flex-start; /* Align items at the start */
-
-  /* Optional: Set a max width for the container */
-   /* Add margin for spacing */
- 
-}
-.flex-box3{
-  width:600px;
-  align-items: center;
+  padding: 10px;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Ensure it takes up full width */
+  flex: 1; /* Allow it to grow to fill the container */
 }
 
 .textcategory {
@@ -35,7 +31,95 @@
     width: 100%;
   }
 
-  .category_card {
-    width: 90%; /* Full width for cards on smaller screens */
-  }
+.category_card {
+  width: 500px;
+  height: auto; /* Adjusted to fit content */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(2, 8, 8, 0.1);
+  margin: 10px;
+  cursor: pointer;
+  background-color: #00B4D8; /* Blue background color */
+  padding: 20px; /* Added padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ctgcard-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.ctgcard-header h3 {
+  font-size: 16px;
+  margin: 0;
+  color: white; /* White text color */
+}
+
+.ctgcard-header p {
+  font-size: 14px;
+  margin: 0;
+  color: white; /* White text color */
+}
+
+.ctgcard-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white; /* White text color */
+}
+
+.ctgcard-details span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-details img {
+  width: 16px;
+  height: 16px;
+}
+
+.locationlogo {
+  width: 12px;
+  height: 18.5px;
+  padding: -10px;
+  margin-right: 2px;
+}
+
+.remotelogo {
+  width: 20px;
+  height: 20px;
+  padding: -10px;
+  margin-right: -5px;
+}
+
+.timelogo {
+  width: 15px;
+  height: 18px;
+  padding: -10px;
+  margin-right: -5px;
+}
+
+.locationlogo {
+  width: 12px;
+  height: 18.5px;
+  padding: -10px;
+  margin-right: 2px;
+}
+
+.remotelogo {
+  width: 20px;
+  height: 20px;
+  padding: -10px;
+  margin-right: -5px;
+}
+
+.timelogo {
+  width: 15px;
+  height: 18px;
+  padding: -10px;
+  margin-right: -5px;
+}
 }
