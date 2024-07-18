@@ -1,125 +1,96 @@
-.mainPart{
-   background-size: cover;
-  min-height: 100vh; /* Ensure the page takes up full viewport height */
-  display: flex;
-  flex-direction: column;
-}
 .category_page {
   background-image: url("../../assets/background.png");
-  align-items: center; /* Center items horizontally */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:auto;
+  width: 100%;
+  
 }
 
 .flex-container {
   display: flex;
   padding: 10px;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */ 
   width: 100%; /* Ensure it takes up full width */
   flex: 1; /* Allow it to grow to fill the container */
+  flex-wrap: wrap; /* Allow items to wrap if they overflow */
 }
 
 .textcategory {
-  color: white;
+  color: rgb(0, 0, 0);
+}
+.cardSearchBar{
+  align-items: center;
+  margin-left: 450px;
 }
 
+.flex-box3 {
+  background-color: rgba(0, 180, 216, 0.3); /* Transparent blue background color */
+  margin-right: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 20px;
+  width: 100%;
+  max-width: 360px; /* Ensure it doesn't get too wide */
+  text-align: center; /* Center text inside the box */
+}
 
 
 @media (max-width: 768px) {
   .flex-container {
     flex-direction: column; /* Stack vertically on smaller screens */
     align-items: center;
-    width: 100%;
   }
 
-.category_card {
-  width: 500px;
-  height: auto; /* Adjusted to fit content */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(2, 8, 8, 0.1);
-  margin: 10px;
-  cursor: pointer;
-  background-color: #00B4D8; /* Blue background color */
-  padding: 20px; /* Added padding */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+  .category_card {
+    width: 100%; /* Take full width on smaller screens */
+    max-width: 500px; /* Maximum width */
+    height: auto; /* Adjust to fit content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(2, 8, 8, 0.1); /* Subtle shadow */
+    margin: 10px; /* Space around the card */
+    background-color: rgba(0, 180, 216, 0.3); /* Blue background color */
+    padding: 20px; /* Add padding inside the card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-.ctgcard-header {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
+  .ctgcard-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
 
-.ctgcard-header h3 {
-  font-size: 16px;
-  margin: 0;
-  color: white; /* White text color */
-}
+  .ctgcard-header h3 {
+    font-size: 16px;
+    margin: 0;
+    color: white; /* White text color */
+  }
 
-.ctgcard-header p {
-  font-size: 14px;
-  margin: 0;
-  color: white; /* White text color */
-}
+  .ctgcard-header p {
+    font-size: 14px;
+    margin: 0;
+    color: white; /* White text color */
+  }
 
-.ctgcard-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white; /* White text color */
-}
+  .ctgcard-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white; /* White text color */
+  }
 
-.ctgcard-details span {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
+  .ctgcard-details span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
 
-.card-details img {
-  width: 16px;
-  height: 16px;
-}
-
-.locationlogo {
-  width: 12px;
-  height: 18.5px;
-  padding: -10px;
-  margin-right: 2px;
-}
-
-.remotelogo {
-  width: 20px;
-  height: 20px;
-  padding: -10px;
-  margin-right: -5px;
-}
-
-.timelogo {
-  width: 15px;
-  height: 18px;
-  padding: -10px;
-  margin-right: -5px;
-}
-
-.locationlogo {
-  width: 12px;
-  height: 18.5px;
-  padding: -10px;
-  margin-right: 2px;
-}
-
-.remotelogo {
-  width: 20px;
-  height: 20px;
-  padding: -10px;
-  margin-right: -5px;
-}
-
-.timelogo {
-  width: 15px;
-  height: 18px;
-  padding: -10px;
-  margin-right: -5px;
-}
+  .card-details img {
+    width: 16px;
+    height: 16px;
+  }
 }

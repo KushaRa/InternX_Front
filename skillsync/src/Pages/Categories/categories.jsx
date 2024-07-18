@@ -58,7 +58,7 @@ export const Categories = () => {
               >
                 <ListItemText
                   className="textcategory"
-                  primary="Software Development"
+                  primary="Mobile Developer"
                 />
               </ListItemButton>
               <ListItemButton
@@ -66,7 +66,7 @@ export const Categories = () => {
               >
                 <ListItemText
                   className="textcategory"
-                  primary="Data Sciences and Analytics"
+                  primary="Data Engineer"
                 />
               </ListItemButton>
               <ListItemButton
@@ -74,7 +74,7 @@ export const Categories = () => {
               >
                 <ListItemText
                   className="textcategory"
-                  primary="Cyber Security"
+                  primary="Security Engineer"
                 />
               </ListItemButton>
               <ListItemButton
@@ -95,7 +95,47 @@ export const Categories = () => {
               >
                 <ListItemText
                   className="textcategory"
-                  primary="Cloud Computing"
+                  primary="Site Reliability Engineer (SRE)"
+                />
+              </ListItemButton>
+              <ListItemButton
+                onClick={(event) => handleListItemClick(event, 7)}
+              >
+                <ListItemText
+                  className="textcategory"
+                  primary="Frontend Developmer"
+                />
+              </ListItemButton>
+              <ListItemButton
+                onClick={(event) => handleListItemClick(event, 8)}
+              >
+                <ListItemText
+                  className="textcategory"
+                  primary="Quality Assurance Engineer"
+                />
+              </ListItemButton>
+              <ListItemButton
+                onClick={(event) => handleListItemClick(event, 9)}
+              >
+                <ListItemText
+                  className="textcategory"
+                  primary="Machine Learning Engineer"
+                />
+              </ListItemButton>
+              <ListItemButton
+                onClick={(event) => handleListItemClick(event, 10)}
+              >
+                <ListItemText
+                  className="textcategory"
+                  primary="Systems Architect"
+                />
+              </ListItemButton>
+              <ListItemButton
+                onClick={(event) => handleListItemClick(event, 11)}
+              >
+                <ListItemText
+                  className="textcategory"
+                  primary="Game Developer"
                 />
               </ListItemButton>
             </List>
