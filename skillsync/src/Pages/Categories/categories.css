@@ -1,41 +1,40 @@
 .category_page {
   background-image: url("../../assets/background.png");
   background-size: cover;
-  height: 300vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center contents horizontally */
+  background-position: center;
+  background-repeat: no-repeat;
+  height:auto;
+  width: 100%;
+  
 }
 
 .flex-container {
   display: flex;
- column-gap: 20px;
-  align-items: center;
-  align-items: flex-start; /* Align items at the start */
-
-  /* Optional: Set a max width for the container */
-   /* Add margin for spacing */
- 
-}
-.flex-box3{
-  width:600px;
-  align-items: center;
+  padding: 10px;
+  justify-content: center; /* Center items horizontally */ 
+  width: 100%; /* Ensure it takes up full width */
+  flex: 1; /* Allow it to grow to fill the container */
+  flex-wrap: wrap; /* Allow items to wrap if they overflow */
 }
 
 .textcategory {
-  color: white;
+  color: rgb(0, 0, 0);
+}
+.cardSearchBar{
+  align-items: center;
+  margin-left: 450px;
+}
+
+.flex-box3 {
+  background-color: rgba(0, 180, 216, 0.3); 
+  margin-right: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 20px;
+  width: 100%;
+  max-width: 360px; 
+  text-align: center; 
 }
 
 
-
-@media (max-width: 768px) {
-  .flex-container {
-    flex-direction: column; /* Stack vertically on smaller screens */
-    align-items: center;
-    width: 100%;
-  }
-
-  .category_card {
-    width: 90%; /* Full width for cards on smaller screens */
-  }
-}
