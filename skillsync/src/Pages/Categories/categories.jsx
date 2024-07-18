@@ -7,6 +7,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import SearchIcon from '@mui/icons-material/Search';
 import { PopularStudent } from "../../components/PopularStudent/popularStudent";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const handleListItemClick = (Categories, index) => {};
 export const Categories = () => {
@@ -42,9 +43,10 @@ export const Categories = () => {
       </div>
       <div className="flex-container">
         <div className="flex-box3">
-          <h1 style={{ color: "white", fontSize: "20px", textAlign: "center" }}>
-            Category
-          </h1>
+        <h1 style={{ color: "white", fontSize: "20px", textAlign: "left", display: "flex", alignItems: "center" }}>
+         Choose a Category <div><ArrowForwardIcon style={{ marginTop: '12px', marginLeft:'5px' }}/></div>
+        </h1>
+
           <Box
             sx={{
               width: "100%",
@@ -88,7 +90,7 @@ export const Categories = () => {
               <ListItemButton
                 onClick={(event) => handleListItemClick(event, 5)}
               >
-                <ListItemText className="textcategory" primary="UI/UX Design" />
+                <ListItemText className="textcategory" primary="UI/UX Designer" />
               </ListItemButton>
               <ListItemButton
                 onClick={(event) => handleListItemClick(event, 6)}

@@ -26,71 +26,15 @@
 }
 
 .flex-box3 {
-  background-color: rgba(0, 180, 216, 0.3); /* Transparent blue background color */
+  background-color: rgba(0, 180, 216, 0.3); 
   margin-right: 30px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   margin: 20px;
   width: 100%;
-  max-width: 360px; /* Ensure it doesn't get too wide */
-  text-align: center; /* Center text inside the box */
+  max-width: 360px; 
+  text-align: center; 
 }
 
 
-@media (max-width: 768px) {
-  .flex-container {
-    flex-direction: column; /* Stack vertically on smaller screens */
-    align-items: center;
-  }
-
-  .category_card {
-    width: 100%; /* Take full width on smaller screens */
-    max-width: 500px; /* Maximum width */
-    height: auto; /* Adjust to fit content */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(2, 8, 8, 0.1); /* Subtle shadow */
-    margin: 10px; /* Space around the card */
-    background-color: rgba(0, 180, 216, 0.3); /* Blue background color */
-    padding: 20px; /* Add padding inside the card */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .ctgcard-header {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-  }
-
-  .ctgcard-header h3 {
-    font-size: 16px;
-    margin: 0;
-    color: white; /* White text color */
-  }
-
-  .ctgcard-header p {
-    font-size: 14px;
-    margin: 0;
-    color: white; /* White text color */
-  }
-
-  .ctgcard-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white; /* White text color */
-  }
-
-  .ctgcard-details span {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-
-  .card-details img {
-    width: 16px;
-    height: 16px;
-  }
-}
