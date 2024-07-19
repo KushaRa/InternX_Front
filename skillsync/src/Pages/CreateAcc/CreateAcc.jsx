@@ -35,12 +35,13 @@ const Signup = () => {
   };
 
   return (
-    <>
-      <ToastContainer />
-      {/* ToastContainer component to display notifications */}
+     <>
+       <ToastContainer />
+       {/* ToastContainer component to display notifications */}
       <div className="flex-Container">
         <div className="flex-box01" style={{width:"750px"}}> 
           <div className="logo">logo</div>
+          </div>
         <div className="flex-box01">
           <div className="logo">InternX</div>
 
@@ -105,8 +106,8 @@ const Signup = () => {
           </div>
         </div>
       </div>
-    </>
-  );
-};
+   </> 
+   );
+ }; 
 
 export default Signup;
