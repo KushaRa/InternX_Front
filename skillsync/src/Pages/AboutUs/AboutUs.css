@@ -38,11 +38,11 @@
  }
  
  .Vission, .Mission {
-    margin-top: 10px;
+    margin-top: -40px;
  }
  
  .vissioMission h3 {
-    color: #005582;
+    color: #50b4eb;
     text-align: center;
     font-size: 2rem;
     font-weight: 800;
@@ -51,19 +51,26 @@
  
  .vissioMission p {
     text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    
+
  }
  
  .whyUs {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: 45px;
+    margin-top: -40px;
     align-items: center;
     gap: 20px;
+    padding-top: -1px;
+    /* margin-bottom: 1rem; */
  }
  
  .whyUs h3 {
-    color: #005582;
+    color: #50b4eb;
+    /* color:; */
     text-align: center;
     font-size: 2rem;
     font-weight: 800;
@@ -72,8 +79,8 @@
  
  .whyUs p {
     text-align: center;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 250px;
+    padding-right: 250px;
     margin-top: 0px;
  }
  
