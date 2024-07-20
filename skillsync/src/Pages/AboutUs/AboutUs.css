@@ -1,162 +1,162 @@
 .intro {
-    height: 107vh;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: white;
-    background-image: url('../../assets/landingpage.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    overflow: hidden;
- }
- .nav{
-   z-index: 1; /* Ensure it is higher than the ::before layer */
+   height: 107vh;
+   margin: 0;
+   font-family: Arial, sans-serif;
+   color: white;
+   background-image: url('../../assets/landingpage.png');
+   background-size: cover;
+   background-position: center;
    position: relative;
- }
- .intro::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color:rgba(3, 91, 139, 0.05); /* Adjust the color and transparency */
-    z-index: 0; 
- }
- 
- .vissioMission {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-top: 40px;
-    align-items: center;
-    gap: 20px;
- }
- 
- .vissioMission .Mission, .vissioMission .Vission {
-    width: 45%;
- }
- 
- .Vission, .Mission {
-    margin-top: -40px;
- }
- 
- .vissioMission h3 {
-    color: #50b4eb;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
- }
- 
- .vissioMission p {
-    text-align: center;
-    padding-bottom: 20px;
-    margin-bottom: 10px;
-    
+   overflow: hidden;
+}
+.nav{
+  z-index: 1; /* Ensure it is higher than the ::before layer */
+  position: relative;
+}
+.intro::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color:rgba(3, 91, 139, 0.05); /* Adjust the color and transparency */
+   z-index: 0; 
+}
 
- }
- 
- .whyUs {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-top: -40px;
-    align-items: center;
-    gap: 20px;
-    padding-top: -1px;
-    /* margin-bottom: 1rem; */
- }
- 
- .whyUs h3 {
-    color: #50b4eb;
-    /* color:; */
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
- }
- 
- .whyUs p {
-    text-align: center;
-    padding-left: 250px;
-    padding-right: 250px;
-    margin-top: 0px;
- }
- 
- .topic {
-    margin-top: 1px;
-    color: #005582;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
- }
- 
- .topic h1 {
-    font-size: 3rem;
- }
- 
- .team {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
- }
- 
- .cardA {
-    margin: 1rem;
-    text-align: center;
- }
- 
- .cardA img {
-    width: 28vh;
-    border-radius: 50%;
- }
- 
- .cardA p {
-    margin-top: 0.8rem;
-    font-size: 1.2rem;
- }
- 
- .social-media {
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
- }
- 
- .social-media svg {
-    margin: 0 0.5rem;
-    cursor: pointer;
-    color: #bfbfbf; /* LinkedIn blue */
- }
- 
- .social-media svg:hover {
-    color: #00090e; /* Darker LinkedIn blue */
- }
- 
- .paraz {
-    margin-top: 0rem;
-    text-align: center;
-    background-color: #005582;
-    color: rgb(225, 225, 252);
- }
- 
- .paraz h2, .paraz h3 {
-    padding-top: 2rem;
-    margin-bottom: 1rem;
-    color: aliceblue;
- }
- 
- .paraz p {
-    margin: 0 auto;
-    width: 60%;
-    line-height: 1.6;
-    text-align: justify;
- }
- @media (max-width: 1024px) {
-    .intro {
-       height:auto;
-       background-image: url('../../assets/landingpage.png'); /* Remove background image for small screens */
-    }
- 
- }
+.vissioMission {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   margin-top: 70px;
+   align-items: center;
+   gap: 20px;
+}
+
+.vissioMission .Mission, .vissioMission .Vission {
+   width: 45%;
+}
+
+.Vission, .Mission {
+   margin-top: -40px;
+}
+
+.vissioMission h3 {
+   color: #50b4eb;
+   text-align: center;
+   font-size: 2rem;
+   font-weight: 800;
+   margin-bottom: 1rem;
+}
+
+.vissioMission p {
+   text-align: center;
+   padding-bottom: 20px;
+   margin-bottom: 10px;
+   
+
+}
+
+.whyUs {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   margin-top: -40px;
+   align-items: center;
+   gap: 20px;
+   padding-top: -1px;
+   /* margin-bottom: 1rem; */
+}
+
+.whyUs h3 {
+   color: #50b4eb;
+   /* color:; */
+   text-align: center;
+   font-size: 2rem;
+   font-weight: 800;
+   margin-bottom: 1rem;
+}
+
+.whyUs p {
+   text-align: center;
+   padding-left: 250px;
+   padding-right: 250px;
+   margin-top: 0px;
+}
+
+.topic {
+   margin-top: 1px;
+   color: #005582;
+   text-align: center;
+   font-size: 2rem;
+   font-weight: 800;
+   margin-bottom: 1rem;
+}
+
+.topic h1 {
+   font-size: 3rem;
+}
+
+.team {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 2rem;
+}
+
+.cardA {
+   margin: 1rem;
+   text-align: center;
+}
+
+.cardA img {
+   width: 28vh;
+   border-radius: 50%;
+}
+
+.cardA p {
+   margin-top: 0.8rem;
+   font-size: 1.2rem;
+}
+
+.social-media {
+   margin-top: 0.5rem;
+   font-size: 1.5rem;
+}
+
+.social-media svg {
+   margin: 0 0.5rem;
+   cursor: pointer;
+   color: #bfbfbf; /* LinkedIn blue */
+}
+
+.social-media svg:hover {
+   color: #00090e; /* Darker LinkedIn blue */
+}
+
+.paraz {
+   margin-top: 0rem;
+   text-align: center;
+   background-color: #005582;
+   color: rgb(225, 225, 252);
+}
+
+.paraz h2, .paraz h3 {
+   padding-top: 2rem;
+   margin-bottom: 1rem;
+   color: aliceblue;
+}
+
+.paraz p {
+   margin: 0 auto;
+   width: 60%;
+   line-height: 1.6;
+   text-align: justify;
+}
+@media (max-width: 1024px) {
+   .intro {
+      height:auto;
+      background-image: url('../../assets/landingpage.png'); /* Remove background image for small screens */
+   }
+
+}

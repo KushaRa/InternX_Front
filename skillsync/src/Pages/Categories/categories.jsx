@@ -44,7 +44,7 @@ export const Categories = () => {
       <div className="flex-container">
         <div className="flex-box3">
         <h1 style={{ color: "white", fontSize: "20px", textAlign: "left", display: "flex", alignItems: "center" }}>
-         Choose a Category <div><ArrowForwardIcon style={{ marginTop: '12px', marginLeft:'5px' }}/></div>
+         Select a Category <div><ArrowForwardIcon style={{ marginTop: '12px', marginLeft:'5px' }}/></div>
         </h1>
 
           <Box
