@@ -1,5 +1,6 @@
 .select-user {
   display: flex;
+  padding: 0px;
   flex-direction: column;
   height: 100vh;
   background-image: url("../../assets/landingpage.png");

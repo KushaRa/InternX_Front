@@ -38,8 +38,8 @@ const Signup = () => {
      <>
        <ToastContainer />
        {/* ToastContainer component to display notifications */}
-      <div className="flex-Container">
-        <div className="flex-box01" style={{width:"750px"}}> 
+      <div className="flex-Container" style={{padding: "0px"}}>
+        <div className="flex-box01" style={{width: "800px"}}> 
           <div className="logo">logo</div>
           </div>
         <div className="flex-box01">
