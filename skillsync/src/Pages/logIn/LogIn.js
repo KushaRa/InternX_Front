@@ -39,8 +39,8 @@ export const LogIn = () => {
 
   return (
     <>
-      <div className="flex-container">
-        <div className="flex-box01">
+      <div className="flex-container" style={{ border: 'none', padding: '0px' }}>
+        <div className="flex-box01" style={{width: '60%'}}>
         <div className="logo">InternX</div>
           <div className="welcome">Welcome to</div>
           <div className="internx">InternX Community</div>
