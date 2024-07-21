@@ -35,24 +35,26 @@ const Signup = () => {
   };
 
   return (
-     <>
-       <ToastContainer />
-       {/* ToastContainer component to display notifications */}
-      <div className="flex-Container" style={{padding: "0px"}}>
-        <div className="flex-box01" style={{width: "800px"}}> 
-          <div className="logo">logo</div>
-          </div>
-        <div className="flex-box01">
+    <>
+      <ToastContainer />
+      {/* ToastContainer component to display notifications */}
+      <div
+        className="flex-Container"
+        style={{ border: "none", padding: "0px", display: "fixed" }}
+      >
+        <div className="flex-box01" style={{ width: "60%" }}>
           <div className="logo">InternX</div>
           <div className="welcome">Welcome to</div>
           <div className="internx">InternX Community</div>
         </div>
         <div className="flex-box02">
           <div className="createAcc">
-            <h5 style={{ marginLeft: "10px", marginTop: "50px" }}>Create an InternX account</h5>
+            <h5 style={{ marginLeft: "10px", marginTop: "50px" }}>
+              Create an InternX account
+            </h5>
             <form onSubmit={handleSignup} className="input-box1">
               <div className="place">
-                <input 
+                <input
                   type="text"
                   placeholder="Full Name"
                   value={fullname}
@@ -61,7 +63,7 @@ const Signup = () => {
                 />
               </div>
               <div className="place">
-                <input 
+                <input
                   type="text"
                   placeholder="Email"
                   required
@@ -70,7 +72,7 @@ const Signup = () => {
                 />
               </div>
               <div className="place">
-                <input 
+                <input
                   type="password"
                   placeholder="Your Password"
                   required
@@ -80,7 +82,8 @@ const Signup = () => {
               </div>
               <div className="terms">
                 <label>
-                  <input type="checkbox" className="checkbox1" />I agree with InternX Terms of Services and Privacy Policy.
+                  <input type="checkbox" className="checkbox1" />I agree with
+                  InternX Terms of Services and Privacy Policy.
                 </label>
               </div>
               <button type="submit" id="signupButton" className="signupButton">
@@ -107,8 +110,8 @@ const Signup = () => {
           </div>
         </div>
       </div>
-   </> 
-   );
- }; 
+    </>
+  );
+};
 
 export default Signup;
