@@ -14,13 +14,13 @@ export default function Lnavbar() {
             <Link to='/'>InternX</Link>
           </div>
           <div className="menu" 
-          onClick={()=>setMenu(menuOpen)          }>
+          onClick={()=>setMenu(!menuOpen)}>
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <div className ="navUl">
-          <ul className={menuOpen ? "open": ""}>
+          
+          <ul className={`navUl ${menuOpen ? "open" : ""}`}>
 
             <li>
               <Link to="/card">Home</Link>
@@ -39,7 +39,7 @@ export default function Lnavbar() {
             </Link>
           </ul>
           </div>
-        </div>
+        
       </nav>
     </>
   );
