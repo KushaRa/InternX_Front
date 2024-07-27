@@ -7,7 +7,7 @@ const SelectUser = () => {
     <div className="select-user">
           <div className="select-user-content">
         <div className="job-seekers">
-          <h2>For companies</h2>
+          <h2>For Companies</h2>
           <p>Find valuable hands-on experience to boost your career.</p>
          <button className="login-buttonSC"><Link to="/createacc">Sign up</Link></button>
           <p>

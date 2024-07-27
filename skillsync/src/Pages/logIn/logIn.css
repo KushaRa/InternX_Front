@@ -106,6 +106,8 @@
   flex-grow: 2;
   height: 1px;
   background-color: #ccc;
+  margin-top:10px ;
+  margin-bottom: 10px;
 }
 
 .divider-text {
@@ -163,4 +165,6 @@
   margin-left: -5px;
 }
 
-
+/* .divider-container {
+  margin-bottom: 4px;
+} */
