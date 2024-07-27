@@ -65,7 +65,66 @@
     background-color: rgb(255, 255, 255);
   }
 
+
+
+ .menu{
+  display: flex;
+  position:none;
+  margin-top: 28px;
+  margin-right: 10px;
+  top:0.75rem;
+  right:0.75rem;
+  flex-direction:column;
+  justify-content: space-between;
+  width:2.25rem;
+  height: 2rem;
+
+}
+
+.menu span{
+  height:0.4rem;
+  width:100%;
+  background-color: #fffefe;
+  border-radius:0.2rem;
+}
+
   @media screen and (max-width: 760px)
   {
-    
+   .menu{
+    display:flex;
+   }
+   .navBar{
+    flex-direction: coloumn;
+    align-items: start;
+   }
+
+   .navUl {
+    display: none;
+    flex-direction: column;
+    width:100%;
+    margin-bottom: 0.25rem;
+}
+
   }
+
+  
+
+
+@media screen and (max-width: 480px)
+{
+  .menu{
+    display:flex;
+    align-items: flex-end;
+    
+   }
+   .navBar{
+    flex-direction: coloumn;
+    align-items: start;
+   }
+
+   .navUl {
+    display: none;
+    flex-direction: column;
+    width:100%;
+    margin-bottom: 0.25rem;
+}}
