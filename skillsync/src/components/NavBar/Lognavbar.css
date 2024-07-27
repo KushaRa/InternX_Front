@@ -68,7 +68,7 @@
 
 
  .menu{
-  display: flex;
+  display: none;
   position:none;
   margin-top: 28px;
   margin-right: 10px;
@@ -90,20 +90,25 @@
 
   @media screen and (max-width: 760px)
   {
-   .menu{
-    display:flex;
-   }
-   .navBar{
-    flex-direction: coloumn;
-    align-items: start;
-   }
-
-   .navUl {
-    display: none;
-    flex-direction: column;
-    width:100%;
-    margin-bottom: 0.25rem;
-}
+    .menu{
+      display:flex;
+      align-items: flex-end;
+      
+     }
+     .navBar{
+      flex-direction: coloumn;
+      align-items: start;
+     }
+  
+     .navUl {
+      display: none;
+      flex-direction: column;
+      width:100%;
+      margin-bottom: 0.25rem;
+  }
+    .navUl ul.open{
+      display: flex;
+    }
 
   }
 
@@ -127,4 +132,8 @@
     flex-direction: column;
     width:100%;
     margin-bottom: 0.25rem;
-}}
+}
+  .navUl ul.open{
+    display: flex;
+  }
+}
