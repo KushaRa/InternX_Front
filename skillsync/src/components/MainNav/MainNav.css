@@ -70,3 +70,56 @@ button a {
 button:hover {
   background-color: rgb(255, 255, 255);
 }
+@media screen and (max-width: 760px) {
+  .menu {
+    display: flex;
+    align-items: flex-end;
+  }
+  .logo1{
+    position: absolute;
+  }
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .navUl {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  .navUl.open {
+    display: flex;
+    background: rgba(0, 0, 0, 0.307); /* Add background color for better visibility */
+    padding: 10px; /* Add padding for better spacing */
+    transition: all 0.3s ease; /* Add smooth transition */
+    border-radius: 8px;
+  }
+
+  .navUl li {
+    margin: 10px 0; /* Add margin for better spacing between items */
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu {
+    display: flex;
+    align-items: flex-end;
+    background-color: #000000;
+  
+  }
+ 
+  
+  .navUl {
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 0.25rem;
+  }
+
+  .navUl.open {
+    display: flex;
+  }
+}
