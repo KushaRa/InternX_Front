@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
   transition: all 0.3s ease 0s;
-  position: absolute;
+  position:relative;
 }
 
 .logo1 a {
@@ -92,9 +92,10 @@ button:hover {
   .menu {
     display: flex;
     align-items: flex-end;
+   
   }
   .logo1{
-    position: absolute;
+    position:relative;
   }
   .navBar {
     flex-direction: column;
@@ -111,7 +112,7 @@ button:hover {
 
   .navUl.open {
     display: flex;
-    background: rgba(0, 0, 0, 0.307); /* Add background color for better visibility */
+    background:#000000; /* Add background color for better visibility */
     padding: 10px; /* Add padding for better spacing */
     transition: all 0.3s ease; /* Add smooth transition */
     border-radius: 8px;
