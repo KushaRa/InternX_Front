@@ -84,7 +84,7 @@ button:hover {
     padding-left: 20px; /* Adjust padding for smaller screens */
   }
 
-  .navUl {
+  .MnavUl {
     display: none;
     flex-direction: column;
     width: 100%;
