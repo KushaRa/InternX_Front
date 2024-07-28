@@ -14,7 +14,7 @@
   align-items: center;
   justify-content: space-between;
   transition: all 0.3s ease 0s;
-  position: absolute;
+  position:relative;
 }
 
 .logo1 a {
