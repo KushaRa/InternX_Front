@@ -1,67 +1,143 @@
 * {
-    text-decoration: none;
-  }
-  
-  .navBar {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-right: 15px;
-    padding-left: 50px;
-    padding-top: 20px;
-  }
-  
-  .navDiv {
+  text-decoration: none;
+}
+
+.navBar {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-right: 15px;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.navDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease 0s;
+  position: absolute;
+}
+
+.logo1 a {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fffefe;
+  cursor: pointer;
+  position: absolute;
+
+}
+
+.navUl {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Increase the gap between items */
+}
+
+.navUl li {
+  display: inline;
+  list-style: none;
+}
+
+.navUl li a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navUl li a:hover {
+  color: #00b4d8; /* Change the font color on hover */
+}
+
+button {
+  background-color: #00b4d8;
+  margin-left: 10px;
+  border-radius: 10px;
+  width: 117px;
+  height: 45px;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: background-color 0.3s ease;
+}
+
+button a {
+  color: black;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.menu {
+  display: none;
+  position: absolute;
+  margin-top: 28px;
+  margin-right: 10px;
+  top: 0.75rem;
+  right: 0.75rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+.menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #fffefe;
+  border-radius: 0.2rem;
+}
+
+@media screen and (max-width: 760px) {
+  .menu {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: all 0.3s ease 0s;
+    align-items: flex-end;
   }
+  .logo1{
+    position: absolute;
+  }
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .navUl {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  .navUl.open {
+    display: flex;
+    background: rgba(0, 0, 0, 0.307); /* Add background color for better visibility */
+    padding: 10px; /* Add padding for better spacing */
+    transition: all 0.3s ease; /* Add smooth transition */
+    border-radius: 8px;
+  }
+
+  .navUl li {
+    margin: 10px 0; /* Add margin for better spacing between items */
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu {
+    display: flex;
+    align-items: flex-end;
+    background-color: #000000;
   
-  .logo1 a {
-    font-size: 35px;
-    font-weight: 600;
-    color: #fffefe;
-    cursor: pointer;
   }
+ 
   
   .navUl {
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 0.25rem;
+  }
+
+  .navUl.open {
     display: flex;
-    align-items: center;
-    gap: 20px; /* Increase the gap between items */
   }
-  
-  .navUl li {
-    display: inline;
-    list-style: none;
-  }
-  
-  .navUl li a {
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-  }
-  
-  .navUl li a:hover {
-    color: #00b4d8; /* Change the font color on hover */
-  }
-  
-  button {
-    background-color: #00b4d8;
-    margin-left: 10px;
-    border-radius: 10px;
-    width: 117px;
-    height: 45px;
-    cursor: pointer;
-    font-weight: bolder;
-    transition: background-color 0.3s ease;
-  }
-  
-  button a {
-    color: black;
-    font-size: 15px;
-  }
-  
-  button:hover {
-    background-color: rgb(255, 255, 255);
-  }
-  
+}

@@ -1,5 +1,6 @@
 .select-user {
   display: flex;
+  padding: 0px;
   flex-direction: column;
   height: 100vh;
   background-image: url("../../assets/landingpage.png");
@@ -35,7 +36,7 @@
   color: #00b4d8;
 }
 .job-seekers:hover {
-  background-color: rgba(0, 82, 165, 0.4);
+  background-color: rgba(70, 173, 214, 0.4);
 }
 .login-buttonSC {
   
@@ -52,7 +53,7 @@
 
 
 .companies:hover {
-  background-color: rgba(0, 82, 165, 0.4);
+  background-color: rgba(70, 173, 214, 0.4);
 }
 
 .companies {
