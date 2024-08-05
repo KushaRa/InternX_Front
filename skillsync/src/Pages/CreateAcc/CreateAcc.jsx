@@ -39,8 +39,8 @@ const Signup = () => {
        <ToastContainer />
        {/* ToastContainer component to display notifications */}
       <div className="flex-Container">
-        <div className="flex-box01" style={{width:"750px"}}> 
-          <div className="logo">logo</div>
+        <div className="flex-box01" > 
+        
           </div>
         <div className="flex-box01">
           <div className="logo">InternX</div>

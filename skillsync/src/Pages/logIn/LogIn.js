@@ -39,9 +39,12 @@ export const LogIn = () => {
 
   return (
     <>
-      <div className="flex-container">
-        <div className="flex-box01">
-        <div className="logo">InternX</div>
+      <div
+        className="flex-container"
+        style={{ border: "none", padding: "0px" }}
+      >
+        <div className="flex-box01" style={{ width: "60%" }}>
+          <div className="logo">InternX</div>
           <div className="welcome">Welcome to</div>
           <div className="internx">InternX Community</div>
         </div>
@@ -51,21 +54,25 @@ export const LogIn = () => {
             <h5>Login to your account</h5>
             <div>
               <form onSubmit={handleLogin} className="input-box1">
-              <div className="place"> <input 
-                  type="text"
-                  placeholder="Email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
+                <div className="place">
+                  {" "}
+                  <input
+                    type="text"
+                    placeholder="Email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
                 </div>
-                <div className="place"><input 
-                  type="password"
-                  placeholder="Your Password"
-                  required
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                /></div>
+                <div className="place">
+                  <input
+                    type="password"
+                    placeholder="Your Password"
+                    required
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                  />
+                </div>
                 <div className="terms">
                   <label>
                     <input type="checkbox" />I agree with InternX Terms of
