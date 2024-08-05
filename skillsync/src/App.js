@@ -12,6 +12,7 @@ import { Route, Routes } from "react-router-dom";
 import ViewCard from "./Pages/ViewCard/viewCard";
 import StdViewCard from "./Pages/StdView/stdView";
 import AboutUs from "./Pages/AboutUs/AboutUs";
+import Companyregistration from "./Pages/CreateAcc/Companyregistration";
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/categories" element={<Categories />}></Route>
         <Route path="/view/:id" element={<ViewCard />}></Route>
         <Route path="/apply/:id" element={<StdViewCard />}></Route>
+        <Route path="/companyregistration" element={<Companyregistration />}></Route>
       </Routes>
 </div>
 );
