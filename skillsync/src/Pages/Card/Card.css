@@ -1,0 +1,187 @@
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  margin: 0; /* Remove default margin */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cardPage {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("../../assets/homepage.png");
+}
+
+.mainNav {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.locationlogo,
+.remotelogo,
+.timelogo {
+  width: 20px;
+  height: 20px;
+}
+
+.heroSection {
+  color: white;
+  height: 300vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-size: 2.5em;
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.cardHeader {
+  margin-top: 58px;
+  color: aliceblue;
+}
+
+.cardSearchBar {
+  display: flex;
+  align-items: center;
+  padding: 7.9px;
+  font-size: 1em;
+  width: 500px;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.cardSearch {
+  border: none;
+  outline: 0;
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.cardSearchBar button {
+  border: none;
+  outline: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.card-featured-internships {
+  display: flex;
+  padding: 20px;
+  font-size: 1em;
+  width: 100%;
+  justify-content: center;
+  align-items: left;
+  text-align: left;
+  background-color: #75e4fa57;
+  box-sizing: border-box;
+  margin-left: 0px;
+  margin-top: 8px;
+}
+
+.cardSearchBar input {
+  display: flex;
+  padding: 10px;
+  font-size: 1em;
+  width: 1000px;
+  border: none;
+  border-radius: 10px;
+}
+
+.card-featured-internships h2,
+.internship-cards h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-style: initial;
+  overflow: hidden;
+  border-radius: 10%;
+  text-overflow: ellipsis;
+}
+
+.internship-cards {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+  justify-content: flex-start; 
+  margin-top: 20px;
+}
+.internship-card {
+  width: calc(25% - 20px); 
+  max-width: 300px; 
+  height: 210px; 
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 20px; 
+  margin-left: 40px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: white;
+  transition: transform 0.3s, background-color 0.3s;
+ 
+}
+
+@media screen and (max-width: 1200px) {
+  .internship-card {
+    width: calc(33.33% - 20px); 
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .internship-card {
+    width: calc(50% - 20px); 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .internship-card {
+    width: calc(100% - 20px); 
+  }
+}
+.internship-card:hover {
+  background-color: #75e4fa57;
+  transform: scale(1.05); 
+}
+
+.card-header {
+  background-color: #1b2122;
+  color: rgb(249, 246, 246);
+  padding: 20px;
+  height: 180px;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  background-color: #2cd4e7bc;
+  padding: 15px;
+  margin-top: auto;
+}
+
+.searchButton {
+  
+  padding-top: -50px;
+  padding-bottom: -60px;
+ 
+
+  
+}

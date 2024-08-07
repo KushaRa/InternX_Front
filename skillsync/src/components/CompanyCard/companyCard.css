@@ -17,18 +17,6 @@
   border-bottom-right-radius: 0px;
 }
 
-{/*.card:before{
-  content:"";
-  position:absolute;
-  width:600px;
-  height:100%;
-  background: rgba(0, 0, 0, 0.1);
-  background: rgba(93, 96, 127, 0.362);
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}*/}
-
-
 .part1,
 .part2 {
   margin-bottom: 0px;
@@ -39,28 +27,13 @@
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   position: relative;
-  height: 100px;
+  height: 80px;
   background: transparent;
-  border: 1px solid #ffffff;
-  padding: 20px;
-  
+  background: rgba(0, 205, 246, 0.362);
+  padding: 20px;  
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
-.part1::before{
-    content:"";
-    position:absolute;
-    width:700px;
-    height:100%;
-    background: rgba(29, 11, 219, 0.1);
-    background: rgba(0, 180, 216, 0.362);
-    margin-top:-20px;
-    margin-left: -21px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
 
 
 .part2{
@@ -73,15 +46,14 @@
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border: 1px solid #ffffff;
+  
 
 }
 
 .company_name {
   color: #007bff;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: bolder;
   margin-bottom: 5px;
 }
 
@@ -99,11 +71,15 @@
   margin-bottom: 5px;
   margin-left: 5px;
   margin-right: 5px;
+  display: flex;
+  align-items: center;
+  
 }
 
 .viewbutton {
   text-align: right;
   margin-right: 5px;
+  transition: background-color 0.3s ease;
   }
 
 .apply {
@@ -120,3 +96,4 @@
 .apply:hover {
   background-color: #00090b;
 }
+

@@ -1,106 +1,170 @@
-.flex-container {
+
+.flex-Container {
   display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 0px;
 }
-.flex-box1 {
-  width: 62%;
+.flex-box01 {
+  width: 50%;
   height: 100vh;
   background-color: black;
-  padding: 0%;
-  margin: 0px;
-  border: none;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
 }
 
-.logo2 {
-  color: white;
+.logo {
   font-size: 40px;
-  margin-left: 188px;
   font-style: italic;
-  margin-top: 200px;
-  margin-bottom: 0px;
-  padding: 0px;
+  margin-top: 20px;
+}
+.login h5{
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
 }
 
 .welcome {
-  color: rgb(0, 180, 216, 0.54);
   font-size: 40px;
-  margin-top: 100px;
-  margin-left: 188px;
-  padding: 0%;
-  border: none;
+  margin-top: 20px;
+  color: rgb(0, 180, 216, 0.54);
+  margin-left: 0;
 }
 
 .internx {
-  color: rgb(0, 180, 216);
   font-size: 65px;
-  margin-top: 25px;
-  margin-left: 188px;
+  margin-top: 10px;
+  margin-left: 0;
+    color: rgb(0, 180, 216);
+}
+
+.flex-box02 {
+  margin-top: 10%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+ 
 }
 
 .login {
-  color: black;
-  margin-left: 200px;
-  margin-top: 150px;
-  margin-right: 39px;
-  padding: 0%;
-  border: none;
-  font-size: 25px;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  max-width: 400px; 
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align text */
 }
 
-.input-box {
-  position: relative;
-  width: 300px;
-  height: 20px;
-  margin: 30px;
+.input-box1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
 }
 
-.input-box input {
-  width: 300px;
-  height: 28px;
-  border-color: #00b4d8;
+.input-box1 .place input {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #00b4d8;
   border-radius: 10px;
-  margin-left: -30px;
-  align-items: center;
-  justify-items: center;
+  padding: 10px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
 }
 
-.remember-forget {
+.input-box1 .place input:focus {
+  border-color: #007a9c;
+  outline: none;
+}
+
+
+.loginButton {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #00b4d8;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+.loginButton:hover {
+  background-color: #f1f1f1;
+  border: 1px solid #00b4d8;;
+}
+
+.divider {
+  flex-grow: 2;
+  height: 1px;
+  background-color: #ccc;
+  margin-top:10px ;
+  margin-bottom: 10px;
+}
+
+.divider-text {
+  margin: 0 10px;
+  color: #888;
+  font-family: Arial, sans-serif;
+  font-size: small;
+}
+
+.google-button {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #00b4d8;
+  color: black;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.google-button:hover {
+  background-color: #f1f1f1;
+}
+
+.google-button img {
+  height: 19px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.flex-box02 {
+  width: 38%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -150px;
+  margin-left: -50px;
+}
+
+.terms {
   font-size: 12px;
   padding: 5px;
   justify-content: space-between;
   display: flex;
   margin: 0;
   align-items: center;
+  margin-bottom: 10px;
 }
 
-.remember-forget label {
-  margin: 0;
-  padding: 0;
+.terms input {
+  margin-left: -5px;
 }
 
-.remember-forget a {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
-#loginButton {
-  width: 300px;
-  margin-left: 0px;
-  height: 35px;
-}
-
-.Or {
-  font-size: 15px;
-  align-items: center;
-  justify-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-#googleButton {
-  width: 300px;
-  margin-left: 0px;
-  height: 35px;
-}
+/* .divider-container {
+  margin-bottom: 4px;
+} */

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./Company.css";
-import NavBar from "../../components/NavBar/Lognavbar";
+import MainNav from "../../components/MainNav/MainNav";
 import { Popular } from "../../components/Popular/popular";
+import NewIntern from "../../components/NewJobAdd/newIntern";
 
 export const Company = () => {
+
   const [profile, setProfile] = useState({
     name: "",
     companyInformation: "",
@@ -26,10 +28,21 @@ export const Company = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
     setProfile({ ...profile, [name]: value });
+
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+
   };
 
   return (
     <div className="Content">
+
       <NavBar />
       <div className="container">
         <div className="profile-box box">
@@ -60,6 +73,20 @@ export const Company = () => {
         <div className="NewIntern">
           <button className="NewAdd">ADD NEW</button>
         </div>
+
+      <MainNav />
+      <NewIntern open={open} handleClose={handleClose} />
+      <div className="NewInt">
+       
+      </div>
+
+      {/*<div className="CDetails"></div>*/}
+      <div className="InternCards">
+      <button className="NewAdd" onClick={handleOpen}>
+          ADD NEW
+      </button>
+         <Popular />
+
       </div>
     </div>
   );

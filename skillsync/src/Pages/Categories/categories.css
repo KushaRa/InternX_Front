@@ -1,0 +1,40 @@
+.category_page {
+  background-image: url("../../assets/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:auto;
+  width: 100%;
+  
+}
+
+.flex-container {
+  display: flex;
+  padding: 10px;
+  justify-content: center; /* Center items horizontally */ 
+  width: 100%; /* Ensure it takes up full width */
+  flex: 1; /* Allow it to grow to fill the container */
+  flex-wrap: wrap; /* Allow items to wrap if they overflow */
+}
+
+.textcategory {
+  color: rgb(0, 0, 0);
+}
+.cardSearchBar{
+  align-items: center;
+  margin-left: 450px;
+}
+
+.flex-box3 {
+  background-color: rgba(0, 180, 216, 0.3); 
+  margin-right: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 20px;
+  width: 100%;
+  max-width: 360px; 
+  text-align: center; 
+}
+
+

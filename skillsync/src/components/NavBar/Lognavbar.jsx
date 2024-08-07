@@ -1,18 +1,29 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Lognavbar.css";
 import { Link } from "react-router-dom";
 
 export default function Lnavbar() {
-  return (
+  const[menuOpen, setMenu] =useState(false);
+
+ return (
+
     <>
       <nav className="navBar">
         <div className="navDiv">
-          <div className="logo">
-            <a href="#">InternX</a>
+          <div className="logo1">
+            <Link to='/'>InternX</Link>
           </div>
-          <ul className="navUl">
+          <div className="menu" 
+          onClick={()=>setMenu(!menuOpen)}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          
+          <ul className={`navUl ${menuOpen ? "open" : ""}`}>
+
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/card">Home</Link>
             </li>
             <li>
               <Link to="/internships">Internships</Link>
@@ -28,7 +39,8 @@ export default function Lnavbar() {
             </Link>
             <li><Link to="/internships">Company Dashboard</Link></li>
           </ul>
-        </div>
+          </div>
+        
       </nav>
     </>
   );

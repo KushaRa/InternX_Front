@@ -1,67 +1,125 @@
-*{
-    text-decoration: none;
+* {
+  text-decoration: none;
+}
+.active {
+  background-color: aqua;
 }
 
-.navBar{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-right: 15px;
-    padding-left: 50px;
-    padding-top: 20px;
+.MnavBar {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-right: 15px;
+  padding-left: 50px;
+  padding-top: 20px;
 }
 
-.navDiv{
+.MnavDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease 0s;
+}
+
+.logo1 a {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fffefe;
+  cursor: pointer;
+}
+
+.MnavUl {
+  display: flex;
+  align-items: center;
+  gap:20px
+  
+}
+
+li {
+  display: inline;
+  list-style: none;
+ 
+}
+
+li a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+li a:hover {
+  color: #00b4d8; /* Change the font color on hover */
+}
+
+
+
+button {
+  background-color: #00b4d8;
+  margin-left: 10px;
+  border-radius: 10px;
+  width: 117px;
+  height: 45px;
+  cursor: pointer;
+  font-weight: bolder;
+  transition: background-color 0.3s ease;
+}
+
+button a {
+  color: black;
+  font-size: 15px;
+}
+
+button:hover {
+  background-color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 760px) {
+  .menu {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: all 0.3s ease 0s;
-}
+    align-items: flex-end;
+  }
+  .logo1{
+    position: absolute;
+  }
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px; /* Adjust padding for smaller screens */
+  }
 
-.logo a{
-    font-size: 35px;
-    font-weight: 600;
-    color: #fffefe;
-    cursor: pointer;
-}
+  .MnavUl {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
 
-.navUl li{
-    display: inline;
-    list-style: none;
-}
+  .navUl.open {
+    display: flex;
+    background: rgba(0, 0, 0, 0.307); /* Add background color for better visibility */
+    padding: 10px; /* Add padding for better spacing */
+    transition: all 0.3s ease; /* Add smooth transition */
+    border-radius: 8px;
+  }
 
-.navUl li a{
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    margin-right: 25px;
-    cursor: pointer;
+  .navUl li {
+    margin: 10px 0; /* Add margin for better spacing between items */
+  }
 }
+@media screen and (max-width: 480px) {
+  .menu {
+    display: flex;
+    align-items: flex-end;
+    background-color: #000000;
+  
+  }
+ 
+  
+  .navUl {
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 0.25rem;
+  }
 
-button{
-    background-color:#00B4D8;
-    margin-left: 10px;
-    border-radius: 10px;
-    padding: auto;
-    width: 117px;
-    height: 45px;
-    transition: 5ms;
-    cursor: pointer;
-}
-
-button a{
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-.navUl li:hover{
-    padding-left: 7px;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 6px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    text-decoration-color: rgb(255, 255, 255);
-}
-
-button:hover{
-    background-color: rgb(255, 255, 255);
+  .navUl.open {
+    display: flex;
+  }
 }
