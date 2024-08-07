@@ -2,8 +2,20 @@ import React, { useEffect, useState } from "react";
 import { useParams} from "react-router-dom";
 import axios from "axios";
 import './jDetailsStd.css';
+import NewCV from "../ApplyJob/applyJob";
+
 
 const JDetailsStd = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   const { id } = useParams();
   const [data, setData] = useState(null);
   
@@ -31,6 +43,7 @@ const JDetailsStd = () => {
 
  return (
     <div className='fullPage'>
+      <NewCV open={open} handleClose={handleClose} />
     <div className='jobDetails'>
       <div className="titleCard"><h2>{data.title}</h2></div>
       <div className="companyCard"><p><b>Company: </b>{data.company_name}</p></div>
@@ -41,7 +54,7 @@ const JDetailsStd = () => {
       <div className="decriptionCard"><p><b>Description:</b><br></br> {data.description}</p></div>
     </div>
     <div className="section-two">
-    <button className="ApplyButton">Apply Now</button>
+    <button className="ApplyButton" onClick={handleOpen}>Apply Now</button>
       </div>
   </div>
   );

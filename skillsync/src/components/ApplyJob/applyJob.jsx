@@ -10,7 +10,7 @@ import {
   Typography,
   IconButton,
 } from '@mui/material';
-import './newIntern.css';
+import './applyJob.css';
 import CloseIcon from '@mui/icons-material/Close';
 
 const NewCV = ({ open, handleClose }) => {
@@ -105,7 +105,7 @@ const NewCV = ({ open, handleClose }) => {
               </Grid>
              
               <Grid item container spacing={2}>
-                <Grid item xs={6} className="gridItem">
+                <Grid item xs={12} className="gridItem">
                   <FilledInput
                     className="inputBox"
                     placeholder="Resume Link *"
@@ -138,7 +138,7 @@ const NewCV = ({ open, handleClose }) => {
                     onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#00B4D8')}
                     onClick={handleClose}
                   >
-                    Post
+                    Submit
                   </Button>
                 </Grid>
               </Grid>
