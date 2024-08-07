@@ -1,12 +1,14 @@
 .jobDetails{
     align-items: center;
     position: relative;
+    color: rgb(20, 21, 21);
     background: rgba(0, 205, 246, 0.45);
     margin:40px;
     padding:40px;
     border-radius: 12px;
     gap:10px;
     font-size:17px;
+
     }
 .companyCard{
     margin-top: 5px;
@@ -33,7 +35,7 @@
 
  
   .ApplyButton{
-    background-color: #39e81e;
+    background-color: #00b4d8;
     color: rgb(9, 9, 9);
     border: none;
     border-radius: 10px;
