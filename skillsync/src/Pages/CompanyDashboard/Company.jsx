@@ -13,6 +13,7 @@ export const Company = () => {
   });
 
   const [profilePicturePreview, setProfilePicturePreview] = useState(null);
+  const [open, setOpen] = useState(false);
 
   const handleFileChange = (event) => {
     const file = event.target.files[0];
@@ -28,8 +29,7 @@ export const Company = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
     setProfile({ ...profile, [name]: value });
-
-  const [open, setOpen] = useState(false);
+  };
 
   const handleOpen = () => {
     setOpen(true);
@@ -37,13 +37,11 @@ export const Company = () => {
 
   const handleClose = () => {
     setOpen(false);
-
   };
 
   return (
     <div className="Content">
-
-      <NavBar />
+      <MainNav />
       <div className="container">
         <div className="profile-box box">
           <div className="profile-picture-container">
@@ -71,22 +69,11 @@ export const Company = () => {
           <Popular />
         </div>
         <div className="NewIntern">
-          <button className="NewAdd">ADD NEW</button>
+          <button className="NewAdd" onClick={handleOpen}>
+            ADD NEW
+          </button>
+          <NewIntern open={open} handleClose={handleClose} />
         </div>
-
-      <MainNav />
-      <NewIntern open={open} handleClose={handleClose} />
-      <div className="NewInt">
-       
-      </div>
-
-      {/*<div className="CDetails"></div>*/}
-      <div className="InternCards">
-      <button className="NewAdd" onClick={handleOpen}>
-          ADD NEW
-      </button>
-         <Popular />
-
       </div>
     </div>
   );
