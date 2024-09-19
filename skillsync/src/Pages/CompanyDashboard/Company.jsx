@@ -6,9 +6,12 @@ import NewIntern from "../../components/NewJobAdd/newIntern";
 
 export const Company = () => {
   const [profile, setProfile] = useState({
-    name: "",
-    companyInformation: "",
-    profilePicture: null,
+    companyName: "",
+    address: "",
+    telephone: "",
+    email: "",
+    establishedYear: "",
+    profilePicture: null
   });
 
   const [profilePicturePreview, setProfilePicturePreview] = useState(null);
@@ -30,6 +33,12 @@ export const Company = () => {
     setProfile({ ...profile, [name]: value });
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Profile updated:", profile);
+    // Add logic to submit data to API
+  };
+
   const handleOpen = () => {
     setOpen(true);
   };
@@ -41,63 +50,104 @@ export const Company = () => {
   return (
     <div className="Content">
       <MainNav />
-      <div className="profile-box"
-      style={{
-        width: "90%",
-        height: "200px",
-        background: "rgba(0, 180, 216, 0.22)",
-        borderRadius: "10px",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        marginBottom: "10px",
-        marginTop:"100px"
-      }}>
-          <div className="profile-picture-container">
-            {profilePicturePreview && (
-              <img src={profilePicturePreview} alt="Profile" className="profile-picture" />
-            )}
-            <label htmlFor="file-upload" className="custom-file-upload">
-              Choose File
-            </label>
-            <input id="file-upload" type="file" onChange={handleFileChange} />
-          </div>
-          <input
-            type="text"
-            name="name"
-            value={profile.name}
-            onChange={handleChange}
-            placeholder="Name"
-          />
+      <div className="profile-box">
+        <div className="profile-picture-container">
+          {profilePicturePreview && (
+            <img src={profilePicturePreview} alt="Profile" className="profile-picture" />
+          )}
+          <label htmlFor="file-upload" className="custom-file-upload">
+            Choose File
+          </label>
+          <input id="file-upload" type="file" onChange={handleFileChange} />
         </div>
-      <div className="container">     
+        <input
+          type="text"
+          name="name"
+          value={profile.name}
+          onChange={handleChange}
+          placeholder="Name"
+        />
+      </div>
 
-        <div className="company-info"
-         style={{display: "flex",
-                  padding: "10px",
-                  justifycontent: "center", /* Center items horizontally */ 
-                  /* Ensure it takes up full width */
-                  }}>
-          <div className="header">Company Information</div>
-          <input
-            type="text"
-            name="companyInformation"
-            value={profile.companyInformation}
-            onChange={handleChange}
-            placeholder="Add your company information here"
-          />
-        </div>
-            <div calssName="cardNbutton" style={{marginTop:"70px"}}>
-        <div className="InternCards">
-          <Popular />
-        </div>
-        <div className="NewIntern">
-          <button className="NewAdd" onClick={handleOpen}>
-            ADD NEW
+      <div className="container">
+        <form className="company-info" onSubmit={handleSubmit}>
+          <div className="header">Update Company Profile</div>
+          
+          <div className="form-group">
+            <label htmlFor="companyName">Company Name</label>
+            <input
+              type="text"
+              id="companyName"
+              name="companyName"
+              value={profile.companyName}
+              onChange={handleChange}
+              placeholder="Enter company name"
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="address">Company Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              value={profile.address}
+              onChange={handleChange}
+              placeholder="Enter company address"
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="telephone">Telephone</label>
+            <input
+              type="tel"
+              id="telephone"
+              name="telephone"
+              value={profile.telephone}
+              onChange={handleChange}
+              placeholder="Enter telephone number"
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={profile.email}
+              onChange={handleChange}
+              placeholder="Enter company email"
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="establishedYear">Established Year</label>
+            <input
+              type="number"
+              id="establishedYear"
+              name="establishedYear"
+              value={profile.establishedYear}
+              onChange={handleChange}
+              placeholder="Enter established year"
+            />
+          </div>
+
+          <button className="update-button" type="submit">
+            Update Profile
           </button>
-          <NewIntern open={open} handleClose={handleClose} />
-        </div>
+        </form>
+
+        <div className="cardNbutton">
+          <div className="InternCards">
+            <Popular />
+          </div>
+          <div className="NewIntern">
+            <button className="NewAdd" onClick={handleOpen}>
+              ADD NEW
+            </button>
+            <NewIntern open={open} handleClose={handleClose} />
+          </div>
         </div>
       </div>
     </div>

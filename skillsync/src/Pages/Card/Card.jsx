@@ -82,6 +82,7 @@ export const Card = () => {
             >
               <div className="card-header">
                 <h3>{item.company_name}</h3>
+            
                 <p>{item.title}</p>
               </div>
               <div className="card-details">
