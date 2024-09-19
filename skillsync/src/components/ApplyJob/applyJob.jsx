@@ -12,6 +12,7 @@ import {
 } from '@mui/material';
 import './applyJob.css';
 import CloseIcon from '@mui/icons-material/Close';
+import axios from 'axios';
 
 const NewCV = ({ open, handleClose }) => {
   const [CVData, setCVData] = useState({
@@ -19,7 +20,6 @@ const NewCV = ({ open, handleClose }) => {
     student_email: '',
     cv: ''
   });
- 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -29,40 +29,39 @@ const NewCV = ({ open, handleClose }) => {
     }));
   };
 
- 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(CVData); // Debugging: Check the form data before submitting
+
     try {
-      const response = await fetch('http://localhost:8000/api/apply', {
+        const response = await axios.post('http://localhost:8000/api/apply', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(CVData),
       });
+
       if (response.ok) {
         console.log('Data submitted successfully!');
-        alert('Data submitted successfully!');
+        alert('Resume submitted successfully!');
         const result = await response.json();
         console.log('Success:', result);
-        alert('Resume submitted successfully!');
         setCVData({
-            student_name: '',
-            student_email: '',
-            cv: ''
+          student_name: '',
+          student_email: '',
+          cv: ''
         });
         handleClose();
       } else {
         console.error('Error:', response.statusText);
-        alert('Failed to submit the post.');
+        alert('Failed to submit the resume.');
       }
     } catch (error) {
       console.error('Error:', error);
-      // alert('Post Submitted.');
+      alert('Failed to submit the resume.');
     }
-    
   };
-  
 
   return (
     <Dialog open={open} onClose={handleClose} fullWidth className="dialog">
@@ -78,7 +77,6 @@ const NewCV = ({ open, handleClose }) => {
         <DialogContent className="dialogContent">
           <form onSubmit={handleSubmit}>
             <Grid container spacing={2} direction="column">
-              {/* First Section: Two Inputs in Two Columns */}
               <Grid item container spacing={2}>
                 <Grid item xs={6} className="gridItem">
                   <FilledInput
@@ -94,16 +92,15 @@ const NewCV = ({ open, handleClose }) => {
                 <Grid item xs={6} className="gridItem">
                   <FilledInput
                     className="inputBox"
-                    placeholder="email *"
+                    placeholder="Email *"
                     disableUnderline
                     fullWidth
-                    name="email"
+                    name="student_email"  // Corrected the name attribute
                     value={CVData.student_email}
                     onChange={handleChange}
                   />
                 </Grid>
               </Grid>
-             
               <Grid item container spacing={2}>
                 <Grid item xs={12} className="gridItem">
                   <FilledInput
@@ -116,31 +113,29 @@ const NewCV = ({ open, handleClose }) => {
                     onChange={handleChange}
                   />
                 </Grid>
-                
-             <Grid item xs={6} className="gridItem" style={{ textAlign: 'right' }}>
-                  <Button
-                    className="PostCV"
-                    type="submit"
-                    style={{
-                      backgroundColor: '#00B4D8',
-                      marginTop: '10px',
-                      borderRadius: '4px',
-                      padding: '10px 20px',
-                      width: '100px',
-                      height: '45px',
-                      color: 'rgb(0, 0, 0)',
-                      fontWeight: 'bolder',
-                      cursor: 'pointer',
-                      transition: 'background-color 0.2s ease-in-out',
-                      border: '1px solid #00B4D8',
-                    }}
-                    onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#fff')}
-                    onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#00B4D8')}
-                    onClick={handleClose}
-                  >
-                    Submit
-                  </Button>
-                </Grid>
+              </Grid>
+              <Grid item xs={12} className="gridItem" style={{ textAlign: 'right' }}>
+                <Button
+                  className="PostCV"
+                  type="submit"
+                  style={{
+                    backgroundColor: '#00B4D8',
+                    marginTop: '10px',
+                    borderRadius: '4px',
+                    padding: '10px 20px',
+                    width: '100px',
+                    height: '45px',
+                    color: 'rgb(0, 0, 0)',
+                    fontWeight: 'bolder',
+                    cursor: 'pointer',
+                    transition: 'background-color 0.2s ease-in-out',
+                    border: '1px solid #00B4D8',
+                  }}
+                  onMouseOver={(e) => (e.currentTarget.style.backgroundColor = '#fff')}
+                  onMouseOut={(e) => (e.currentTarget.style.backgroundColor = '#00B4D8')}
+                >
+                  Submit
+                </Button>
               </Grid>
             </Grid>
           </form>

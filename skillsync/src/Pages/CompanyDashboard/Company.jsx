@@ -5,7 +5,6 @@ import { Popular } from "../../components/Popular/popular";
 import NewIntern from "../../components/NewJobAdd/newIntern";
 
 export const Company = () => {
-
   const [profile, setProfile] = useState({
     name: "",
     companyInformation: "",
@@ -42,8 +41,19 @@ export const Company = () => {
   return (
     <div className="Content">
       <MainNav />
-      <div className="container">
-        <div className="profile-box box">
+      <div className="profile-box"
+      style={{
+        width: "90%",
+        height: "200px",
+        background: "rgba(0, 180, 216, 0.22)",
+        borderRadius: "10px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        marginBottom: "10px",
+        marginTop:"100px"
+      }}>
           <div className="profile-picture-container">
             {profilePicturePreview && (
               <img src={profilePicturePreview} alt="Profile" className="profile-picture" />
@@ -53,9 +63,22 @@ export const Company = () => {
             </label>
             <input id="file-upload" type="file" onChange={handleFileChange} />
           </div>
-          <input type="text" name="name" value={profile.name} onChange={handleChange} placeholder="Name" />
+          <input
+            type="text"
+            name="name"
+            value={profile.name}
+            onChange={handleChange}
+            placeholder="Name"
+          />
         </div>
-        <div className="company-info box">
+      <div className="container">     
+
+        <div className="company-info"
+         style={{display: "flex",
+                  padding: "10px",
+                  justifycontent: "center", /* Center items horizontally */ 
+                  /* Ensure it takes up full width */
+                  }}>
           <div className="header">Company Information</div>
           <input
             type="text"
@@ -65,6 +88,7 @@ export const Company = () => {
             placeholder="Add your company information here"
           />
         </div>
+            <div calssName="cardNbutton" style={{marginTop:"70px"}}>
         <div className="InternCards">
           <Popular />
         </div>
@@ -73,6 +97,7 @@ export const Company = () => {
             ADD NEW
           </button>
           <NewIntern open={open} handleClose={handleClose} />
+        </div>
         </div>
       </div>
     </div>
