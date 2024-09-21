@@ -17,8 +17,19 @@ export const LogIn = () => {
         email,
         password,
       });
+
       if (response.status === 200) {
-        navigate("/Card");
+        const { token, user } = response.data;
+
+        // Save the token in local storage or cookie (if needed)
+        localStorage.setItem("token", token);
+console.log("response recived", response.data);
+        // Redirect based on user role
+        if (user.role === "0") {
+          navigate("/Card");
+        } else if (user.role === "1") {
+          navigate("/internships");
+        }
       } else {
         toast.error("Login failed", {
           style: { backgroundColor: "#00b4d8", color: "black" },

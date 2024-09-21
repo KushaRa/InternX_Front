@@ -18,6 +18,7 @@ const Signup = () => {
         companyname,
         email,
         password,
+        role:1,
       });
       console.log(response.data); // Assuming response.data includes success message
       toast.success("Registered Successfully!", {
