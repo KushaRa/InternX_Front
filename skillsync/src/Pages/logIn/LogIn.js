@@ -51,16 +51,14 @@ console.log("response recived", response.data);
   return (
     <>
       <div
-        className="flex-container"
-        style={{ border: "none", padding: "0px" }}
-      >
-        <div className="flex-box01" style={{ width: "60%" }}>
+        className="flex-container" >
+        <div className="flex-box01" style={{ width: "35%", marginRight:"50px", paddingLeft:"50px" , marginTop:"0px"}}>
           <div className="logo">InternX</div>
           <div className="welcome">Welcome to</div>
           <div className="internx">InternX Community</div>
         </div>
 
-        <div className="flex-box02">
+        <div className="flex-box02" style={{ marginTop:"80px", marginLeft:"80px" }}>
           <div className="login">
             <h5>Login to your account</h5>
             <div>

@@ -9,7 +9,7 @@
 }
 
 .flex-box01 {
-  width: 25%;
+  width: 50%;
   height: 100vh;
   background-color: black;
   display: flex;
@@ -17,6 +17,7 @@
   justify-content: center;
   align-items: flex-start;
   color: white;
+  padding: 40px;
 }
 
 .logo {
@@ -117,11 +118,6 @@
 }
 
 
-.divider-container {
-  display: flex;
-  align-items: center;
-  margin: 20px 0;
-}
 
 .divider {
   flex: 1;
