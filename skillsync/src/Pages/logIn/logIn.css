@@ -4,20 +4,21 @@
   height: 100vh;
   width: 100%;
   background-color: #f8f9fa;
+  border: none;
   padding: 0px;
 }
+
 .flex-box01 {
-  width: 50%;
+  width: 25%;
   height: 100vh;
   background-color: black;
-  padding-left: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  border: none;
-  margin: 0;
+  color: white;
 }
+
 
 
 .logo {
@@ -46,13 +47,13 @@
 }
 
 .flex-box02 {
-  margin-top: 10%;
+  margin-top: 1%;
   margin-left: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
- 
+
 }
 
 .login {
@@ -144,14 +145,7 @@
   margin-right: 10px;
 }
 
-.flex-box02 {
-  width: 38%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -150px;
-  margin-left: -50px;
-}
+
 
 .terms {
   font-size: 12px;
@@ -170,3 +164,4 @@
 /* .divider-container {
   margin-bottom: 4px;
 } */
+
