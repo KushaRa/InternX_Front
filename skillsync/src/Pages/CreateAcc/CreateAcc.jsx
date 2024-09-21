@@ -18,6 +18,7 @@ const Signup = () => {
         fullname,
         email,
         password,
+        role:0
       });
       console.log(response.data); // Assuming response.data includes success message
       toast.success("Registered Successfully!", {
