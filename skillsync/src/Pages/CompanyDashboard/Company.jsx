@@ -65,8 +65,8 @@ export const Company = () => {
   return (
     <div className="Content">
       <MainNav />
-      <div className="profile-box" style={{ display: 'flex', flexDirection: 'row',gap:"80px", height:"200px", justifyContent: 'flex-start', marginLeft:"20px"}}>
-        <div className="profile-picture-container" style={{ display: 'flex',flexDirection: 'column', alignItems: 'center',marginTop:"10px",marginLeft:"50px"}}>
+      <div className="profile-box" style={{ display: 'flex', flexDirection: 'row',gap:"80px", height:"200px", justifyContent: 'flex-start', marginLeft:"70px"}}>
+        <div className="profile-picture-container" style={{ display: 'flex',flexDirection: 'column', alignItems: 'center',marginTop:"10px",marginLeft:"70px"}}>
         {profilePicturePreview ? (
       <img src={profilePicturePreview} alt="Profile" className="profile-picture" style={{ border: '2px solid #ccc', borderRadius: '50%', width: '150px', height: '150px', color:"transparent"}} />
     ) : (
@@ -141,7 +141,7 @@ export const Company = () => {
       <div className="container">
         <div className="cardNbutton">
         
-          <div className="InternCards" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%', marginLeft:"100px", marginTop:"175px"}}>
+          <div className="InternCards" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%', marginLeft:"120px", marginTop:"175px"}}>
             <CategoryFlexContainer/>
               <Popular />
           </div>
