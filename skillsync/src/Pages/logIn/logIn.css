@@ -15,8 +15,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  color: white;
+  border: none;
+  margin: 0;
 }
+
 
 .logo {
   font-size: 40px;
