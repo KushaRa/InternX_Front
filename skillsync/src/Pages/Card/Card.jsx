@@ -46,7 +46,8 @@ export const Card = () => {
         justifyContent: "center",
         alignItems: "center",
         width: "40%",
-        marginTop: "20px"
+        marginTop: "20px",
+        marginRight:"450px"
               
       }}>
       <input 
@@ -70,7 +71,7 @@ export const Card = () => {
           </div> 
           </div>
       </div>
-      <div className="card-featured-internships">
+      <div className="card-featured-internships" style={{marginTop:"110px"}}>
         <h2>Featured Internship Offers</h2>
       </div>
       <div className="internship-cards">

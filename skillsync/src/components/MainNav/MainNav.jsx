@@ -36,7 +36,7 @@ export default function Lnavbar() {
             <li>
               <Link to="/contact">Contact us</Link>
             </li>
-            <Link to='/'><IconButton style={{color: '#00B4D8'}}> <AccountCircle /></IconButton></Link>
+            <Link to='/internships'><IconButton style={{color: '#00B4D8'}}> <AccountCircle /></IconButton></Link>
           </ul>
         </div>
       </nav>

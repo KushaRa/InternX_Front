@@ -54,7 +54,7 @@ console.log("response recived", response.data);
         className="flex-container"
         style={{ border: "none", padding: "0px" }}
       >
-        <div className="flex-box01" style={{ width: "60%" }}>
+        <div className="flex-box01" style={{ width: "60%", marginRight:"50px" }}>
           <div className="logo">InternX</div>
           <div className="welcome">Welcome to</div>
           <div className="internx">InternX Community</div>
