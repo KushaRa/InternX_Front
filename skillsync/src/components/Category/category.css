@@ -1,0 +1,13 @@
+/* Flex container for category content */
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Space between items horizontally */
+    align-items: flex-start; /* Align items at the top */
+    flex-wrap: wrap; /* Wrap items onto multiple lines if needed */
+    width: 100%; /* Full width of the container */
+    padding: 20px;
+    gap: 20px; /* Add space between flex items */
+    max-width: 1200px; /* Max width for centering within the page */
+    margin: 0 auto; /* Center the flex container horizontally */
+  }
+  
