@@ -33,6 +33,7 @@ function App() {
         <Route path="/view/:id" element={<ViewCard />}></Route>
         <Route path="/apply/:id" element={<StdViewCard />}></Route>
         <Route path="/companyregistration" element={<Companyregistration />}></Route>
+        
       </Routes>
 </div>
 );
