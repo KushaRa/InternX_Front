@@ -3,7 +3,7 @@ import "./MainNav.css";
 import { Link } from "react-router-dom";
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import { IconButton } from '@mui/material';
-
+import logo from "../../assets/logo_trprnt.png";
 
 
 export default function Lnavbar() {
@@ -12,8 +12,8 @@ export default function Lnavbar() {
     <>
       <nav className="MnavBar">
         <div className="MnavDiv">
-          <div className="logo1">
-          <Link to='/'>InternX</Link>
+        <div className="logo1" style={{height:"25px", width:"auto",marginTop:"12px", padding:"0px", marginBottom:"30px"}}>
+        <Link to='/'> <img src={logo} alt="InternX Logo" className="logoImage"  style={{height:"35px", width:"auto",marginTop:"0px", padding:"0px"}}  /></Link>
           </div>
           <div className="menu" 
           onClick={()=>setMenu(!menuOpen)}>
