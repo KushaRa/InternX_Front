@@ -7,6 +7,7 @@ import EditIcon from "@mui/icons-material/Edit";
 import PhotoCamera from '@mui/icons-material/PhotoCamera';
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
+import {CategoryFlexContainer } from "../../components/Category/category"
 
 export const Company = () => {
   const [profile, setProfile] = useState({
@@ -139,15 +140,18 @@ export const Company = () => {
 
       <div className="container">
         <div className="cardNbutton">
-          <div className="InternCards">
-            <Popular />
+        
+          <div className="InternCards" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', width: '100%', marginLeft:"100px", marginTop:"175px"}}>
+            <CategoryFlexContainer/>
+              <Popular />
           </div>
           <div className="NewIntern">
-            <button className="NewAdd" onClick={handleOpen}>
+            <button className="NewAdd" onClick={handleOpen} style={{marginLeft:"130px"}}>
               ADD NEW
             </button>
             <NewIntern open={open} handleClose={handleClose} />
           </div>
+          
         </div>
       </div>
     </div>
