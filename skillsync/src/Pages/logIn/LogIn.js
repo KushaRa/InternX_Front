@@ -4,6 +4,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import logo from "../../assets/logo_trprnt.png"
 
 export const LogIn = () => {
   const [email, setEmail] = useState("");
@@ -50,14 +51,13 @@ console.log("response recived", response.data);
 
   return (
     <>
-      <div
-        className="flex-container" >
-        <div className="flex-box01" style={{ width: "35%", marginRight:"50px", paddingLeft:"50px" , marginTop:"0px"}}>
-          <div className="logo">InternX</div>
+       <div className="flex-Container">
+        
+        <div className="flex-box01" style={{paddingLeft:"20px" ,paddingRight:"30px"}}>
+          <div className="logo"><img src={logo} alt="InternX Logo" style={{height:"70px", width:"auto"}} /></div>
           <div className="welcome">Welcome to</div>
           <div className="internx">InternX Community</div>
         </div>
-
         <div className="flex-box02" style={{ marginTop:"80px", marginLeft:"80px" }}>
           <div className="login">
             <h5>Login to your account</h5>

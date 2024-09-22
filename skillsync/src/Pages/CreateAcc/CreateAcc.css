@@ -10,14 +10,15 @@
 
 .flex-box01 {
   width: 50%;
-  height: 100vh;
+  padding-left: 20px;
+    height: 100vh;
   background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   color: white;
-  padding: 40px;
+
 }
 
 .logo {
