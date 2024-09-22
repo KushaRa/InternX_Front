@@ -5,26 +5,29 @@ import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from "@mui/icons-material/Search";
 import { PopularStudent } from "../../components/PopularStudent/popularStudent";
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+
 
 const handleListItemClick = (Categories, index) => {};
 export const Categories = () => {
   return (
     <div className="category_page">
       <MainNav />
-      <div className="cardSearchBar"
+      <div
+        className="cardSearchBar"
         style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           width: "40%",
-          marginTop: "20px"
-        }}>
-        <input 
-          type="text" 
-          placeholder="Type Here.." 
+          marginTop: "20px",
+        }}
+      >
+        <input
+          type="text"
+          placeholder="Type Here.."
           style={{
             border: "none",
             outline: 0,
@@ -36,16 +39,31 @@ export const Categories = () => {
             flex: 1,
             marginRight: "18px",
             marginLeft: "50px",
-            marginTop: "20px"
+            marginTop: "20px",
           }}
-        />  
-        <button className="searchButton"><SearchIcon /></button>
+        />
+        <button className="searchButton">
+          <SearchIcon />
+        </button>
       </div>
       <div className="flex-container">
         <div className="flex-box3">
-        <h1 style={{ color: "white", fontSize: "20px", textAlign: "left", display: "flex", alignItems: "center" }}>
-         Select a Category <div><ArrowForwardIcon style={{ marginTop: '12px', marginLeft:'5px' }}/></div>
-        </h1>
+          <h1
+            style={{
+              color: "white",
+              fontSize: "20px",
+              textAlign: "left",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            Select a Category{" "}
+            <div>
+              <ArrowForwardIcon
+                style={{ marginTop: "12px", marginLeft: "5px" }}
+              />
+            </div>
+          </h1>
 
           <Box
             sx={{
@@ -90,7 +108,10 @@ export const Categories = () => {
               <ListItemButton
                 onClick={(event) => handleListItemClick(event, 5)}
               >
-                <ListItemText className="textcategory" primary="UI/UX Designer" />
+                <ListItemText
+                  className="textcategory"
+                  primary="UI/UX Designer"
+                />
               </ListItemButton>
               <ListItemButton
                 onClick={(event) => handleListItemClick(event, 6)}
