@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./CreateAcc.css";
+import logo from "../../assets/logo_trprnt.png";
 
 const Signup = () => {
   const navigate = useNavigate(); // Initialize useNavigate
@@ -43,8 +44,8 @@ const Signup = () => {
         className="flex-Container"
         style={{ border: "none", padding: "0px", display: "fixed" }}
       >
-        <div className="flex-box01" style={{ width: "60%" }}>
-          <div className="logo">InternX</div>
+        <div className="flex-box01" style={{ width: "60%",paddingLeft:"40px" }}>
+          <div className="logo"><img src={logo} alt="InternX Logo" style={{height:"70px", width:"auto"}}/></div>
           <div className="welcome">Welcome to</div>
           <div className="internx">InternX Community</div>
         </div>

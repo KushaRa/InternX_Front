@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./CreateAcc.css";
+import logo from "../../assets/logo_trprnt.png";
 
 const Signup = () => {
   const navigate = useNavigate(); // Initialize useNavigate
@@ -40,17 +41,15 @@ const Signup = () => {
        <ToastContainer />
        {/* ToastContainer component to display notifications */}
       <div className="flex-Container">
-        <div className="flex-box01" > 
         
-          </div>
-        <div className="flex-box01">
-          <div className="logo">InternX</div>
+        <div className="flex-box01" style={{paddingLeft:"20px" ,paddingRight:"30px"}}>
+          <div className="logo"><img src={logo} alt="InternX Logo" style={{height:"70px", width:"auto"}} /></div>
           <div className="welcome">Welcome to</div>
           <div className="internx">InternX Community</div>
         </div>
         <div className="flex-box02">
           <div className="createAcc">
-            <h5 style={{ marginLeft: "10px", marginTop: "50px" }}>Create an InternX account</h5>
+            <h5 style={{ marginTop: "50px" }}>Create an InternX account</h5>
             <form onSubmit={handleSignup} className="input-box1">
               <div className="place">
                 <input 
