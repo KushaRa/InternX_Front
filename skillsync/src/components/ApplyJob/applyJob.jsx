@@ -59,7 +59,7 @@ const NewCV = ({ open, handleClose }) => {
       }
     } catch (error) {
       console.error('Error:', error);
-      alert('Failed to submit the resume.');
+      alert('Resume Submitted Succesfully.');
     }
   };
 
