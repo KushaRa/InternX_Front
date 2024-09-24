@@ -25,6 +25,11 @@ const Signup = () => {
       toast.success("Registered Successfully!", {
         style: { backgroundColor: "#00b4d8", color: "white", fontSize: "15px" },
       }); // Show success message
+      setFullname("");
+      setEmail("");
+      setPassword("");
+
+
       setTimeout(() => {
         navigate("/login"); // Navigate to login page after a delay for toast message
       }, 2000); // Adjust the delay as needed

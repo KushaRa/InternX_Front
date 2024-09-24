@@ -26,6 +26,9 @@ export const LogIn = () => {
         localStorage.setItem("token", token);
 console.log("response recived", response.data);
         // Redirect based on user role
+        setEmail("");
+        setPassword("");
+
         if (user.role === "0") {
           navigate("/Card");
         } else if (user.role === "1") {

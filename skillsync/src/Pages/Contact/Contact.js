@@ -92,6 +92,12 @@ export const Contact = () => {
               placeholder="Name"
               name="user_name"
               required
+              style={{               
+                padding: '10px', 
+                width: '10%', 
+                boxSizing: 'border-box' 
+              }}
+            
             />
             <input
               ref={emailRef}
@@ -100,6 +106,11 @@ export const Contact = () => {
               placeholder="Email"
               name="user_email"
               required
+              style={{               
+                padding: '10px', 
+                width: '10%', 
+                boxSizing: 'border-box' 
+              }}
             />
           </div>
           <textarea
