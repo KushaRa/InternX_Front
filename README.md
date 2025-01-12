@@ -1,5 +1,3 @@
-# README
-
 ## InternX
 A platform connecting IT interns with opportunities in Sri Lanka. The platform usefull for students who finding internships as well as companis who posting internship advertiesment.There are Two paths they can choose their own path when registerng to the system, according to their role, whether its is company or student.
 
